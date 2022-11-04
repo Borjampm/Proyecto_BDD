@@ -1,0 +1,201 @@
+id_evento,Evento,Recinto,Ciudad,Pais,Fecha de incio,id_productora
+0,BZRP Tour,Pabellon Max Schmeling,BERLIN,ALEMANIA,09-05-20,227
+1,Como si no importara,Arena Ludwingsburg,LUDWINGSBURG,ALEMANIA,23-01-21,10
+2,Born this way,Irving Plaza,NUEVA YORK,ESTADOS UNIDOS,12-09-20,92
+3,El Duko2.0,Thunder Bay,ONTARIO,CANADA,29-07-20,80
+4,LOS APARATOS,Tarpeian Precinct Lawn,SYDNEY,AUTRALIA,12-08-18,114
+5,Reputation,Raley Field,SACRAMENTO,ESTADOS UNIDOS,30-03-16,210
+6,WAP,E-Werk,COLOGNE,ALEMANIA,06-03-16,151
+7,One Night Only,Bilbao Arena,BILBAO,ESPAÑA,10-08-21,220
+8,Dia Cero,Forest National,FOREST,BELGICA,14-11-18,181
+9,CARAVANA,Don Haskins Center,TEXAS,ESTADOS UNIDOS,05-01-19,241
+10,WAP,Madison Square Garden,NUEVA YORK,ESTADOS UNIDOS,23-12-18,102
+11,Mil Rosas,Leons Centre,ONTARIO,CANADA,18-01-18,67
+12,Quedate,Mercedes-Benz Arena,BERLIN,ALEMANIA,19-01-22,50
+13,Lively And Supreme,Quinta Vergara,VIÑA DEL MAR,CHILE,30-08-18,218
+14,Anastasia,Pabellon Fuente de San Luis,VALENCIA,ESPAÑA,04-07-20,149
+15,Myrad,Teatro Municipal de Santiago,SANTIAGO,CHILE,03-05-16,201
+16,Dolby Live,Palais 12,BRUSELAS,BELGICA,07-06-16,152
+17,Disney Concert,Estadio Unico Diego Armando Maradona,BUENOS AIRES,ARGENTINA,15-03-16,202
+18,Map of the Soul,Teatro Municipal de Santiago,SANTIAGO,CHILE,05-12-20,97
+19,A7S Show,Carrer Baix Vinalopo,MISLATA,ESPAÑA,06-01-19,53
+20,Show Forest,Radio City Music Hall,NUEVA YORK,ESTADOS UNIDOS,11-04-16,237
+21,The Misery,Spark Arena,AUCKLAND,NUEVA ZELANDA,27-10-20,240
+22,Passionfruit,Club Blondie,SANTIAGO,CHILE,18-05-17,7
+23,Concha Acústica UC 2022,Club Subterraneo,SANTIAGO,CHILE,24-10-22,48
+24,Fourplan Event,Olympiahalle,MUNICH,ALEMANIA,16-08-16,60
+25,CLARITY,Estadio Nacional,SANTIAGO,CHILE,17-08-18,129
+26,Passionfruit,Explanada Ciudad Empresarial,SANTIAGO,CHILE,13-04-20,52
+27,KAWAII,SALA SANTANA,BILBAO,ESPAÑA,06-02-22,149
+28,DISCOTEKA,El Huevo,VALPARAISO,CHILE,30-09-17,95
+29,Entre Nosotros,Sala La Rivera,MADRID,ESPAÑA,21-12-20,53
+30,Younger now,HISTORY,TORONTO,CANADA,27-03-17,80
+31,The After Hours,Teatro Caupolicán,SANTIAGO,CHILE,08-05-18,86
+32,Plastic Hearts,UBS Arena,NUEVA YORK,ESTADOS UNIDOS,23-05-21,226
+33,Anastasia,Teatro Cariola,SANTIAGO,CHILE,19-07-19,218
+34,Bigger than me,Estadio ANZ,SYDNEY,AUTRALIA,28-07-19,39
+35,Alpha Eventalist,Estadio Bicentario de La Florida,SANTIAGO,CHILE,15-10-21,129
+36,Beto Cuevas,Kursaal Oostende,OSTEND,BELGICA,12-04-18,123
+37,Mystere,LAUT,BARCELONA,ESPAÑA,10-08-19,245
+38,The After Hours,Teatro Coliseo,SANTIAGO,CHILE,20-04-18,27
+39,Rio Concert,Vivo Rio,RIO DE JANEIRO,BRASIL,26-02-16,213
+40,Frozen,Teatro Colon,BUENOS AIRES,ARGENTINA,09-12-19,79
+41,Niño Blessi,SOF Q8 Toinha Brasil,BRASILIA,BRASIL,08-09-19,140
+42,S.U.N.O,The Anthem,WASHINGTON DC,ESTADOS UNIDOS,16-06-16,226
+43,Que oso,Youtube Theatre,LOS ANGELES,ESTADOS UNIDOS,22-05-18,226
+44,EQILIBRIO,Festhalle,FRANKFURT,ALEMANIA,14-08-21,36
+45,Paramore,Powerstation 33,AUCKLAND,NUEVA ZELANDA,30-05-16,83
+46,QueenB,Club Providencia,SANTIAGO,CHILE,06-08-19,205
+47,Flicker,SALA SANTANA,BILBAO,ESPAÑA,18-04-21,245
+48,I Aint Worried,Estadio Monumental,BUENOS AIRES,ARGENTINA,01-12-19,94
+49,Tomorrow Never Knows,Studio The Venue,AUCKLAND,NUEVA ZELANDA,07-03-20,234
+50,La Ultima Mision,Estadio Rose Bowl,LOS ANGELES,ESTADOS UNIDOS,12-08-17,92
+51,Bachata en vivo,Irving Plaza,NUEVA YORK,ESTADOS UNIDOS,05-11-20,102
+52,Perfect Specacular Paradise,Estadio Monumental,SANTIAGO,CHILE,16-06-16,139
+53,Five Day,Arena TSB Bank,WELLINGTON,NUEVA ZELANDA,08-07-21,243
+54,Same old love,Days Bay Pavilion,LOWER HUTT,NUEVA ZELANDA,28-03-20,83
+55,Lotto,Estadio Nacional,SANTIAGO,CHILE,10-10-21,147
+56,Dangerous Woman,Days Bay Pavilion,LOWER HUTT,NUEVA ZELANDA,08-02-18,234
+57,Passionfruit,Columbianhalle,BERLIN,ALEMANIA,10-10-20,36
+58,Twelve Carat Tour,Sala La Rivera,MADRID,ESPAÑA,08-07-22,53
+59,Map of the Soul,Shubert Theatre,BOSTON,ESTADOS UNIDOS,21-06-20,102
+60,Gowlding,Sala Apolo,BARCELONA,ESPAÑA,03-07-19,53
+61,Gowlding,Salitre Magico,BOGOTA,COLOMBIA,17-12-22,158
+62,DJs Apoyando a Chile,Teatro Teletón,SANTIAGO,CHILE,11-12-16,17
+63,Seize The Day,Thunder Bay,ONTARIO,CANADA,08-09-22,80
+64,Papi Juancho,Cirque Royal,BRUSELAS,BELGICA,16-07-21,183
+65,Le Reve,The Fillmore Philadelphia,PHILADELPHIA,ESTADOS UNIDOS,28-03-17,210
+66,"Young, Dumb and Broke",Teatro Municipal de Santiago,SANTIAGO,CHILE,16-09-22,218
+67,How do you sleep,Teatro Municipal de Santiago,SANTIAGO,CHILE,25-09-21,134
+68,Anastasia,Salitre Magico,BOGOTA,COLOMBIA,07-12-19,135
+69,Sin Despertar,Warehouse Live,TEXAS,ESTADOS UNIDOS,26-02-20,237
+70,Ye,El Huevo,VALPARAISO,CHILE,08-11-22,218
+71,1989,Jeunesse Arena,RIO DE JANEIRO,BRASIL,13-07-18,131
+72,Phoenix Show,Espacio Unimed,SAO PAULO,BRASIL,08-01-16,131
+73,The E.N.D World,Air Canada Centre,TORONTO,CANADA,12-05-21,67
+74,ShoNuf Lucky,Opera de Sidney,SYDNEY,AUTRALIA,10-02-19,22
+75,Bigger than me,Metropol,BERLIN,ALEMANIA,01-06-20,36
+76,La leyenda,UBS Arena,NUEVA YORK,ESTADOS UNIDOS,02-03-18,241
+77,A7S Show,Barclaycard Arena,HAMBURG,ALEMANIA,19-12-17,163
+78,El Duko,Parque Bicentenario Cerrillos,SANTIAGO,CHILE,12-07-18,164
+79,Golden,La Marina de Valencia,VALENCIA,ESPAÑA,23-03-22,51
+80,Papi Juancho,Teatro Municipal de Santiago,SANTIAGO,CHILE,18-09-20,129
+81,Fruta y te,Raley Field,SACRAMENTO,ESTADOS UNIDOS,17-04-17,102
+82,Habana,Velodromo de Berlin,BERLIN,ALEMANIA,09-10-18,203
+83,AgendaMusic,Sala La Rivera,MADRID,ESPAÑA,20-06-18,51
+84,Ko Ko Pop,Estadio Nacional,BUENOS AIRES,ARGENTINA,14-01-20,104
+85,Nobody like you,Palau Sant Jordi,BARCELONA,ESPAÑA,26-07-22,53
+86,Cerca de ti,Teatro Cariola,SANTIAGO,CHILE,28-01-22,59
+87,Tren al Sur,Estadio Bicentario de La Florida,SANTIAGO,CHILE,27-11-18,217
+88,EteSesh,FirstOntario Centre,HAMILTON,CANADA,07-07-19,168
+89,La Ultima Vuelta,Club RBX,SANTIAGO,CHILE,11-12-16,78
+90,Caminemos de la Mano,Quinta Vergara,VIÑA DEL MAR,CHILE,21-07-16,205
+91,CARAVANA,Carioca Club,SAO PAULO,BRASIL,29-07-18,124
+92,TJB,Dodger Stadium,LOS ANGELES,ESTADOS UNIDOS,25-06-22,237
+93,Perfect All Experimenters,Aotea Centre,AUCKLAND,NUEVA ZELANDA,24-07-16,243
+94,Nicky Jam Show,Radio City Music Hall,NUEVA YORK,ESTADOS UNIDOS,28-08-19,210
+95,Niño Blessi,Bikini Barcelona,BARCELONA,ESPAÑA,19-04-20,53
+96,Twelve Carat Tour,The Anthem,WASHINGTON DC,ESTADOS UNIDOS,29-01-18,231
+97,Bangerz,Don Haskins Center,TEXAS,ESTADOS UNIDOS,08-12-18,237
+98,Umbrella Concert,Movistar Arena,BUENOS AIRES,ARGENTINA,07-08-19,202
+99,Revelation Magic Everything,Trafalgar Centre Paru,NELSON,NUEVA ZELANDA,04-01-22,240
+100,Drivers License Tour,ZAG Arena,HANOVER,ALEMANIA,17-02-16,151
+101,Big Time,"Stage Live, Kalea",BILBAO,ESPAÑA,07-04-16,149
+102,Schulz Forever,Arena Ludwingsburg,LUDWINGSBURG,ALEMANIA,22-02-17,163
+103,El Ultimo Concierto,Gran Arena Monticello,SANTIAGO,CHILE,19-07-16,57
+104,Epic Show,Freiheitshalle,MUNICH,ALEMANIA,03-04-22,163
+105,Desesperados,Arena TSB Bank,WELLINGTON,NUEVA ZELANDA,24-09-19,236
+106,Material Girl,Estadio ANZ,SYDNEY,AUTRALIA,21-06-16,206
+107,Sueño Stereo,Shubert Theatre,BOSTON,ESTADOS UNIDOS,02-08-20,242
+108,DJ Snake,Espacio Unimed,SAO PAULO,BRASIL,15-02-16,146
+109,DISCOTEKA,Independance Club,MADRID,ESPAÑA,30/2/2021,245
+110,Lively And Supreme,Mercedes-Benz Arena,BERLIN,ALEMANIA,11-09-20,50
+111,El Alfa Tour,The Brooklyn Monarch,NUEVA YORK,ESTADOS UNIDOS,25-08-19,241
+112,PlanAhead,Luna Park,BUENOS AIRES,ARGENTINA,02-05-21,137
+113,Roads Time,Columbianhalle,BERLIN,ALEMANIA,06-02-20,36
+114,Beyond Wonderland,Gran Arena Monticello,SANTIAGO,CHILE,29-06-16,106
+115,Paramore,Niceto Club,BUENOS AIRES,ARGENTINA,11-01-17,81
+116,Maria Becerra,Teatro Municipal de Santiago,SANTIAGO,CHILE,10-06-22,0
+117,Tusa,Metropolitano Rosario,BUENOS AIRES,ARGENTINA,07-11-20,77
+118,Mami Tour,Thunder Bay,ONTARIO,CANADA,09-07-22,80
+119,Super Bass Tour,Warehouse Live,TEXAS,ESTADOS UNIDOS,02-04-22,102
+120,Bigger than me,Teatro Colon,BUENOS AIRES,ARGENTINA,29-05-21,229
+121,Twelve Carat Tour,Teatro Mayor,BOGOTA,COLOMBIA,29-05-22,72
+122,Michael Jackson Tribute,Cupula Multiespacio,SANTIAGO,CHILE,13-11-17,134
+123,Talking to the moon,Aotea Centre,AUCKLAND,NUEVA ZELANDA,24-02-21,83
+124,Say you wont let go,Antel Arena,BUENOS AIRES,ARGENTINA,08-02-22,229
+125,Telepatia,Raley Field,SACRAMENTO,ESTADOS UNIDOS,02-03-17,242
+126,Me Veras Volver,Palau Sant Jordi,BARCELONA,ESPAÑA,06-09-17,53
+127,MJ Tribute,Warehouse Live,TEXAS,ESTADOS UNIDOS,12-01-16,231
+128,Convencete,Thunder Bay,ONTARIO,CANADA,16-02-20,80
+129,Perfect Specacular Paradise,Sala Apolo,BARCELONA,ESPAÑA,26-02-16,53
+130,The Real Slim Shady,Club Subterraneo,SANTIAGO,CHILE,01-10-20,129
+131,La Criminal,Club Subterraneo,SANTIAGO,CHILE,06-11-19,108
+132,Dont start now,Teatro Gran Rex,BUENOS AIRES,ARGENTINA,02-02-17,79
+133,I Aint Worried,Luna Park,BUENOS AIRES,ARGENTINA,15-05-21,137
+134,Sub Focus,Moon Valencia,VALENCIA,ESPAÑA,15-02-16,220
+135,Get Jacked,Arena TSB Bank,WELLINGTON,NUEVA ZELANDA,16-01-17,243
+136,Best Part,Chango Club,MADRID,ESPAÑA,11-08-18,149
+137,Mami Tour,Columbianhalle,BERLIN,ALEMANIA,19-12-22,227
+138,Kill my mind,La Madeleine,BRUSELAS,BELGICA,28-01-17,155
+139,DISCOTEKA,Mercedes-Benz Arena,BERLIN,ALEMANIA,04-10-16,230
+140,Hips dont lie,Espacio Riesco,SANTIAGO,CHILE,22-12-17,165
+141,Shivers,Lanxess Arena,COLOGNE,ALEMANIA,01-03-18,66
+142,The Encounter,Crypto.com Arena,LOS ANGELES,ESTADOS UNIDOS,17-04-22,103
+143,Everybody,Gran Arena Monticello,SANTIAGO,CHILE,21-10-16,129
+144,Real Scene,Phoenix Concert Theatre,TORONTO,CANADA,11-09-21,179
+145,Papi Juancho,Estadio Rose Bowl,LOS ANGELES,ESTADOS UNIDOS,17-07-22,212
+146,Shape of you,Aussie Stadium,SYDNEY,AUTRALIA,20-04-16,206
+147,Super Freaky Girl,Casino de Viña del Mar,VIÑA DEL MAR,CHILE,01-01-22,108
+148,Belinda Comeback,E-Werk,COLOGNE,ALEMANIA,30-01-16,36
+149,WAR,Shubert Theatre,BOSTON,ESTADOS UNIDOS,10-05-21,210
+150,"Young, Dumb and Broke",Trafalgar Centre Paru,NELSON,NUEVA ZELANDA,09-06-20,243
+151,El negrito ojos claros,Teatro Municipal de Valparaiso,VALPARAISO,CHILE,07-07-18,85
+152,Step by Step,City Hall el Rodeo,MEDELLIN,COLOMBIA,28-03-16,15
+153,Salimo de Noche,Palacio de las Artes,VALENCIA,ESPAÑA,30-2-2019,51
+154,Ultra Solo,Niceto Club,BUENOS AIRES,ARGENTINA,12-11-21,79
+155,El negrito ojos claros,Hipodromo de Palermo,BUENOS AIRES,ARGENTINA,24-08-17,81
+156,Epic Show,Arena TSB Bank,WELLINGTON,NUEVA ZELANDA,06-05-18,240
+157,RUNAWAY,Estadio ANZ,SYDNEY,AUTRALIA,07-09-21,182
+158,S.U.N.O,Cupula Multiespacio,SANTIAGO,CHILE,21-08-18,129
+159,Fine Line,Estadio Rose Bowl,LOS ANGELES,ESTADOS UNIDOS,11-08-22,210
+160,Heather,Palau Sant Jordi,BARCELONA,ESPAÑA,01-03-18,53
+161,MMM Bop,HISTORY,TORONTO,CANADA,14-05-22,5
+162,One Night Only,Movistar Arena,SANTIAGO,CHILE,05-04-19,218
+163,JLo,Club Subterraneo,SANTIAGO,CHILE,18-02-18,129
+164,Natural,Gran Arena Monticello,SANTIAGO,CHILE,07-05-16,37
+165,Watch out for this,Sala But,MADRID,ESPAÑA,17-12-19,149
+166,The Joshua Tree,Luna Park,BUENOS AIRES,ARGENTINA,27-02-20,223
+167,Heather,Teatro Teletón,SANTIAGO,CHILE,18-01-21,185
+168,Eventage Feasts,Luna Park,BUENOS AIRES,ARGENTINA,09-06-16,137
+169,Ko Ko Pop,Palau Sant Jordi,BARCELONA,ESPAÑA,20-04-19,51
+170,Mil Rosas,Mercedes-Benz Arena,BERLIN,ALEMANIA,29-11-22,50
+171,The After Hours,WIZink Center,MADRID,ESPAÑA,04-11-21,149
+172,Fourplan Mania,Kursaal Oostende,OSTEND,BELGICA,29-04-19,6
+173,SongKick,SOF Q8 Toinha Brasil,BRASILIA,BRASIL,09-08-20,124
+174,Heartbreak Weather,SALA SANTANA,BILBAO,ESPAÑA,16-06-20,51
+175,Bang Bang,Warehouse Live,TEXAS,ESTADOS UNIDOS,03-02-21,226
+176,Big E Party Moment,Air Canada Centre,TORONTO,CANADA,18-10-20,67
+177,Oh How,La Madeleine,BRUSELAS,BELGICA,10-09-21,155
+178,How do you sleep,Teatro Municipal de Santiago,SANTIAGO,CHILE,14-09-22,61
+179,I Used to Think I could Fly,Salitre Magico,BOGOTA,COLOMBIA,23-10-19,224
+180,FULL PIOLI,Estadio Rose Bowl,LOS ANGELES,ESTADOS UNIDOS,13-07-17,103
+181,Lali Esposito: The Show,Days Bay Pavilion,LOWER HUTT,NUEVA ZELANDA,03-03-21,160
+182,MMM Bop,Wilterm Theatre,LOS ANGELES,ESTADOS UNIDOS,16-08-17,210
+183,Mil Rosas,City Hall el Rodeo,MEDELLIN,COLOMBIA,03-03-16,44
+184,Dangerous Woman,Niceto Club,BUENOS AIRES,ARGENTINA,22-07-21,104
+185,El amor despues del amor,Aotea Centre,AUCKLAND,NUEVA ZELANDA,05-01-21,236
+186,One Vision of Queen,Teatro Gran Rex,BUENOS AIRES,ARGENTINA,24-07-20,79
+187,Schulz Forever,La Marina de Valencia,VALENCIA,ESPAÑA,22-03-22,53
+188,R3hab live show,Velodromo de Berlin,BERLIN,ALEMANIA,19-09-22,174
+189,Young Flex,Estadio de Futbol Atanasio Girardot,MEDELLIN,COLOMBIA,04-09-18,63
+190,Telepatia,Club Chocolate,SANTIAGO,CHILE,06-04-22,185
+191,Treat you better,Moon Valencia,VALENCIA,ESPAÑA,30-09-19,51
+192,RBD the comeback,Teatro Municipal de Valparaiso,VALPARAISO,CHILE,17-02-20,141
+193,La Gasolina,Estadio Santa Laura,SANTIAGO,CHILE,16-12-16,95
+194,Todo Cambia,Fundo Colmito,VIÑA DEL MAR,CHILE,15-12-21,76
+195,El J23,Canadian Tire Centre,OTTAWA,CANADA,07-10-20,214
+196,One Night Only,WIZink Center,MADRID,ESPAÑA,26-09-17,166
+197,Voyage,Studio The Venue,AUCKLAND,NUEVA ZELANDA,29-05-20,160
+198,Born this way,Shubert Theatre,BOSTON,ESTADOS UNIDOS,08-05-17,241
+199,Get Jacked,Carrer Baix Vinalopo,MISLATA,ESPAÑA,14-02-21,166

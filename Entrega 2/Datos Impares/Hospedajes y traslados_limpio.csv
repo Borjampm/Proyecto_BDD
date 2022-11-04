@@ -1,4 +1,4 @@
-codigo reserva,fecha inicio,fecha termino,lugar,nombre hotel,tipo traslado,aeropuerto salida,hora salida,aeropuerto llegada,hora llegada,id_artista
+codigo_reserva,fecha_inicio,fecha_termino,lugar,nombre_hotel,tipo_traslado,aeropuerto_salida,hora_salida,aeropuerto_llegada,hora_llegada,id_artista
 DUE-45195,18/4/2019,23/4/2019,BILBAO,Hotel Ilunion,TERRESTRE,,,,,13
 VJA-35509,16/4/2019,17/4/2019,AUCKLAND,Hilton Auckland,TERRESTRE,,,,,175
 YOP-65177,5/5/2020,9/5/2020,COLOGNE,StadHotel,AEREO,Aeropuerto Internacional de Bruselas,9:10,Aeropuerto Internacional de Cologne,12:47,81

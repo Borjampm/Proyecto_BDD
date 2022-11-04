@@ -1,4 +1,4 @@
-id_evento,Evento,Recinto,Ciudad,Pais,Fecha de incio,id_productora
+id_evento,Evento,Recinto,Ciudad,Pais,fecha_inicio,id_productora
 0,BZRP Tour,Pabellon Max Schmeling,BERLIN,ALEMANIA,09-05-20,227
 1,Como si no importara,Arena Ludwingsburg,LUDWINGSBURG,ALEMANIA,23-01-21,10
 2,Born this way,Irving Plaza,NUEVA YORK,ESTADOS UNIDOS,12-09-20,92

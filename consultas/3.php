@@ -36,5 +36,8 @@
 	}
   ?>
 	</table>
+  <?php if(empty($tours)){
+    echo "El artista no se ha ido de tour";
+  }?>
 
 <?php include('../templates/footer.html'); ?>

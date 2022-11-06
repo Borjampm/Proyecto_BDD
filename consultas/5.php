@@ -32,5 +32,8 @@
 	}
   ?>
 	</table>
+  <?php if(empty($productoras)){
+    echo "El artista no ha trabajado con una productora";
+  }?>
 
 <?php include('../templates/footer.html'); ?>

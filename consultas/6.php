@@ -31,5 +31,8 @@
 	}
   ?>
 	</table>
+  <?php if(empty($hoteles)){
+    echo "El artista no se ha alojado en un hotel";
+  }?>
 
 <?php include('../templates/footer.html'); ?>

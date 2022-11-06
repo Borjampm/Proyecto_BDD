@@ -25,7 +25,7 @@
   ?>
 
   <form align="center" action="consultas/2.php" method="post">
-    Seleccione un Artista:
+    Seleccione a un Artista:
     <select name="nombre">
       <?php
       #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
@@ -47,13 +47,6 @@
 
 <h3 align="center"> ¿Quieres ver la informacion del ultimo tour de un artista?</h3>
 
-<form align="center" action="consultas/3.php" method="post">
-  Escriba un Nombre Artistico:
-  <input type="text" name="nombre">
-  <br/><br/>
-  <input type="submit" value="Buscar">
-</form>
-<br/><br/>
   <?php require("config/conexion.php");
   $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas;");
   $result -> execute();

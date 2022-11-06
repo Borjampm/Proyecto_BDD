@@ -41,18 +41,56 @@
   <br>
   <br>
   <br>
+<h3 align="center"> ¿Quieres ver los paises a visitar en un tour?</h3>
 
-  <h3 align="center"> ¿Quieres conocer los Pokemones más altos que: ?</h3>
+<form align="center" action="consultas/4.php" method="post">
+  Nombre Artistico:
+  <input type="text" name="nombre">
+  <br/><br/>
+  <input type="submit" value="Buscar">
+</form>
 
-  <form align="center" action="consultas/consulta_altura.php" method="post">
-    Altura Mínima:
-    <input type="text" name="altura">
-    <br/><br/>
-    <input type="submit" value="Buscar">
-  </form>
   <br>
   <br>
   <br>
+<h3 align="center"> ¿Quieres ver la las productoras con las que ha trabajado un artista?</h3>
+
+<form align="center" action="consultas/5.php" method="post">
+  Nombre Artistico:
+  <input type="text" name="nombre">
+  <br/><br/>
+  <input type="submit" value="Buscar">
+</form>
+
+  <br>
+  <br>
+  <br>
+<h3 align="center"> ¿Quieres ver en cuales hoteles se ha hospedado un artista, y cuantas veces?</h3>
+
+<form align="center" action="consultas/6.php" method="post">
+  Nombre Artistico:
+  <input type="text" name="nombre">
+  <br/><br/>
+  <input type="submit" value="Buscar">
+</form>
+
+  <br>
+  <br>
+  <br>
+<h3 align="center"> ¿Quieres ver al artista que ha entregado la mayor cantidad de entradas de cortesia?</h3>
+
+<form align="center" action="consultas/7.php" method="post">
+  Nombre Artistico:
+  <input type="text" name="nombre">
+  <br/><br/>
+  <input type="submit" value="Buscar">
+</form>
+
+  <br>
+  <br>
+  <br>
+
+
 
   <h3 align="center">¿Quieres buscar todos los pokemones por tipo?</h3>
 

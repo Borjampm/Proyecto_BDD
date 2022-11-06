@@ -8,7 +8,7 @@
   $nombre = $_POST["nombre"];
   $query = "SELECT artistas.nombre_artistico, COUNT(artistas.nombre_artistico) as entradas_de_cortesía_entregadas
             FROM entradas_cortesia INNER JOIN artistas ON entradas_cortesia.id_artista = artistas.id_artista
-            WHERE artistas.nombre_artistico = ILIKE '%$nombre%'
+            WHERE artistas.nombre_artistico ILIKE '%$nombre%'
             GROUP BY artistas.nombre_artistico;";
 	$result = $db -> prepare($query);
 	$result -> execute();

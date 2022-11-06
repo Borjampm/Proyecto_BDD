@@ -24,10 +24,10 @@
 	foreach ($artistas as $artista) {
   		echo "<tr><td>$artista[0]</td><td>$artista[1]</td></tr>";
 	}
-  if(empty($artistas)){
-    echo "El artista no ha dado entradas de cortesia";
-  }
+
   ?>
 	</table>
-
+<?phpif(empty($artistas)){
+    echo "El artista no ha dado entradas de cortesia";
+  }?>
 <?php include('../templates/footer.html'); ?>

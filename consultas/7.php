@@ -20,7 +20,6 @@
 	<table align="center">
     <tr>
       <th>Nombre Artistico</th>
-      <th>Numero Contacto</th>
     </tr>
   <?php
 	foreach ($artistas as $artista) {

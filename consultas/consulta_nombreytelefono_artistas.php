@@ -6,8 +6,6 @@
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("../config/conexion.php");
 
-	$tipo = $_POST["tipo_elegido"];
-	$nombre = $_POST["nombre_pokemon"];
 
  	$query = "SELECT nombre_artistico, numero_contacto FROM artistas;";
 	$result = $db -> prepare($query);

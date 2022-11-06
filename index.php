@@ -25,6 +25,10 @@
     <input type="submit" value="Buscar">
   </form>
 
+  <br>
+  <br>
+  <br>
+
 <h3 align="center"> ¿Quieres ver la informacion del ultimo tour de un artista?</h3>
 
 <form align="center" action="consultas/consulta_cantidad_tours.php" method="post">

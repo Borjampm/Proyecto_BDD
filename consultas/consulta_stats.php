@@ -6,6 +6,7 @@
   require("../config/conexion.php");
 
   $nombre = $_POST["nombre"];
+  echo $nombre;
  	#$query = "SELECT * FROM pokemones where id = $id_nuevo;";
   $query = "SELECT artistas.nombre_artistico, COUNT(artistas.nombre_artistico) as entradas_de_cortesía_entregadas FROM entradas_cortesia INNER JOIN artistas ON entradas_cortesia.id_artista = artistas.id_artista WHERE LOWER(artistas.nombre_artistico) = LOWER($nombre) GROUP BY artistas.nombre_artistico;";
   $query = "SELECT artistas.nombre_artistico, COUNT(artistas.nombre_artistico) as entradas_de_cortesía_entregadas FROM entradas_cortesia INNER JOIN artistas ON entradas_cortesia.id_artista = artistas.id_artista WHERE LOWER(artistas.nombre_artistico) = LOWER('Drake') GROUP BY artistas.nombre_artistico;";
@@ -13,8 +14,6 @@
 	$result -> execute();
 	$artistas = $result -> fetchAll();
   ?>
-
-  <h1> $nombre </h1>
 
 	<table align="center">
     <tr>

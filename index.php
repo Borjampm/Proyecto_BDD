@@ -1,8 +1,8 @@
 <?php include('templates/header.html');   ?>
 
 <body>
-  <h1 align="center">Biblioteca Pokemón </h1>
-  <p style="text-align:center;">Aquí podrás encontrar información sobre pokemones.</p>
+  <h1 align="center"> Centro de Informaciones de Eventos Musicales </h1>
+  <p style="text-align:center;">Aquí podrás encontrar información sobre todo lo que está ocurriendo en el mundo de la musica.</p>
 
   <br>
 
@@ -16,11 +16,11 @@
   <br>
   <br>
 
-  <h3 align="center"> ¿Quieres buscar un Pokemón por su ID?</h3>
+  <h3 align="center"> ¿Quieres ver las entradas de cortesia que ha entregado un artista?</h3>
 
   <form align="center" action="consultas/consulta_stats.php" method="post">
-    Id:
-    <input type="text" name="id_elegido">
+    Nombre Artistico:
+    <input type="text" name="nombre">
     <br/><br/>
     <input type="submit" value="Buscar">
   </form>

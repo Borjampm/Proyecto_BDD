@@ -5,26 +5,23 @@
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("../config/conexion.php");
 
-  $id_nuevo = $_POST["id_elegido"];
+  $nombre = $_POST["nombre"];
 
- 	$query = "SELECT * FROM pokemones where id = $id_nuevo;";
+ 	#$query = "SELECT * FROM pokemones where id = $id_nuevo;";
+  $query = "SELECT artistas.nombre_artistico, COUNT(artistas.nombre_artistico) as entradas_de_cortesía_entregadas FROM entradas_cortesia INNER JOIN artistas ON entradas_cortesia.id_artista = artistas.id_artista WHERE LOWER(artistas.nombre_artistico) = LOWER($nombre) GROUP BY artistas.nombre_artistico;";
 	$result = $db -> prepare($query);
 	$result -> execute();
-	$pokemones = $result -> fetchAll();
+	$artistas = $result -> fetchAll();
   ?>
 
 	<table>
     <tr>
-      <th>ID</th>
       <th>Nombre</th>
-      <th>Altura</th>
-      <th>Peso</th>
-      <th>Experiencia Base</th>
-      <th>Tipo</th>
+      <th>Cantidad de entradas</th>
     </tr>
   <?php
-	foreach ($pokemones as $pokemon) {
-  		echo "<tr><td>$pokemon[0]</td><td>$pokemon[1]</td><td>$pokemon[2]</td><td>$pokemon[3]</td><td>$pokemon[4]</td><td>$pokemon[5]</td></tr>";
+	foreach ($artistas as $artista) {
+  		echo "<tr><td>$artista[0]</td><td>$artista[1]</td></tr>";
 	}
   ?>
 	</table>

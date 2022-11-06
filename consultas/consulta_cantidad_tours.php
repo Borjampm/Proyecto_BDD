@@ -14,7 +14,7 @@
             INNER JOIN Eventos
             ON eventos.id_productora = artista_en_evento.id_productora AND  eventos.id_evento = artista_en_evento.id_evento
             INNER JOIN Tours ON eventos.evento = tours.nombre
-            WHERE artistas.nombre_artistico ILIKE ‘%$nombre%’
+            WHERE LOWER(artistas.nombre_artistico) = LOWER('$nombre')
             ORDER BY tours.fecha_inicio DESC
             LIMIT 1;";
 	$result = $db -> prepare($query);

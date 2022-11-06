@@ -14,7 +14,7 @@
 	$artistas = $result -> fetchAll();
   ?>
 
-	<table>
+	<table align="center">
     <tr>
       <th>Nombre</th>
       <th>Cantidad de entradas</th>

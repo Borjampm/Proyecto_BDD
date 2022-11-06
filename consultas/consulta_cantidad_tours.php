@@ -3,7 +3,8 @@
 <body>
 <?php
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
-  #WHERE LOWER(artistas.nombre_artistico) LIKE ‘%$nombre%’
+  #WHERE artistas.nombre_artistico ILIKE ‘%$nombre%’
+  #WHERE LOWER(artistas.nombre_artistico) = LOWER('$nombre')
   require("../config/conexion.php");
 
   $nombre = $_POST["nombre"];
@@ -13,7 +14,7 @@
             INNER JOIN Eventos
             ON eventos.id_productora = artista_en_evento.id_productora AND  eventos.id_evento = artista_en_evento.id_evento
             INNER JOIN Tours ON eventos.evento = tours.nombre
-            WHERE LOWER(artistas.nombre_artistico) = lower('$nombre')
+            WHERE artistas.nombre_artistico ILIKE ‘%$nombre%’
             ORDER BY tours.fecha_inicio DESC
             LIMIT 1;";
 	$result = $db -> prepare($query);

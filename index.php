@@ -72,13 +72,6 @@
   <br>
 <h3 align="center"> ¿Quieres ver los paises a visitar en un tour?</h3>
 
-<form align="center" action="consultas/4.php" method="post">
-  Escriba un Tour:
-  <input type="text" name="nombre">
-  <br/><br/>
-  <input type="submit" value="Buscar">
-</form>
-<br/><br/>
   <?php require("config/conexion.php");
   $result = $db -> prepare("SELECT DISTINCT nombre FROM tours;");
   $result -> execute();
@@ -86,7 +79,7 @@
   ?>
 
   <form align="center" action="consultas/4.php" method="post">
-    O seleccine a uno:
+    Seleccione un Tour:
     <select name="nombre">
       <?php
       #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
@@ -104,12 +97,6 @@
   <br>
 <h3 align="center"> ¿Quieres ver las productoras con las que ha trabajado un artista?</h3>
 
-<form align="center" action="consultas/5.php" method="post">
-  Escriba un Nombre Artistico:
-  <input type="text" name="nombre">
-  <br/><br/>
-  <input type="submit" value="Buscar">
-</form>
 <br/><br/>
   <?php require("config/conexion.php");
   $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas;");
@@ -118,7 +105,7 @@
   ?>
 
   <form align="center" action="consultas/5.php" method="post">
-    O seleccine a uno:
+    Seleccione a un Artista:
     <select name="nombre">
       <?php
       #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
@@ -136,12 +123,6 @@
   <br>
 <h3 align="center"> ¿Quieres ver en cuales hoteles se ha hospedado un artista, y cuantas veces?</h3>
 
-<form align="center" action="consultas/6.php" method="post">
-  Escriba un Nombre Artistico:
-  <input type="text" name="nombre">
-  <br/><br/>
-  <input type="submit" value="Buscar">
-</form>
 <br/><br/>
   <?php require("config/conexion.php");
   $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas;");
@@ -150,7 +131,7 @@
   ?>
 
   <form align="center" action="consultas/6.php" method="post">
-    O seleccine a uno:
+    Seleccione a un Artista:
     <select name="nombre">
       <?php
       #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>

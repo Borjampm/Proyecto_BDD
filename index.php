@@ -24,7 +24,7 @@
     <br/><br/>
     <input type="submit" value="Buscar">
   </form>
-
+  <br/><br/>
   <?php require("config/conexion.php");
   $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas;");
   $result -> execute();
@@ -32,7 +32,7 @@
   ?>
 
   <form align="center" action="consultas/2.php" method="post">
-    O seleccinar uno:
+    O seleccine a uno:
     <select name="nombre">
       <?php
       #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
@@ -55,11 +55,31 @@
 <h3 align="center"> ¿Quieres ver la informacion del ultimo tour de un artista?</h3>
 
 <form align="center" action="consultas/3.php" method="post">
-  Nombre Artistico:
+  Escriba un Nombre Artistico:
   <input type="text" name="nombre">
   <br/><br/>
   <input type="submit" value="Buscar">
 </form>
+<br/><br/>
+  <?php require("config/conexion.php");
+  $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas;");
+  $result -> execute();
+  $dataCollected = $result -> fetchAll();
+  ?>
+
+  <form align="center" action="consultas/3.php" method="post">
+    O seleccine a uno:
+    <select name="nombre">
+      <?php
+      #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
+      foreach ($dataCollected as $d) {
+        echo "<option value=$d[0]>$d[0]</option>";
+      }
+      ?>
+    </select>
+    <br><br>
+    <input type="submit" value="Buscar">
+  </form>
 
   <br>
   <br>

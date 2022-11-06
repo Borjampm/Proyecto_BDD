@@ -54,7 +54,7 @@
   ?>
 
   <form align="center" action="consultas/3.php" method="post">
-    O seleccine a uno:
+    Seleccione a un Artista:
     <select name="nombre">
       <?php
       #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>

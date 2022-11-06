@@ -14,7 +14,7 @@
             INNER JOIN Eventos
             ON eventos.id_productora = artista_en_evento.id_productora AND  eventos.id_evento = artista_en_evento.id_evento
             INNER JOIN Productoras ON eventos.id_productora = productoras.id_productora
-            WHERE LOWER(artistas.nombre_artistico) = LOWER('nombre');";
+            WHERE LOWER(artistas.nombre_artistico) = LOWER('$nombre');";
 ;
 	$result = $db -> prepare($query);
 	$result -> execute();

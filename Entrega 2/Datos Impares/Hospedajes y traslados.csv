@@ -65,7 +65,7 @@ CIS-15231,Robin Schulz,21/10/2021,24/10/2021,BRUSELAS,Dansaert Hotel,AEREO,Aerop
 YUY-79619,One Direction,11/8/2022,14/8/2022,BRUSELAS,Dansaert Hotel,AEREO,Aeropuerto Internacional de Boston,7:31,Aeropuerto de Bruselas,14:54
 CEO-25170,U2,19/10/2021,22/10/2021,AUCKLAND,Auckland City Hotel,AEREO,Aeropuerto InternacionalHartsfield-Jackson,12:43,Aeropuerto Internacional de Auckland,12:11
 BLW-94478,Beele,25/3/2018,30/3/2018,SANTIAGO,Almasur Hotel,TERRESTRE,NULL,NULL,NULL,NULL
-EHD-67439,La Ley,26/2/2020,30/2/2020,NEWTOWN,The Newtown Hotel,TERRESTRE,NULL,NULL,NULL,NULL
+EHD-67439,La Ley,26/2/2020,28/2/2020,NEWTOWN,The Newtown Hotel,TERRESTRE,NULL,NULL,NULL,NULL
 EJG-79027,Wos,29/5/2019,4/6/2019,BUENOS AIRES,Design Suites,AEREO,Aeropuerto Internacional de Berlin,1:31,Aeropuerto Ezeiza,7:50
 RQW-65411,Skrillex,10/11/2021,15/11/2021,SANTIAGO,Hotel Magnolia,TERRESTRE,NULL,NULL,NULL,NULL
 UZW-50211,Pearl Jam,27/8/2019,27/8/2019,BRUSELAS,Ibis Hotel,MIXTO,Aeropuerto de Bilbao,6:18,Aeropuerto de Bruselas,16:13
@@ -129,7 +129,7 @@ IZW-22084,Paramore,16/7/2019,17/7/2019,FRANKFURT,Melia Frankfurt,TERRESTRE,NULL,
 TED-66039,Beto Cuevas,14/5/2020,14/5/2020,RIO DE JANEIRO,Sheraton Rio de Janeiro,AEREO,Aeropuerto de Newtown,11:13,Aeropuerto Internacional Rio de Janeiro,8:40
 SWK-60246,La Ley,23/4/2019,27/4/2019,AUCKLAND,Heritage Homestay,TERRESTRE,NULL,NULL,NULL,NULL
 DEQ-92045,Diplo,17/3/2018,22/3/2018,LOS ANGELES,Sonesta Los Angeles,TERRESTRE,NULL,NULL,NULL,NULL
-EHD-67439,La Ley,26/2/2020,30/2/2020,NEWTOWN,The Newtown Hotel,TERRESTRE,NULL,NULL,NULL,NULL
+EHD-67439,La Ley,26/2/2020,28/2/2020,NEWTOWN,The Newtown Hotel,TERRESTRE,NULL,NULL,NULL,NULL
 HDY-16763,Snow,28/11/2020,3/12/2020,SAO PAULO,Sao Paulo Hotel,TERRESTRE,NULL,NULL,NULL,NULL
 LRK-73398,Bon Jovi,14/10/2022,15/10/2022,SANTIAGO,HUB Providencia,TERRESTRE,NULL,NULL,NULL,NULL
 BUN-88971,BTS,16/8/2022,20/8/2022,MADRID,Riu Plaza España,TERRESTRE,NULL,NULL,NULL,NULL
@@ -137,7 +137,7 @@ XBA-14521,5 Seconds of Summer,14/12/2020,14/12/2020,BUENOS AIRES,Esplendor By Wy
 XYJ-49624,Paloma Mami,4/4/2021,5/4/2021,BUENOS AIRES,Palacio Paz,AEREO,Aeropuerto Internacional de Denver,20:46,Aeropuerto Internacional de Buenos Aires,0:55
 UFE-34774,Quevedo,27/4/2019,28/4/2019,RIO DE JANEIRO,Park Lane RDJ,TERRESTRE,NULL,NULL,NULL,NULL
 ODO-30998,Michael Jackson,30/12/2022,3/1/2023,LOS ANGELES,Hotel Normandie,TERRESTRE,NULL,NULL,NULL,NULL
-BSR-56072,Mercedes Sosa,26/2/2022,30/2/2022,HAMBURG,Reichshof,MIXTO,Aeropuerto Arturo Merino Benitez,22:43,Aeropuerto de Hamburg,15:19
+BSR-56072,Mercedes Sosa,26/2/2022,28/2/2022,HAMBURG,Reichshof,MIXTO,Aeropuerto Arturo Merino Benitez,22:43,Aeropuerto de Hamburg,15:19
 FUE-43931,Gepe,30/1/2019,2/2/2019,VIÑA DEL MAR,Best Western Marina del Rey,TERRESTRE,NULL,NULL,NULL,NULL
 YJA-77186,One Republic,11/11/2019,16/11/2019,BERLIN,Radisson Berlin,MIXTO,Aeropuerto Internacional de Auckland,18:23,Aeropuerto Internacional de Berlin,15:40
 XOA-84288,Nicki Nicole,28/3/2019,31/3/2019,BARCELONA,Acta Voraport,MIXTO,Aeropuerto Internacional de Auckland,18:20,Aeropuerto Internacional de Barcelona,10:34
@@ -269,7 +269,7 @@ HDY-16763,Snow,28/11/2020,3/12/2020,SAO PAULO,Sao Paulo Hotel,TERRESTRE,NULL,NUL
 ODO-30998,Michael Jackson,30/12/2022,3/1/2023,LOS ANGELES,Hotel Normandie,TERRESTRE,NULL,NULL,NULL,NULL
 QWB-28983,Daniel Caesar,19/7/2019,24/7/2019,BILBAO,Hotel Ercilla de Bilbao,TERRESTRE,NULL,NULL,NULL,NULL
 JBA-36436,Bee Gees,9/7/2022,10/7/2022,BUENOS AIRES,Design Suites,MIXTO,Aeropuerto Internacional de Barcelona,0:31,Aeropuerto Ezeiza,22:19
-BSR-56072,Mercedes Sosa,26/2/2022,30/2/2022,HAMBURG,Reichshof,MIXTO,Aeropuerto Arturo Merino Benitez,22:43,Aeropuerto de Hamburg,15:19
+BSR-56072,Mercedes Sosa,26/2/2022,28/2/2022,HAMBURG,Reichshof,MIXTO,Aeropuerto Arturo Merino Benitez,22:43,Aeropuerto de Hamburg,15:19
 JBA-36436,Bee Gees,9/7/2022,10/7/2022,BUENOS AIRES,Design Suites,MIXTO,Aeropuerto Internacional de Barcelona,0:31,Aeropuerto Ezeiza,22:19
 TLF-66089,Marshmello,7/4/2018,7/4/2018,FRANKFURT,The Flag,MIXTO,Aeropuerto Internacional de Auckland,2:32,Aeropuerto Internacional de Frankfurt,7:42
 YSG-39943,Paulo Londra,6/6/2022,10/6/2022,LOS ANGELES,Ace Hotel,AEREO,Aeropuerto Internacional de Berlin,3:34,LAX Airport,15:37

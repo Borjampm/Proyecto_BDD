@@ -131,7 +131,7 @@
   $dataCollected = $result -> fetchAll();
   ?>
 
-  <form align="center" action="consultas/4.php" method="post">
+  <form align="center" action="consultas/5.php" method="post">
     O seleccine a uno:
     <select name="nombre">
       <?php

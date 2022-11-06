@@ -18,7 +18,7 @@
 
   <h3 align="center"> ¿Quieres ver las entradas de cortesia que ha entregado un artista?</h3>
 
-  <form align="center" action="consultas/consulta_stats.php" method="post">
+  <form align="center" action="consultas/consulta_cantidad_entradas_cortesia.php" method="post">
     Nombre Artistico:
     <input type="text" name="nombre">
     <br/><br/>

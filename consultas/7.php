@@ -8,7 +8,7 @@
 
 
  	$query = "SELECT artistas.nombre_artistico
-            FROM rntradas_cortesia INNER JOIN artistas ON entradas_cortesia.id_artista = artistas.id_artista
+            FROM entradas_cortesia INNER JOIN artistas ON entradas_cortesia.id_artista = artistas.id_artista
             GROUP BY artistas.nombre_artistico
             ORDER BY COUNT(artistas.nombre_artistico) DESC
             LIMIT 1;";

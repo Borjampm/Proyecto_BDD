@@ -19,8 +19,8 @@
       <th>Numero Contacto</th>
     </tr>
   <?php
-	foreach ($pokemones as $pokemon) {
-  		echo "<tr> <td>$artistas[0]</td> <td>$artistas[1]</td> </tr>";
+	foreach ($artistas as $artista) {
+  		echo "<tr> <td>$artista[0]</td> <td>$artista[1]</td> </tr>";
 	}
   ?>
 	</table>

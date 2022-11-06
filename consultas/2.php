@@ -13,7 +13,9 @@
 	$result = $db -> prepare($query);
 	$result -> execute();
 	$artistas = $result -> fetchAll();
-  echo empty($artistas)
+  if(empty($artistas)){
+    echo "No tiene entradas de cortesia";
+  }
   ?>
 
 	<table align="center">

@@ -8,7 +8,7 @@
 
   <h3 align="center"> ¿Quieres ver los nombres artisticos de todos los artistas y sus numeros de contacto?</h3>
 
-  <form align="center" action="consultas/consulta_nombreytelefono_artistas.php" method="post">
+  <form align="center" action="consultas/1.php" method="post">
     <input type="submit" value="Buscar">
   </form>
 
@@ -18,7 +18,7 @@
 
   <h3 align="center"> ¿Quieres ver las entradas de cortesia que ha entregado un artista?</h3>
 
-  <form align="center" action="consultas/consulta_cantidad_entradas_cortesia.php" method="post">
+  <form align="center" action="consultas/2.php" method="post">
     Nombre Artistico:
     <input type="text" name="nombre">
     <br/><br/>
@@ -31,7 +31,7 @@
 
 <h3 align="center"> ¿Quieres ver la informacion del ultimo tour de un artista?</h3>
 
-<form align="center" action="consultas/consulta_cantidad_tours.php" method="post">
+<form align="center" action="consultas/3.php" method="post">
   Nombre Artistico:
   <input type="text" name="nombre">
   <br/><br/>

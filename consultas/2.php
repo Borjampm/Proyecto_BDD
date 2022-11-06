@@ -27,7 +27,7 @@
 
   ?>
 	</table>
-<?phpif(empty($artistas)){
+<?php if(empty($artistas)){
     echo "El artista no ha dado entradas de cortesia";
   }?>
 <?php include('../templates/footer.html'); ?>

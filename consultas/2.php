@@ -13,9 +13,6 @@
 	$result = $db -> prepare($query);
 	$result -> execute();
 	$artistas = $result -> fetchAll();
-  if(empty($artistas)){
-    echo "No tiene entradas de cortesia";
-  }
   ?>
 
 	<table align="center">
@@ -27,6 +24,9 @@
 	foreach ($artistas as $artista) {
   		echo "<tr><td>$artista[0]</td><td>$artista[1]</td></tr>";
 	}
+  if(empty($artistas)){
+    echo "El artista no ha dado entradas de cortesia";
+  }
   ?>
 	</table>
 

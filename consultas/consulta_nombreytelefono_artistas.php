@@ -13,7 +13,7 @@
 	$artistas = $result -> fetchAll();
   ?>
 
-	<table align="centre">
+	<table align="center">
     <tr>
       <th>Nombre Artistico</th>
       <th>Numero Contacto</th>

@@ -117,7 +117,7 @@ GVN-38736,Paloma Mami,18/6/2020,23/6/2020,BARCELONA,Acta Voraport,MIXTO,Aeropuer
 ISX-23696,Gustavo Cerati,30/5/2018,3/6/2018,VIÑA DEL MAR,Sheraton Miramar,TERRESTRE,NULL,NULL,NULL,NULL
 UUT-77757,Nicki Nicole,11/12/2019,15/12/2019,WELLINGTON,Oaks Wellington hotel,TERRESTRE,NULL,NULL,NULL,NULL
 YVT-29308,Imagine Dragons,7/10/2019,10/10/2019,SANTIAGO,Hotel Magnolia,AEREO,Aeropuerto de Philadelphia,1:20,Aeropuerto Arturo Merino Benitez,20:38
-AJH-38849,Afrojack,26/4/2021,31/4/2021,TEXAS,Texas Gran Hotel,MIXTO,Aeropuerto de Bilbao,23:43,Aeropuerto de Sidney,2:23
+AJH-38849,Afrojack,26/4/2021,30/4/2021,TEXAS,Texas Gran Hotel,MIXTO,Aeropuerto de Bilbao,23:43,Aeropuerto de Sidney,2:23
 QOR-38589,One Republic,19/12/2022,23/12/2022,BUENOS AIRES,Design Suites,MIXTO,Aeropuerto Internacional de Auckland,9:53,Aeropuerto Internacional de Buenos Aires,23:35
 SCZ-77102,Duki,8/3/2021,10/3/2021,SANTIAGO,Courtyard by Marriot,TERRESTRE,NULL,NULL,NULL,NULL
 VKA-64244,Gustavo Cerati,22/1/2019,26/1/2019,LOS ANGELES,Ace Hotel,TERRESTRE,NULL,NULL,NULL,NULL
@@ -151,7 +151,7 @@ DOZ-78767,New Kids on the Block,12/7/2018,16/7/2018,BILBAO,Hotel Ilunion,TERREST
 JOV-74815,Shawn Mendes,22/6/2020,22/6/2020,BARCELONA,Barcelo Sants,TERRESTRE,NULL,NULL,NULL,NULL
 SFE-11508,Ed Sheeran,16/12/2018,16/12/2018,COLOGNE,Ruby Ella,AEREO,Aeropuerto de Brasilia,15:55,Aeropuerto de Cologne,22:32
 GVY-71555,Jessie J,21/7/2019,25/7/2019,RIO DE JANEIRO,Millenium Hotel Rio,MIXTO,Aeropuerto de Philadelphia,14:43,Aeropuerto Internacional Rio de Janeiro,20:12
-QWH-52620,Paulo Londra,28/4/2020,31/4/2020,BERLIN,Radisson Berlin,TERRESTRE,NULL,NULL,NULL,NULL
+QWH-52620,Paulo Londra,28/4/2020,30/4/2020,BERLIN,Radisson Berlin,TERRESTRE,NULL,NULL,NULL,NULL
 LCD-10239,The Beatles,12/7/2018,13/7/2018,AUCKLAND,Auckland City Hotel,TERRESTRE,NULL,NULL,NULL,NULL
 ZHJ-26410,Hansen,2/4/2018,5/4/2018,BARCELONA,Acta Voraport,AEREO,Aeropuerto Internacional de Auckland,1:12,Aeropuerto Internacional de Barcelona,2:29
 KDV-48608,Luar La L,6/5/2020,11/5/2020,BOSTON,Hampton Inn,AEREO,Aeropuerto Internacional de Berlin,18:45,Aeropuerto Internacional de Boston,4:33
@@ -205,7 +205,7 @@ VKW-97484,Bon Jovi,27/4/2021,29/4/2021,TORONTO,Pan Pacific Toronto,MIXTO,Aeropue
 KTP-21350,Maria Becerra,3/7/2019,8/7/2019,LOS ANGELES,Hotel Normandie,TERRESTRE,NULL,NULL,NULL,NULL
 MSW-76456,Emilia,15/8/2022,18/8/2022,SANTIAGO,AC Hotel by Marriot,MIXTO,Aeropuerto de Newtown,20:13,Aeropuerto Arturo Merino Benitez,2:30
 DYB-25500,Afrojack,29/11/2018,1/12/2018,SYDNEY,Sydney Grand Hotel,MIXTO,Aeropuerto Ezeiza,11:22,Aeropuerto Internacional de Sidney,3:35
-ZLK-25002,Skrillex,28/4/2021,31/4/2021,BOGOTA,HAB Hotel,TERRESTRE,NULL,NULL,NULL,NULL
+ZLK-25002,Skrillex,28/4/2021,30/4/2021,BOGOTA,HAB Hotel,TERRESTRE,NULL,NULL,NULL,NULL
 UKF-87442,Khea,4/2/2022,6/2/2022,SANTIAGO,Almasur Hotel,TERRESTRE,NULL,NULL,NULL,NULL
 HEP-10747,Paulo Londra,12/10/2018,16/10/2018,WASHINGTON DC,Washington Plaza Hotel,TERRESTRE,NULL,NULL,NULL,NULL
 VKS-55653,Los Prisioneros,21/5/2020,23/5/2020,SANTIAGO,Sheraton Santiago,TERRESTRE,NULL,NULL,NULL,NULL
@@ -232,7 +232,7 @@ GCZ-97711,The Weeknd,28/5/2022,28/5/2022,VALENCIA,Silken Puerta Valencia,MIXTO,A
 TFO-66669,Jessie J,17/7/2022,22/7/2022,VALPARAISO,Hotel WineBox,TERRESTRE,NULL,NULL,NULL,NULL
 OTW-42698,Tini Stoessel,22/7/2019,24/7/2019,MIAMI,Riu Plaza Miami Beach,MIXTO,Aeropuerto Internacional de Denver,23:28,Aeropuerto Internacional de Miami,17:37
 BTJ-28479,Paulo Londra,20/10/2018,25/10/2018,SANTIAGO,HUB Providencia,MIXTO,Aeropuerto Internacional de Ottawa,16:41,Aeropuerto Arturo Merino Benitez,17:17
-ZLK-25002,Skrillex,28/4/2021,31/4/2021,BOGOTA,HAB Hotel,TERRESTRE,NULL,NULL,NULL,NULL
+ZLK-25002,Skrillex,28/4/2021,30/4/2021,BOGOTA,HAB Hotel,TERRESTRE,NULL,NULL,NULL,NULL
 VKA-64244,Gustavo Cerati,22/1/2019,26/1/2019,LOS ANGELES,Ace Hotel,TERRESTRE,NULL,NULL,NULL,NULL
 VKO-62769,DrefQuila,3/4/2022,4/4/2022,SANTIAGO,Novapark,TERRESTRE,NULL,NULL,NULL,NULL
 GTQ-73788,Camila Cabello,22/12/2022,25/12/2022,BUENOS AIRES,Design Suites,MIXTO,Aeropuerto Internacional de Berlin,9:24,Aeropuerto Ezeiza,1:54
@@ -262,7 +262,7 @@ DKJ-59492,Eagles,14/8/2020,16/8/2020,OTTAWA,Ottawa Hotel,MIXTO,Aeropuerto Intern
 UKF-87442,Khea,4/2/2022,6/2/2022,SANTIAGO,Almasur Hotel,TERRESTRE,NULL,NULL,NULL,NULL
 YGC-16315,Camila Cabello,9/12/2020,11/12/2020,VALENCIA,Hotel VillaCarlos,AEREO,Aeropuerto Arturo Merino Benitez,0:14,Aeropuerto de Valencia,16:14
 EKH-25069,Emilia,18/6/2018,21/6/2018,BERLIN,Hotel Neuer Fritz,TERRESTRE,NULL,NULL,NULL,NULL
-AJH-38849,Afrojack,26/4/2021,31/4/2021,TEXAS,Texas Gran Hotel,MIXTO,Aeropuerto de Bilbao,23:43,Aeropuerto de Sidney,2:23
+AJH-38849,Afrojack,26/4/2021,30/4/2021,TEXAS,Texas Gran Hotel,MIXTO,Aeropuerto de Bilbao,23:43,Aeropuerto de Sidney,2:23
 VOJ-99145,Taylor Swift,3/10/2019,4/10/2019,BOSTON,Wyndham Boston,MIXTO,Aeropuerto Internacional de Barcelona,3:14,Aeropuerto Internacional de Boston,10:48
 UUD-80299,Skrillex,22/5/2018,27/5/2018,MADRID,Lotus Opera House,TERRESTRE,NULL,NULL,NULL,NULL
 HDY-16763,Snow,28/11/2020,3/12/2020,SAO PAULO,Sao Paulo Hotel,TERRESTRE,NULL,NULL,NULL,NULL
@@ -333,7 +333,7 @@ QZY-59757,Sech,1/10/2022,2/10/2022,AUCKLAND,Heritage Homestay,TERRESTRE,NULL,NUL
 VOJ-99145,Taylor Swift,3/10/2019,4/10/2019,BOSTON,Wyndham Boston,MIXTO,Aeropuerto Internacional de Barcelona,3:14,Aeropuerto Internacional de Boston,10:48
 GCZ-97711,The Weeknd,28/5/2022,28/5/2022,VALENCIA,Silken Puerta Valencia,MIXTO,Aeropuerto Internacional de Berlin,12:12,Aeropuerto de Valencia,22:32
 MFQ-15649,Daniel Caesar,9/7/2019,10/7/2019,BERLIN,Melia Berlin,TERRESTRE,NULL,NULL,NULL,NULL
-QWH-52620,Paulo Londra,28/4/2020,31/4/2020,BERLIN,Radisson Berlin,TERRESTRE,NULL,NULL,NULL,NULL
+QWH-52620,Paulo Londra,28/4/2020,30/4/2020,BERLIN,Radisson Berlin,TERRESTRE,NULL,NULL,NULL,NULL
 NFL-56112,Madonna,18/4/2020,20/4/2020,NUEVA YORK,Millenium Hotel,TERRESTRE,NULL,NULL,NULL,NULL
 YMA-15869,EXO,11/6/2021,13/6/2021,BERLIN,Hotel Neuer Fritz,TERRESTRE,NULL,NULL,NULL,NULL
 JXI-58978,Diplo,6/1/2018,10/1/2018,SANTIAGO,Novapark,AEREO,Aeropuerto Ezeiza,23:19,Aeropuerto Arturo Merino Benitez,19:31

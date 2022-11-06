@@ -17,6 +17,13 @@
   <br>
 
   <h3 align="center"> ¿Quieres ver la cantidad de entradas de cortesia que ha entregado un artista?</h3>
+
+  <?php require("config/conexion.php");
+  $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas;");
+  $result -> execute();
+  $dataCollected = $result -> fetchAll();
+  ?>
+
   <form align="center" action="consultas/2.php" method="post">
     Seleccione un Artista:
     <select name="nombre">

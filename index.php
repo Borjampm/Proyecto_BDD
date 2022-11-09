@@ -26,11 +26,12 @@
 
   <form align="center" action="consultas/2.php" method="post">
     Seleccione a un Artista:
-    <select name='nombre'>
+    <select name="nombre">
       <?php
       #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
       foreach ($dataCollected as $d) {
-        echo "<option value=$d[0]>$d[0]</option>";
+        $e_s = $d[1] . ";" . $p[0] . ";"
+        echo '<option value= "'.$e_s.'">  </option>';
       }
       ?>
     </select>

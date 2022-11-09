@@ -1,7 +1,7 @@
 <?php include('templates/header.html');   ?>
 
 <body>
-  <h1 align="center"> Zentro de Informaciones de Eventos Musicales </h1>
+  <h1 align="center"> Centro de Informaciones de Eventos Musicales </h1>
   <p style="text-align:center;">Aquí podrás encontrar información sobre todo lo que está ocurriendo en el mundo de la musica.</p>
 
   <br>

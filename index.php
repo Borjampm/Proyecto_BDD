@@ -21,8 +21,7 @@
   <?php require("config/conexion.php");
   $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas;");
   $result -> execute();
-  $dataCollected1 = $result -> fetchAll();
-  $dataCollected = sort($dataCollected1);
+  $dataCollected = $result -> fetchAll();
   ?>
 
   <form align="center" action="consultas/2.php" method="post">

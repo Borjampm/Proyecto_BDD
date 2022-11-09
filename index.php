@@ -135,7 +135,7 @@
     <select name="nombre">
       <?php
       #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
-      foreach ($dataCollected as $d) {
+      foreach (sort($dataCollected) as $d) {
         echo '<option value="'.$d[0].'">'.$d[0].'</option>';
       }
       ?>

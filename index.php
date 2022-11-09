@@ -30,8 +30,7 @@
       <?php
       #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
       foreach ($dataCollected as $d) {
-        $e_s = $d[1] . ";" . $d[0] . ";";
-        echo '<option value= "'.$e_s.'">  </option>';
+        echo "<option value=$d>$d</option>";
       }
       ?>
     </select>

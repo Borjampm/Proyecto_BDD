@@ -21,7 +21,8 @@
   <?php require("config/conexion.php");
   $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas;");
   $result -> execute();
-  $dataCollected = $result -> fetchAll();
+  $dataCollected1 = $result -> fetchAll();
+  $dataCollected = sort($dataCollected1)
   ?>
 
   <form align="center" action="consultas/2.php" method="post">
@@ -135,7 +136,7 @@
     <select name="nombre">
       <?php
       #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
-      foreach (sort($dataCollected) as $d) {
+      foreach ($dataCollected as $d) {
         echo '<option value="'.$d[0].'">'.$d[0].'</option>';
       }
       ?>

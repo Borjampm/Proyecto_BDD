@@ -6,6 +6,7 @@
   require("../config/conexion.php");
 
   $nombre = $_POST["nombre"];
+  echo $nombre
   $query = "SELECT artistas.nombre_artistico, COUNT(artistas.nombre_artistico) as entradas_de_cortesía_entregadas
             FROM entradas_cortesia INNER JOIN artistas ON entradas_cortesia.id_artista = artistas.id_artista
             WHERE LOWER(artistas.nombre_artistico) = LOWER('$nombre')

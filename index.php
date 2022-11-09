@@ -19,7 +19,7 @@
   <h3 align="center"> ¿Quieres ver la cantidad de entradas de cortesia que ha entregado un artista?</h3>
 
   <?php require("config/conexion.php");
-  $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas ORDER BY nombre_artistico DESC;");
+  $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas ORDER BY nombre_artistico ASC;");
   $result -> execute();
   $dataCollected = $result -> fetchAll();
   ?>
@@ -48,7 +48,7 @@
 <h3 align="center"> ¿Quieres ver la informacion del ultimo tour de un artista?</h3>
 
   <?php require("config/conexion.php");
-  $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas;");
+  $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas ORDER BY nombre_artistico ASC;");
   $result -> execute();
   $dataCollected = $result -> fetchAll();
   ?>
@@ -73,7 +73,7 @@
 <h3 align="center"> ¿Quieres ver los paises a visitar en un tour?</h3>
 
   <?php require("config/conexion.php");
-  $result = $db -> prepare("SELECT DISTINCT nombre FROM tours;");
+  $result = $db -> prepare("SELECT DISTINCT nombre FROM tours ORDER BY nombre ASC;");
   $result -> execute();
   $dataCollected = $result -> fetchAll();
   ?>
@@ -99,7 +99,7 @@
 
 <br/><br/>
   <?php require("config/conexion.php");
-  $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas;");
+  $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas ORDER BY nombre_artistico ASC;");
   $result -> execute();
   $dataCollected = $result -> fetchAll();
   ?>
@@ -125,7 +125,7 @@
 
 <br/><br/>
   <?php require("config/conexion.php");
-  $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas;");
+  $result = $db -> prepare("SELECT DISTINCT nombre_artistico FROM artistas ORDER BY nombre_artistico ASC;");
   $result -> execute();
   $dataCollected = $result -> fetchAll();
   ?>

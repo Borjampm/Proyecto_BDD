@@ -131,7 +131,7 @@
   ?>
 
   <form align="center" action="consultas/6.php" method="post">
-    Seleccione a un Artista:
+    Seleccionex a un Artista:
     <select name="nombre">
       <?php
       #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>

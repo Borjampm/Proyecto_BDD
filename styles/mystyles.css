@@ -50,7 +50,7 @@ table.center {
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: darkblue;
     color: white;
 }
 
@@ -59,7 +59,7 @@ tr{
 }
 
 tr:hover {
-    background-color: aliceblue;
+    background-color: rgba(80, 81, 82, 0.18);
 }
 
 tr:nth-child(even) {

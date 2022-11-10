@@ -115,3 +115,7 @@ html {
     font-size: medium;
     z-index: -2;
   }
+
+  input {
+  color: aliceblue;
+  }

@@ -61,3 +61,57 @@ tr:hover {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
+html {
+    background-color: rgb(26, 42, 108);
+ }
+ body {
+    background-color: rgb(26, 42, 108);
+ }
+
+.page_wrapper {
+    background-color: rgb(183, 208, 218);
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+
+    max-width: 1200px; /* 2 */
+    height: auto;
+
+    padding-top: 10px;
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+    padding-bottom: 40px;
+
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    z-index: -3;
+  }
+
+
+
+  .content_wrapper {
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+
+    max-width: 500px;
+    line-height: auto;
+    height: auto;
+
+    padding-top: 20px;
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+    padding-bottom: 20px;
+
+
+    background-color: white;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+
+    font-size: medium;
+    z-index: -2;
+  }

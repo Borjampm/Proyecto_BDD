@@ -7,11 +7,14 @@
 
   <br>
 
+  <div class = content_wrapper>
   <h3 align="center"> ¿Quieres ver los nombres artisticos de todos los artistas y sus numeros de contacto?</h3>
 
   <form align="center" action="consultas/1.php" method="post">
     <input type="submit" value="Ver">
   </form>
+
+</div>
 
   <br>
   <br>

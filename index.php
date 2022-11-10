@@ -19,7 +19,7 @@
   <br>
   <br>
   <br>
-
+  <div class = content_wrapper>
   <h3 align="center"> ¿Quieres ver la cantidad de entradas de cortesia que ha entregado un artista?</h3>
 
   <?php require("config/conexion.php");
@@ -41,7 +41,7 @@
     <br><br>
     <input type="submit" value="Buscar">
   </form>
-
+  </div>
 
 
 
@@ -49,6 +49,7 @@
   <br>
   <br>
 
+  <div class = content_wrapper>
 <h3 align="center"> ¿Quieres ver la informacion del ultimo tour de un artista?</h3>
 
   <?php require("config/conexion.php");
@@ -70,10 +71,11 @@
     <br><br>
     <input type="submit" value="Buscar">
   </form>
-
+  </div>
   <br>
   <br>
   <br>
+  <div class = content_wrapper>
 <h3 align="center"> ¿Quieres ver los paises a visitar en un tour?</h3>
 
   <?php require("config/conexion.php");
@@ -95,10 +97,11 @@
     <br><br>
     <input type="submit" value="Buscar">
   </form>
-
+  </div>
   <br>
   <br>
   <br>
+  <div class = content_wrapper>
 <h3 align="center"> ¿Quieres ver las productoras con las que ha trabajado un artista?</h3>
 
 <br/><br/>
@@ -121,10 +124,11 @@
     <br><br>
     <input type="submit" value="Buscar">
   </form>
-
+  </div>
   <br>
   <br>
   <br>
+  <div class = content_wrapper>
 <h3 align="center"> ¿Quieres ver en cuales hoteles se ha hospedado un artista, y cuantas veces?</h3>
 
 <br/><br/>
@@ -148,16 +152,17 @@
     <input type="submit" value="Buscar">
   </form>
 
-
+  </div>
   <br>
   <br>
   <br>
+  <div class = content_wrapper>
 <h3 align="center"> ¿Quieres ver al artista que ha entregado la mayor cantidad de entradas de cortesia?</h3>
 
 <form align="center" action="consultas/7.php" method="post">
   <input type="submit" value="Ver">
 </form>
-
+</div>
   <br>
   <br>
   <br>

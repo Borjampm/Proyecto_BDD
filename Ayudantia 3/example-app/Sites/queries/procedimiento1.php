@@ -23,6 +23,9 @@
             $query = "SELECT mover_pokemon($pokemon[0], '$pokemon[1]'::varchar,'$pokemon[2]'::varchar,$pokemon[3],$pokemon[4],$pokemon[5],$pokemon[6],$pokemon[7],$pokemon[8], $pokemon[9],TRUE);";
         }
 
+        echo $query;
+        echo "\n";
+
 
         // Ejecutamos las querys para efectivamente insertar los datos
         $result = $db -> prepare($query);

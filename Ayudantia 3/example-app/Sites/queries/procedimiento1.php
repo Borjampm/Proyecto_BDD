@@ -28,7 +28,7 @@
 
 
         // Ejecutamos las querys para efectivamente insertar los datos
-        $result = $db -> prepare($query);
+        $result = $db2 -> prepare($query);
         $result -> execute();
         $result -> fetchAll();
     }
@@ -36,7 +36,7 @@
 
     // Mostramos los cambios en una nueva tabla
     $query = "SELECT * FROM pokemon1 ORDER BY id DESC;";
-    $result = $db -> prepare($query);
+    $result = $db2 -> prepare($query);
     $result -> execute();
     $pokemons = $result -> fetchAll();
 

@@ -25,7 +25,7 @@
 
 
         // Ejecutamos las querys para efectivamente insertar los datos
-        $result = $db -> prepare($query);
+        $result = $db1 -> prepare($query);
         $result -> execute();
         $result -> fetchAll();
     }
@@ -33,7 +33,7 @@
 
     // Mostramos los cambios en una nueva tabla
     $query = "SELECT * FROM usuarios;";
-    $result = $db -> prepare($query);
+    $result = $db1 -> prepare($query);
     $result -> execute();
     $usuarios = $result -> fetchAll();
 

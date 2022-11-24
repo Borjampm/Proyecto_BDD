@@ -1,7 +1,7 @@
 <?php
-  $user = 'grupo998';
-  $password = 'grupo998';
-  $databaseName = 'grupo998e3';
+  $user = 'grupo13';
+  $password = 'Chamisero72';
+  $databaseName = 'grupo13e3';
 
   $user2 = 'grupo999';
   $password2 = 'grupo999';

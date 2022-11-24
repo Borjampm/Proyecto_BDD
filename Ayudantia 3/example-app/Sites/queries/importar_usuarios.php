@@ -20,8 +20,9 @@
         $username = str_replace(" ", "_", $artista[0]);
         $psw = rand(10000000, 99999999);
         $tipo = "artista";
-        $query = "importar_usuario($username, $psw, $tipo ,$artista[1]);";
+        $query = "importar_usuario('$username'::varchar, '$psw'::varchar, '$tipo'::varchar , $artista[1]);";
         echo $query;
+        echo "\n";
 
 
         // Ejecutamos las querys para efectivamente insertar los datos

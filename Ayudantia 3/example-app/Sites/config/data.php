@@ -1,6 +1,6 @@
 <?php
   $user = 'grupo13';
-  $password = 'Chamisero72';
+  $password = 'grupo13';
   $databaseName = 'grupo13e3';
 
   $user2 = 'grupo999';

@@ -1,7 +1,7 @@
 CREATE OR REPLACE FUNCTION
 
 -- declaramos la función y sus argumentos
-importar_usuario (username varchar(30), psw varchar(100), tipo varchar(30), id_tipo int)
+importar_usuario (user_name varchar(30), password varchar(100), tipo varchar(30), id_tipo int)
 
 -- declaramos lo que retorna, en este caso un booleano
 RETURNS BOOLEAN AS $$
@@ -19,7 +19,7 @@ BEGIN
     
     -- si el id en el argumento no está en la tabla, agregamos el pokemon
     -- notar que ahora debemos agregar el dato de la columna generation en el values a insertar
-    INSERT INTO usuarios values(username, psw , tipo , id_tipo);
+    INSERT INTO usuarios values(user_name, password , tipo , id_tipo);
     RETURN TRUE;
     -- IF username NOT IN (SELECT user_name from usuarios) THEN
     --     INSERT INTO usuarios values(username, psw , tipo , id_tipo);

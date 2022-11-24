@@ -1,7 +1,7 @@
 <?php include('./templates/header.html');   ?>
     <body>
     <h3>Importar Usuarios</h3>
-        <form  action='./queries/procedimiento1.php' method='GET'>
+        <form  action='./queries/importar_usuarios.php' method='GET'>
             <input class='btn' type='submit' value='Importar Usuarios'>
         </form>
 

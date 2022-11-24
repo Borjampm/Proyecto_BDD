@@ -4,7 +4,7 @@
     require("../config/conexion.php");
     include('../templates/header.html');
 
-    // Primero obtenemos todos los pokemons de la tabla que queremos agregar
+    //ARTISTAS
     $query = "SELECT nombre_artistico, id_artista FROM artistas;";
     $result = $db1 -> prepare($query);
     $result -> execute();
@@ -14,9 +14,6 @@
 
     foreach ($artistas as $artista){
 
-        // Luego construimos las querys con nuestro procedimiento almacenado para ir agregando esas tuplas a nuestra bdd objetivo
-        // Hacemos una verificacion para ver si el pokemon es legendario porque ese parámetro no se comporta muy bien entre php y sql
-        // asi que lo agregamos manualmente al final (por eso los FALSE o TRUE)
         $username = str_replace(" ", "_", $artista[0]);
         $psw = rand(10000000, 99999999);
         $tipo = "artista";
@@ -31,8 +28,32 @@
         $result -> fetchAll();
     }
 
+    //PRODUCTORAS
+    $query = "SELECT nombre, id_productora FROM productoras;";
+    $result = $db1 -> prepare($query);
+    $result -> execute();
+    $productoras = $result -> fetchAll();
 
-    // Mostramos los cambios en una nueva tabla
+
+
+    foreach ($productoras as $productora){
+
+        $username = str_replace(" ", "_", $productora[0]);
+        $psw = rand(10000000, 99999999);
+        $tipo = "productora";
+        $query = "SELECT importar_usuario('$username'::varchar, '$psw'::varchar, '$tipo'::varchar , $productora[1]);";
+        echo $query;
+        echo "\n";
+
+
+        // Ejecutamos las querys para efectivamente insertar los datos
+        $result = $db1 -> prepare($query);
+        $result -> execute();
+        $result -> fetchAll();
+    }
+
+
+    // Mostramos los cambios en una nueva tabla de usuarios
     $query = "SELECT * FROM usuarios;";
     $result = $db1 -> prepare($query);
     $result -> execute();

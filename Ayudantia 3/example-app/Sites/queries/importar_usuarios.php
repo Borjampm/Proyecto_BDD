@@ -55,7 +55,7 @@
                 <?php
                 foreach ($usuarios as $usuario) {
                     echo "<tr>";
-                    for ($i = 0; $i < 12; $i++) {
+                    for ($i = 0; $i < 4; $i++) {
                         echo "<td>$usuario[$i]</td> ";
                     }
                     echo "</tr>";

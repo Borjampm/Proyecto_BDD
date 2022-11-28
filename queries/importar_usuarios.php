@@ -83,7 +83,7 @@
         </table>
                 <?php
                 foreach ($resultado_artista as $resultado) {
-                    echo $resultado;
+                    echo "<p>$resultado</p>";
                 }
                 ?>
         <footer>

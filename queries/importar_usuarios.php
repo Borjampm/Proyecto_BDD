@@ -81,11 +81,20 @@
                 ?>
             </tbody>
         </table>
+        <table class='table'>
+            <thead>
+                <tr>
+                <th>result</th>
+                </tr>
+            </thead>
+            <tbody>
                 <?php
-                foreach ($resultado_artista as $resultado) {
-                    echo "<p>$resultado</p>";
+                foreach ($resultado_artista as $result) {
+                    echo "<tr> $result </tr>";
                 }
                 ?>
+            </tbody>
+        </table>
         <footer>
         </footer>
     </body>

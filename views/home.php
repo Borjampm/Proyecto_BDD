@@ -1,7 +1,16 @@
-<?php include('./templates/header.html');   ?>
-<p>
-    CRIS
-</p>
+<?php include('/home/grupo13/Sites/templates/header.html');   ?>
+<?php
+        if (!isset($_SESSION['username'])) {
+    ?>
+        <form align="center" action="views/login.php" method="get">
+            <input type="submit" value="Iniciar sesión">
+        </form>
+    <?php } else { ?>
+        <form align="center" action="views/logout.php" method="post">
+            <input type="submit" value="Cerrar sesión">
+        </form>
+        <p> Chupala Cris inicie sesion</p>
+    <?php } ?>
 <html>
 <body>
 <div class='main'>

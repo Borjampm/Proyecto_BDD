@@ -48,7 +48,7 @@
         $result = $db1 -> prepare($query);
         $result -> execute();
         $resultado_artista = $result -> fetchAll();
-        print_r($resultado_artista);
+        echo $resultado_artista;
     }
 
 

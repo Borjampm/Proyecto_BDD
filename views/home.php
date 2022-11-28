@@ -1,4 +1,5 @@
+<?php include('./templates/header.html');   ?>
 <p>
-    CRIS 
+    CRIS
 </p>
 

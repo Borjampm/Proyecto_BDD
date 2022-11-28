@@ -23,10 +23,6 @@
             $query = "SELECT mover_pokemon($pokemon[0], '$pokemon[1]'::varchar,'$pokemon[2]'::varchar,$pokemon[3],$pokemon[4],$pokemon[5],$pokemon[6],$pokemon[7],$pokemon[8], $pokemon[9],TRUE);";
         }
 
-<<<<<<< HEAD:Ayudantia_3/example-app/Sites/queries/procedimiento1.php
-
-
->>>>>>> 65ef1407708c1ba5e8aec85e72ac7de9797f2fc0:Ayudantia 3/example-app/Sites/queries/procedimiento1.php
         // Ejecutamos las querys para efectivamente insertar los datos
         $result = $db2 -> prepare($query);
         $result -> execute();

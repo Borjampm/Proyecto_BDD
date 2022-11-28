@@ -18,8 +18,7 @@
         $psw = rand(10000000, 99999999);
         $tipo = "artista";
         $query = "SELECT importar_usuario('$username'::varchar, '$psw'::varchar, '$tipo'::varchar , $artista[1]);";
-        echo $query;
-        echo "\n";
+
 
 
         // Ejecutamos las querys para efectivamente insertar los datos
@@ -29,7 +28,7 @@
     }
 
     //PRODUCTORAS
-    $query = "SELECT nombre, id_productora FROM productoras;";
+    $query = "SELECT nombre, id_productora, pais FROM productoras;";
     $result = $db1 -> prepare($query);
     $result -> execute();
     $productoras = $result -> fetchAll();
@@ -39,11 +38,10 @@
     foreach ($productoras as $productora){
 
         $username = str_replace(" ", "_", $productora[0]);
+        $username = $username . "_" . $productora[2];
         $psw = rand(10000000, 99999999);
         $tipo = "productora";
         $query = "SELECT importar_usuario('$username'::varchar, '$psw'::varchar, '$tipo'::varchar , $productora[1]);";
-        echo $query;
-        echo "\n";
 
 
         // Ejecutamos las querys para efectivamente insertar los datos
@@ -61,7 +59,7 @@
 
 ?>
 
-    <body>  
+    <body>
         <table class='table'>
             <thead>
                 <tr>

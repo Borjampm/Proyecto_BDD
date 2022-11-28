@@ -33,7 +33,7 @@ if(isset($_POST['but_submit'])){
 
         if($count > 0){
             $_SESSION['uname'] = $uname;
-            header('Location: home.php');
+            header('Location: index.php');
         }else{
             echo "Invalid username and password";
         }

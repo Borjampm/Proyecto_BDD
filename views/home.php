@@ -1,4 +1,4 @@
-<?php include('/home/grupo13/Sites/templates/header.html');   ?>
+<?php include('../templates/header.html');   ?>
 <?php
         if (!isset($_SESSION['username'])) {
     ?>

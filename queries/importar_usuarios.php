@@ -41,14 +41,14 @@
         $username = $username . "_" . $productora[2];
         $psw = rand(10000000, 99999999);
         $tipo = "productora";
-        $query = "SELECT importar_usuario('$username'::varchar, '$psw'::varchar, '$tipo'::varchar , $productora[1]);";
+        $query = "SELECT importar_usuario('$username'::varchar, '$psw'::varchar, '$tipo'::varchar , $productora[1]) as resultado;";
 
 
         // Ejecutamos las querys para efectivamente insertar los datos
         $result = $db1 -> prepare($query);
         $result -> execute();
         $resultado_artista = $result -> fetchAll();
-        echo $resultado_artista;
+        echo $resultado_artista["resultado"];
     }
 
 

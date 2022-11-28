@@ -1,4 +1,10 @@
 <?php include('../templates/header.html');   ?>
+<?php session_start();
+    if (isset($_SESSION['username'])){
+        echo "Bienvenido/a: ";
+        echo $_SESSION['username'];
+    }
+?>
 <?php
         if (!isset($_SESSION['username'])) {
     ?>

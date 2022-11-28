@@ -4,7 +4,7 @@ CREATE OR REPLACE FUNCTION
 importar_usuario (user_name varchar(100), password varchar(30), tipo varchar(30), id_tipo int)
 
 -- declaramos lo que retorna, en este caso un booleano
-RETURNS varchar(100) as $$
+RETURNS varchar(100)
 
 
 

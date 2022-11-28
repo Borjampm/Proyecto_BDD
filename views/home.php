@@ -2,11 +2,11 @@
 <?php
         if (!isset($_SESSION['username'])) {
     ?>
-        <form align="center" action="views/login.php" method="get">
+        <form align="center" action="./login.php" method="get">
             <input type="submit" value="Iniciar sesión">
         </form>
     <?php } else { ?>
-        <form align="center" action="views/logout.php" method="post">
+        <form align="center" action="./logout.php" method="post">
             <input type="submit" value="Cerrar sesión">
         </form>
         <p> Chupala Cris inicie sesion</p>

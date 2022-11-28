@@ -33,7 +33,7 @@
                         <label for='name'>Name</label>
                         <input type='text' name='name' />
                     </div>
-                    
+
 
                     <div class='form-element'>
                         <label for='type'>Type</label>
@@ -63,37 +63,37 @@
                         <label for='total'>Total</label>
                         <input type='number' name='total' />
                     </div>
-                    
+
 
                     <div class='form-element'>
                         <label for='hp'>HP</label>
                         <input type='number' name='hp' />
                     </div>
-            
+
 
                     <div class='form-element'>
                         <label for='attack'>Attack</label>
                         <input type='number' name='attack' />
                     </div>
-                    
+
 
                     <div class='form-element'>
                         <label for='defense'>Defense</label>
                         <input type='number' name='defense' />
                     </div>
-                    
+
 
                     <div class='form-element'>
                         <label for='sp_atk'>Sp. Atk</label>
                         <input type='number' name='sp_atk' />
                     </div>
-                    
+
 
                     <div class='form-element'>
                         <label for='sp_def'>Sp. Def</label>
                         <input type='number' name='sp_def' />
                     </div>
-                    
+
 
                     <div class='form-element'>
                         <label for='speed'>Speed</label>
@@ -107,23 +107,41 @@
                             <option value='false'>False</option>
                         </select>
                     </div>
-                    
+
 
                     <div class='form-element'>
                         <label for='generation'>Generation</label>
                         <input type='number' name='generation'  min='1' max='3'/>
                     </div>
-                    
+
 
                     <input class='btn' type='submit' value='Consultar'>
                 </form>
             </div>
-        </div>
-        <footer>
-            <p>
-                IIC2413 - Ayudantía 3 BDD
-            </p>
-        </footer>
+            <?php
+include "config.php";
+
+// Check user login or not
+if(!isset($_SESSION['uname'])){
+    header('Location: index.php');
+}
+
+// logout
+if(isset($_POST['but_logout'])){
+    session_destroy();
+    header('Location: index.php');
+}
+?>
+<!doctype html>
+<html>
+    <head></head>
+    <body>
+        <h1>Homepage</h1>
+        <form method='post' action="">
+            <input type="submit" value="Logout" name="but_logout">
+        </form>
+    </body>
+</html>
 
     </body>
 </html>

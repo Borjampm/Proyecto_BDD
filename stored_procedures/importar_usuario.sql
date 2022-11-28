@@ -24,10 +24,10 @@ BEGIN
         INSERT INTO usuarios values(user_name, password , tipo , id_tipo);
 
         -- retornamos true si se agregó el valor
-        RETURN TRUE;
+        RETURN "TRUE";
     ELSE
         -- y false si no se agregó
-        RETURN FALSE;
+        RETURN "FALSE";
 
     END IF;
 

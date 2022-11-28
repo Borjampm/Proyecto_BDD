@@ -80,9 +80,7 @@
                 }
                 ?>
                 <?php
-                foreach ($resultado_artista as $resultado) {
-                    echo $resultado;
-                }
+                echo $resultado_artista;
                 ?>
             </tbody>
         </table>

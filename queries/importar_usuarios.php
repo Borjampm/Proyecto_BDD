@@ -79,11 +79,13 @@
                     echo "</tr>";
                 }
                 ?>
-                <?php
-                echo $resultado_artista;
-                ?>
             </tbody>
         </table>
+                <?php
+                foreach ($resultado_artista as $resultado) {
+                    echo $resultado;
+                }
+                ?>
         <footer>
         </footer>
     </body>

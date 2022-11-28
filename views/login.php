@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $msg = $_GET['msg']
+    // $msg = $_GET['msg']
 ?>
 
 <?php include('../templates/header.html'); ?>

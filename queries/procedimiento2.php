@@ -20,7 +20,7 @@
     $query = "SELECT * FROM pokemon1 ORDER BY id DESC;";
     $result = $db -> prepare($query);
     $result -> execute();
-    $pokemons = $result -> fetchAll();
+    $pokemons = $result -> fetch();
 
 ?>
 

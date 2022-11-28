@@ -47,7 +47,7 @@
         // Ejecutamos las querys para efectivamente insertar los datos
         $result = $db1 -> prepare($query);
         $result -> execute();
-        $resultado_artista = $result -> fetchAll();
+        $resultado_artista = $result -> fetch();
         print_r($resultado_artista);
     }
 

@@ -89,11 +89,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php
-                foreach ($resultado_artista as $result) {
-                    echo "<tr> $result </tr>";
-                }
-                ?>
+
             </tbody>
         </table>
         <footer>

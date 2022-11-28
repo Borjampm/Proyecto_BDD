@@ -12,11 +12,11 @@
         <form align="center" action="views/login.php" method="get">
             <input type="submit" value="Iniciar sesión">
         </form>
-        <p> Chupala Cris</p>
     <?php } else { ?>
         <form align="center" action="views/logout.php" method="post">
             <input type="submit" value="Cerrar sesión">
         </form>
+        <p> Chupala Cris</p>
     <?php } ?>
     <h3>Importar Usuarios</h3>
         <form  action='./queries/importar_usuarios.php' method='GET'>

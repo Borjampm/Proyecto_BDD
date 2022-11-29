@@ -1,9 +1,11 @@
 <?php include('../templates/header.html');   ?>
 <?php session_start();
-    if (isset($_SESSION['username'])  && !empty($_SESSION['tipo'])){
+    if (isset($_SESSION['username'])  && isset($_SESSION['tipo'])){
+        echo $_SESSION["tipo"];
         if ($_SESSION["tipo"] == "artista"){
             echo "ARTISTA";
         } else{ echo "PRODUCTORA";
+            echo "PRODUCTORA";
         }
         echo "Bienvenido/a: ";
         echo $_SESSION['username'];
@@ -12,7 +14,7 @@
 <?php
         if (!isset($_SESSION['username'])) {
         ?>
-            <form align="center" action="./login.php?msg=INGRESAR CREDENCIALES" method="get">
+            <form align="center" action="./login.php" method="get">
                 <input type="submit" value="Iniciar sesión">
             </form>
         <?php } else { ?>

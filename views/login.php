@@ -1,6 +1,10 @@
 <?php
     session_start();
-    $msg = $_GET['msg'];
+    if (isset($_GET['msg'])){
+        $msg = $_GET['msg'];
+    } else{
+        $msg = "INGRESAR CREDENCIALES";
+    }
 ?>
 
 <?php include('../templates/header.html'); ?>

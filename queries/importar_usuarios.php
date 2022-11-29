@@ -9,6 +9,7 @@
     $result = $db1 -> prepare($query);
     $result -> execute();
     $artistas = $result -> fetchAll();
+    $n_artistas_malo = 0;
 
 
 
@@ -24,7 +25,11 @@
         // Ejecutamos las querys para efectivamente insertar los datos
         $result = $db1 -> prepare($query);
         $result -> execute();
-        $result -> fetchAll();
+        $resultado_artistas = $result -> fetchAll();
+        $resultado_artistas = $resultado_artistas[0]["importar_usuario"];
+        if ($resultado_artistas == 0){
+            $n_artistas_malo = $n_artistas_malo + 1;
+        }
     }
 
     //PRODUCTORAS
@@ -32,7 +37,7 @@
     $result = $db1 -> prepare($query);
     $result -> execute();
     $productoras = $result -> fetchAll();
-
+    $n_productoras_malo = 0;
 
 
     foreach ($productoras as $productora){
@@ -47,12 +52,15 @@
         // Ejecutamos las querys para efectivamente insertar los datos
         $result = $db1 -> prepare($query);
         $result -> execute();
-        $resultado_artista = $result -> fetchAll();
-        print_r($resultado_artista)."/n";
-        echo "STR";
-        echo $resultado_artista[0]["importar_usuario"];
-        echo "STR";
+        $resultado_productoras = $result -> fetchAll();
+        $resultado_productoras = $resultado_productoras[0]["importar_usuario"];
+        if ($resultado_productoras == 0){
+            $n_productoras_malo = $n_productoras_malo + 1;
+        }
     }
+
+    echo "No se pudieron crear ".$n_productoras_malo." cuentas de productoras.";
+    echo "No se pudieron crear ".$n_artistas_malo." cuentas de artistas.";
 
 
     // Mostramos los cambios en una nueva tabla de usuarios

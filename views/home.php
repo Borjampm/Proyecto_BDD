@@ -17,7 +17,16 @@
             <form align="center" action="./login.php" method="get">
                 <input type="submit" value="Iniciar sesión">
             </form>
-        <?php } else { ?>
+        <?php } else { 
+            echo $_SESSION["tipo"];
+            if ($_SESSION["tipo"] == "artista"){
+                echo "ARTISTA";
+            } else{ echo "PRODUCTORA";
+                echo "PRODUCTORA";
+            }
+            echo "Bienvenido/a: ";
+            echo $_SESSION['username'];
+            ?>
             <form align="center" action="./logout.php" method="post">
                 <input type="submit" value="Cerrar sesión">
             </form>

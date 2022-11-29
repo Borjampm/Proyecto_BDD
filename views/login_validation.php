@@ -29,8 +29,8 @@
         $msg = "SESION INICIADA CORRECTAMENTE";
         header("Location: ./home.php?msg=$msg");
         } else{
-            $msg = "CREDENCIALES INVALIDAS";
-            header("Location: ./login.php?msg=$msg");
+            //$msg = "CREDENCIALES INVALIDAS";
+            header("Location: ./login.php?msg=$query");
         }
     }
 ?>

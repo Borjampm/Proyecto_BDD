@@ -49,6 +49,9 @@
         $result -> execute();
         $resultado_artista = $result -> fetchAll();
         print_r($resultado_artista)."/n";
+        echo "STR";
+        echo $resultado_artista[0][importar_usuario];
+        echo "STR";
     }
 
 

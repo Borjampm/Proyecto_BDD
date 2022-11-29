@@ -24,11 +24,12 @@
         $_SESSION['timeout'] = time();
         $_SESSION['username'] = $_POST['username'];
         $_SESSION['password'] = $_POST['password'];
+        $_SESSION['tipo'] = $usuario[2];
 
-        $msg = "Sesión iniciada correctamente";
+        $msg = "SESION INICIADA CORRECTAMENTE";
         header("Location: ./home.php?msg=$msg");
         } else{
-            $msg = "ERROR";
+            $msg = "CREDENCIALES INVALIDAS";
             header("Location: ./login.php?msg=$msg");
         }
     }

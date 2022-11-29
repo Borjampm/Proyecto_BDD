@@ -6,17 +6,21 @@
     }
 ?>
 <?php
-        if (!isset($_SESSION['username'])) {
-    ?>
-        <form align="center" action="./login.php" method="get">
-            <input type="submit" value="Iniciar sesión">
-        </form>
-    <?php } else { ?>
-        <form align="center" action="./logout.php" method="post">
-            <input type="submit" value="Cerrar sesión">
-        </form>
-        <p> Chris</p>
-    <?php } ?>
+        if (!isset($_SESSION['username']) && !empty($_SESSION['tipo'])) {
+            if ($_SESSION["tipo"] == "artista"){
+                echo "ARTISTA";
+            } else{ echo "PRODUCTORA";
+            }
+        ?>
+            <form align="center" action="./login.php" method="get">
+                <input type="submit" value="Iniciar sesión">
+            </form>
+        <?php } else { ?>
+            <form align="center" action="./logout.php" method="post">
+                <input type="submit" value="Cerrar sesión">
+            </form>
+            <p> Kris</p>
+        <?php } ?>
 <html>
 <body>
 <div class='main'>

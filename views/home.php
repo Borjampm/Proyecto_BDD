@@ -12,7 +12,7 @@
             } else{ echo "PRODUCTORA";
             }
         ?>
-            <form align="center" action="./login.php" method="get">
+            <form align="center" action="./login.php?msg=INGRESAR CREDENCIALES" method="get">
                 <input type="submit" value="Iniciar sesión">
             </form>
         <?php } else { ?>

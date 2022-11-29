@@ -25,7 +25,7 @@
         $_SESSION['timeout'] = time();
         $_SESSION['username'] = $_POST['username'];
         $_SESSION['password'] = $_POST['password'];
-        $_SESSION['tipo'] = $usuario[2];
+        $_SESSION['tipo'] = $usuario[0][2];
 
         $msg = "SESION INICIADA CORRECTAMENTE";
         header("Location: ./home.php?msg=$msg");

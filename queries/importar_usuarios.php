@@ -59,9 +59,14 @@
         }
     }
 
-    echo "No se pudieron crear ".$n_productoras_malo." cuentas de productoras.";
-    echo "No se pudieron crear ".$n_artistas_malo." cuentas de artistas.";
-
+    // AGREGAR HTML
+    if ($n_artistas_malo != 0 || $n_productoras_malo != 0){
+        echo "No se pudieron crear ".$n_productoras_malo." cuentas de productoras.";
+        echo "\n";
+        echo "No se pudieron crear ".$n_artistas_malo." cuentas de artistas.";
+    } else{
+        echo "Se crearon exitosamente todos los usuarios.";
+    }
 
     // Mostramos los cambios en una nueva tabla de usuarios
     $query = "SELECT * FROM usuarios;";

@@ -4,11 +4,20 @@
 ?>
 
 <?php
+
     $msg = '';
     if (isset($_POST['login']) && !empty($_POST['username']) && !empty($_POST['password']))
     {
-        $rut = $_POST['username'];
-        $user_password = $_POST['password'];
+
+        $query = "SELECT user_name, password, tipo FROM usuarios WHERE user_name=".$_POST['username']."AND password=".$_POST['password'].";";
+        $result = $db1 -> prepare($query);
+        $result -> execute();
+        $usuario = $result -> fetchAll();
+
+        if($usuario){
+
+        // $rut = $_POST['username'];
+        // $user_password = $_POST['password'];
         $_SESSION['valid'] = true;
         $_SESSION['timeout'] = time();
         $_SESSION['username'] = $_POST['username'];
@@ -16,5 +25,9 @@
 
         $msg = "Sesión iniciada correctamente";
         header("Location: ./home.php?msg=$msg");
+        } else{
+            $msg = "ERROR";
+            header("Location: ./login.php?msg=$msg");
+        }
     }
 ?>

@@ -12,6 +12,7 @@
         <!-- <?php echo $msg; ?> -->
         <input type="text" name="username" placeholder="nombre de usuario" required autofocus>
         <input type="password" name="password" placeholder="contraseña" required>
+        <!-- <select type="tipo" name="tipo" placeholder="contraseña" required> -->
         <button type="submit" name="login"> Iniciar sesión </button>
     </form>
 

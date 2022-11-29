@@ -15,7 +15,7 @@
         <form align="center" action="./logout.php" method="post">
             <input type="submit" value="Cerrar sesión">
         </form>
-        <p> Chupala Cris inicie sesion</p>
+        <p> Chris</p>
     <?php } ?>
 <html>
 <body>

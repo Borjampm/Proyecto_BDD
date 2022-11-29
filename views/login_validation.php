@@ -10,8 +10,9 @@
     $msg = '';
     if (isset($_POST['login']) && !empty($_POST['username']) && !empty($_POST['password']))
     {
-
-        $query = 'SELECT user_name, password, tipo FROM usuarios WHERE user_name="'.$_POST['username'].'" AND password="'.$_POST['password'].'";';
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $query = "SELECT user_name, password, tipo FROM usuarios WHERE user_name ='$username'AND password ='$password';";
         $result = $db1 -> prepare($query);
         $result -> execute();
         $usuario = $result -> fetchAll();

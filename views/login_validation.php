@@ -1,6 +1,8 @@
 <?php
     ob_start();
     session_start();
+    require("../config/conexion.php");
+    include('../templates/header.html');
 ?>
 
 <?php

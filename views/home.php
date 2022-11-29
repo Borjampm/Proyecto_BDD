@@ -8,10 +8,11 @@
                 <input type="submit" value="Iniciar sesión">
             </form>
         <?php } else { 
-            echo $_SESSION["tipo"];
             if ($_SESSION["tipo"] == "artista"){
+                // VISTA PARA ARTISTAS
                 echo "ARTISTA";
             } else{
+                // VISTA PARA PRODUCTORAS
                 echo "PRODUCTORA";
             }
             echo "Bienvenido/a: ";

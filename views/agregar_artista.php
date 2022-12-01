@@ -21,7 +21,7 @@ $artistas = $result -> fetchAll();
         <select name="recinto">
             <?php
             #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
-            foreach ($artista as $d) {
+            foreach ($artistas as $d) {
                 echo '<option value="'.$d[0].'">'.$d[1].'</option>';
             }
             ?>

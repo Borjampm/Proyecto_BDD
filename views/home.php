@@ -8,6 +8,14 @@ require("../config/conexion.php");
             echo "Bienvenido/a: ";
             echo $_SESSION['username'];
             echo "\n";
+            ?>
+            <form align="center" action="./logout.php" method="post">
+                <input type="submit" value="Cerrar sesión">
+            </form>
+            <form align="center" action="./crear_evento.php" method="get">
+                <input type="submit" value="Crear Evento">
+            </form>
+        <?php 
         ?>
             <form align="center" action="./login.php" method="get">
                 <input type="submit" value="Iniciar sesión">
@@ -118,45 +126,11 @@ require("../config/conexion.php");
                             ?>
                         </tbody>
                 </table>
-                <h2> Eventos Aprobados </h2>
-                <table class='table'>
-                    <thead>
-                        <tr>
-                        <th>Nombre</th>
-                        <th>Fecha de Inicio</th>
-                        <th>Recinto</th>
-                        <th>Ciudad</th>
-                        <th>Pais</th>
-                        <th>Estado</th>
-                    </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                            foreach ($eventos as $evento) {
-                                if ($evento[7] == "Aprobado"){
-                                echo "<tr>";
-                                echo "<td>$evento[1]</td> ";
-                                echo "<td>$evento[5]</td> ";
-                                echo "<td>$evento[2]</td> ";
-                                echo "<td>$evento[3]</td> ";
-                                echo "<td>$evento[4]</td> ";
-                                echo "<td>Aprobado</td> ";
-                                echo "</tr>";
-                                }
-                            }
-                            ?>
-                        </tbody>
-                </table> 
 
-        <?php
+                <?php
 
-            }
-            ?>
-            <form align="center" action="./logout.php" method="post">
-                <input type="submit" value="Cerrar sesión">
-            </form>
-            <p> Kris</p>
-        <?php } ?>
+                    }
+                } ?>
 <html>
 <body>
 <div class='main'>

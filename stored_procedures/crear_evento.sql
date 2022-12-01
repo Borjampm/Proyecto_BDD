@@ -21,10 +21,10 @@ BEGIN
         INSERT INTO eventos values(idmax+1, nombre, recinto_nombre, ciudad, pais, fecha_inicio, id_productora, estado);
 
         -- retornamos true si se agregó el valor
-        RETURN 1;
+        RETURN idmax+1;
     ELSE
         -- y false si no se agregó
-        RETURN 0;
+        RETURN -1;
 
     END IF;
 

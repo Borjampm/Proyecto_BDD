@@ -23,13 +23,12 @@
         $resultado_evento = $result -> fetchAll();
 
         $resultado_evento = $resultado_evento[0]["crear_evento"];
-        if ($resultado_evento == 0){
+        if ($resultado_evento == -1){
             $msg = "NO SE PUDO CREAR EL EVENTO";
             header("Location: ./crear_evento.php?msg=$msg");
 
         } else{
-            $msg = "EVENTO CREADO CORRECTAMENTE";
-        header("Location: ./home.php?msg=$msg");
+        header("Location: ./agregar_artista.php?msg=$resultado_evento");
         }
     }
 ?>

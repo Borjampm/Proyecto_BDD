@@ -16,7 +16,11 @@ $recintos = $result -> fetchAll();
         <?php echo $msg; ?>
         <input type="text" name="nombre" placeholder="nombre del evento" required autofocus>
         <input type="date" name="fecha_inicio" placeholder="Fecha de Inicio" required>
-        <select name="recinto">
+        <input type="text" name="ciudad" placeholder="Ciudad" required>
+        <input type="text" name="pais" placeholder="Pais" required>
+        <button type="submit" name="crear_evento"> Crear Evento </button>
+    </form>
+    <select name="recinto">
             <?php
             #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
             foreach ($recintos as $d) {
@@ -24,9 +28,5 @@ $recintos = $result -> fetchAll();
             }
             ?>
         </select>
-        <input type="text" name="ciudad" placeholder="Ciudad" required>
-        <input type="text" name="pais" placeholder="Pais" required>
-        <button type="submit" name="login"> Iniciar sesión </button>
-    </form>
 </body>
 

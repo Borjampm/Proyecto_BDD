@@ -3,6 +3,9 @@
 ?>
 <?php
         if (!isset($_SESSION['username'])) {
+            echo "Bienvenido/a: ";
+            echo $_SESSION['username'];
+            echo "\n";
         ?>
             <form align="center" action="./login.php" method="get">
                 <input type="submit" value="Iniciar sesión">
@@ -11,12 +14,51 @@
             if ($_SESSION["tipo"] == "artista"){
                 // VISTA PARA ARTISTAS
                 echo "ARTISTA";
-            } else{
+            
+            } 
+            
+            else{
                 // VISTA PARA PRODUCTORAS
                 echo "PRODUCTORA";
+
+                $tipo_id = $_SESSION['tipo'];
+
+                $query = "SELECT * FROM eventos WHERE eventos.id_productora = '$tipo_id';";
+                $result = $db1 -> prepare($query);
+                $result -> execute();
+                $eventos = $result -> fetchAll();
+
+                ?>
+                <table class='table'>
+                    <thead>
+                        <tr>
+                        <th>Nombre</th>
+                        <th>Fecha de Inicio</th>
+                        <th>Recinto</th>
+                        <th>Ciudad</th>
+                        <th>Pais</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            foreach ($eventos as $evento) {
+                                if ($evento[-1] = "Programado"){
+                                echo "<tr>";
+                                echo "<td>$evento[1]</td> ";
+                                echo "<td>$evento[5]</td> ";
+                                echo "<td>$evento[2]</td> ";
+                                echo "<td>$evento[3]</td> ";
+                                echo "<td>$evento[4]</td> ";
+                                echo "</tr>";
+                                }
+                            }
+                            ?>
+                        </tbody>
+                </table>
+
+        <?php
+
             }
-            echo "Bienvenido/a: ";
-            echo $_SESSION['username'];
             ?>
             <form align="center" action="./logout.php" method="post">
                 <input type="submit" value="Cerrar sesión">

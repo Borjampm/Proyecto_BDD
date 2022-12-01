@@ -45,7 +45,7 @@ require("../config/conexion.php");
                         <tbody>
                             <?php
                             foreach ($eventos as $evento) {
-                                if ($evento[7] = "Programado"){
+                                if ($evento[-1] == "Programado"){
                                 echo "<tr>";
                                 echo "<td>$evento[1]</td> ";
                                 echo "<td>$evento[5]</td> ";
@@ -74,7 +74,7 @@ require("../config/conexion.php");
                         <tbody>
                             <?php
                             foreach ($eventos as $evento) {
-                                if ($evento[7] = "En Espera"){
+                                if ($evento[-1] == "En Espera"){
                                 echo "<tr>";
                                 echo "<td>$evento[1]</td> ";
                                 echo "<td>$evento[5]</td> ";
@@ -102,7 +102,7 @@ require("../config/conexion.php");
                         <tbody>
                             <?php
                             foreach ($eventos as $evento) {
-                                if ($evento[7] = "Rechazado"){
+                                if ($evento[-1] == "Rechazado"){
                                 echo "<tr>";
                                 echo "<td>$evento[1]</td> ";
                                 echo "<td>$evento[5]</td> ";
@@ -131,7 +131,7 @@ require("../config/conexion.php");
                         <tbody>
                             <?php
                             foreach ($eventos as $evento) {
-                                if ($evento[7] = "Aprobado"){
+                                if ($evento[-1] == "Aprobado"){
                                 echo "<tr>";
                                 echo "<td>$evento[1]</td> ";
                                 echo "<td>$evento[5]</td> ";

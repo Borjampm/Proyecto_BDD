@@ -1,6 +1,11 @@
 <?php
 include('../templates/header.html');
 require("../config/conexion.php");
+if (isset($_GET['msg'])){
+    $msg = $_GET['msg'];
+} else{
+    $msg = "INGRESAR CREDENCIALES";
+}
 
 $query = "SELECT nombre FROM recintos;";
 $result = $db2 -> prepare($query);

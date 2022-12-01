@@ -8,7 +8,7 @@ $result -> execute();
 $artistas = $result -> fetchAll();
 $msg = $_GET['msg'];
 
-$query = "SELECT artistas.nombre_artistico, artistas.telefono FROM artista_en_evento, artistas WHERE id_evento = $msg AND artista_en_evento.id_artista = artistas.id_artista;";
+$query = "SELECT artistas.nombre_artistico, artistas.telefono FROM artista_en_evento, artistas WHERE artista_en_evento.id_evento = '$msg' AND artista_en_evento.id_artista = artistas.id_artista;";
 $result = $db1 -> prepare($query);
 $result -> execute();
 $artistas_display = $result -> fetchAll();

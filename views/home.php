@@ -31,6 +31,7 @@ require("../config/conexion.php");
                 $eventos = $result -> fetchAll();
 
                 ?>
+                <h2> Eventos Programados </h2>
                 <table class='table'>
                     <thead>
                         <tr>
@@ -59,7 +60,7 @@ require("../config/conexion.php");
                             ?>
                         </tbody>
                 </table>
-
+                <h2> Eventos en Espera </h2>
                 <table class='table'>
                     <thead>
                         <tr>
@@ -88,6 +89,7 @@ require("../config/conexion.php");
                             ?>
                         </tbody>
                 </table>
+                <h2> Eventos Rechazados </h2>
                 <table class='table'>
                     <thead>
                         <tr>
@@ -116,7 +118,7 @@ require("../config/conexion.php");
                             ?>
                         </tbody>
                 </table>
-                </table>
+                <h2> Eventos Aprobados </h2>
                 <table class='table'>
                     <thead>
                         <tr>

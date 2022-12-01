@@ -5,17 +5,6 @@ require("../config/conexion.php");
 ?>
 <?php
         if (!isset($_SESSION['username'])) {
-            echo "Bienvenido/a: ";
-            echo $_SESSION['username'];
-            echo "\n";
-            ?>
-            <form align="center" action="./logout.php" method="post">
-                <input type="submit" value="Cerrar sesión">
-            </form>
-            <form align="center" action="./crear_evento.php" method="get">
-                <input type="submit" value="Crear Evento">
-            </form>
-        <?php 
         ?>
             <form align="center" action="./login.php" method="get">
                 <input type="submit" value="Iniciar sesión">
@@ -23,13 +12,24 @@ require("../config/conexion.php");
         <?php } else { 
             if ($_SESSION["tipo"] == "artista"){
                 // VISTA PARA ARTISTAS
-                echo "ARTISTA";
+                echo "Bienvenido/a: ";
+                echo $_SESSION['username'];
+                echo "\n";
             
             } 
             
             else{
                 // VISTA PARA PRODUCTORAS
-                echo "PRODUCTORA";
+                echo "Bienvenido/a: ";
+                echo $_SESSION['username'];
+                echo "\n";
+                ?>
+                <form align="center" action="./logout.php" method="post">
+                    <input type="submit" value="Cerrar sesión">
+                </form>
+                <form align="center" action="./crear_evento.php" method="get">
+                    <input type="submit" value="Crear Evento">
+                </form>
 
                 $tipo_id = $_SESSION['tipo_id'];
 

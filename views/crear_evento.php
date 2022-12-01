@@ -15,7 +15,7 @@ $recintos = $result -> fetchAll();
 ?>
 
 <body>
-    <h3> Ingrese nombre de usuario y contraseña </h3>
+    <h3> Ingrese la información de su evento </h3>
     <br>
     <form class="form-signin" role="form" action="crear_evento_validation.php" method="post">
         <?php echo $msg; ?>

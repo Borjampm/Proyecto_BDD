@@ -3,6 +3,7 @@
         session_start();
         require("../config/conexion.php");
         include('../templates/header.html');
+        $msg = $_GET['msg'];
 ?>
 
 <?php

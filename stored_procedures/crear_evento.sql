@@ -1,7 +1,7 @@
 CREATE OR REPLACE FUNCTION
 
 -- declaramos la función y sus argumentos
-crear_evento (nombre varchar(100), fecha_inicio date, ciudad varchar(30), pais varchar(30), recinto varchar(100), id_productora int)
+crear_evento (nombre varchar(100), fecha_inicio date, ciudad varchar(30), pais varchar(30), recinto varchar(100), id_productora int, estado varchar(30))
 
 -- declaramos lo que retorna, en este caso un booleano
 RETURNS INTEGER as $$
@@ -12,7 +12,7 @@ RETURNS INTEGER as $$
 BEGIN
 
     IF fecha_inicio NOT IN (SELECT eventos.fecha_inicio from eventos WHERE eventos.recinto = recinto) THEN
-        INSERT INTO eventos values(nombre, fecha_inicio, ciudad, pais, recinto, id_productora);
+        INSERT INTO eventos(nombre, fecha_inicio, ciudad, pais, recinto, id_productora, estado) values(nombre, fecha_inicio, ciudad, pais, recinto, id_productora, estado);
 
         -- retornamos true si se agregó el valor
         RETURN 1;

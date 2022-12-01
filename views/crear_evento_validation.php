@@ -15,7 +15,7 @@
         $pais = $_POST['pais'];
         $recinto = $_POST['recinto'];
         $id= $_SESSION['tipo_id'];
-        $query = "SELECT crear_evento('$nombre'::varchar, '$fecha_inicio'::varchar, '$ciudad'::varchar, '$pais'::varchar, '$recinto'::varchar,  $id);";
+        $query = "SELECT crear_evento('$nombre'::varchar, '$fecha_inicio'::date, '$ciudad'::varchar, '$pais'::varchar, '$recinto'::varchar,  $id);";
 
         $result = $db1 -> prepare($query);
         $result -> execute();

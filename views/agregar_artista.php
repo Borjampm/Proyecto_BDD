@@ -38,6 +38,7 @@ $artistas_display = $result -> fetchAll();
         <thead>
             <tr>
             <th>Nombre</th>
+            <th>Número de Contacto</th>
             </tr>
         </thead>
             <tbody>

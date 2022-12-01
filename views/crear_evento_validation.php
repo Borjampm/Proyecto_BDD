@@ -24,7 +24,7 @@
         $resultado_evento = $resultado_evento[0]["crear_evento"];
         if ($resultado_evento == 0){
             $msg = "NO SE PUDO CREAR EL EVENTO";
-            header("Location: ./crear_evento.php?msg=$msg");
+            header("Location: ./crear_evento.php?msg=$query");
 
         } else{
             $msg = "EVENTO CREADO CORRECTAMENTE";

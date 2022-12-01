@@ -38,14 +38,14 @@ $artistas_display = $result -> fetchAll();
         <thead>
             <tr>
             <th>Nombre</th>
-        </tr>
-            </thead>
+            </tr>
+        </thead>
             <tbody>
                 <?php
                 foreach ($artistas_display as $artista) {
                     echo "<tr>";
-                    echo $artista[0];
-                    echo $artista[1];
+                    echo "<td>$artista[0]</td> ";
+                    echo "<td>$artista[1]</td> ";
                     echo "</tr>";
                 }
                 ?>

@@ -26,7 +26,7 @@
         $_SESSION['username'] = $_POST['username'];
         $_SESSION['password'] = $_POST['password'];
         $_SESSION['tipo'] = $usuario[0][2];
-        $_SESSION['tipo_id'] = $usuario[0][3];
+        //$_SESSION['tipo_id'] = $usuario[0][3];
 
         $msg = "SESION INICIADA CORRECTAMENTE";
         header("Location: ./home.php?msg=$msg");

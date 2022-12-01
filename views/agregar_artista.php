@@ -7,7 +7,7 @@ if (isset($_GET['msg'])){
     $msg = "INGRESAR CREDENCIALES";
 }
 
-$query = "SELECT id_artista, nombre FROM artistas;";
+$query = "SELECT id_artista, nombre_artistico FROM artistas;";
 $result = $db1 -> prepare($query);
 $result -> execute();
 $artistas = $result -> fetchAll();

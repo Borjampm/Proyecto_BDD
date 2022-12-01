@@ -25,7 +25,7 @@ require("../config/conexion.php");
 
                 $tipo_id = $_SESSION['tipo_id'];
 
-                $query = "SELECT * FROM eventos WHERE eventos.id_productora = '$tipo_id';";
+                $query = "SELECT * FROM eventos WHERE eventos.id_productora = '$tipo_id' ORDER BY eventos.fecha_inicio DESC;";
                 $result = $db1 -> prepare($query);
                 $result -> execute();
                 $eventos = $result -> fetchAll();
@@ -39,7 +39,8 @@ require("../config/conexion.php");
                         <th>Recinto</th>
                         <th>Ciudad</th>
                         <th>Pais</th>
-                        </tr>
+                        <th>Estado</th>
+                    </tr>
                         </thead>
                         <tbody>
                             <?php
@@ -51,12 +52,99 @@ require("../config/conexion.php");
                                 echo "<td>$evento[2]</td> ";
                                 echo "<td>$evento[3]</td> ";
                                 echo "<td>$evento[4]</td> ";
+                                echo "<td>Programado</td> ";
                                 echo "</tr>";
                                 }
                             }
                             ?>
                         </tbody>
                 </table>
+
+                <table class='table'>
+                    <thead>
+                        <tr>
+                        <th>Nombre</th>
+                        <th>Fecha de Inicio</th>
+                        <th>Recinto</th>
+                        <th>Ciudad</th>
+                        <th>Pais</th>
+                        <th>Estado</th>
+                    </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            foreach ($eventos as $evento) {
+                                if ($evento[-1] = "En Espera"){
+                                echo "<tr>";
+                                echo "<td>$evento[1]</td> ";
+                                echo "<td>$evento[5]</td> ";
+                                echo "<td>$evento[2]</td> ";
+                                echo "<td>$evento[3]</td> ";
+                                echo "<td>$evento[4]</td> ";
+                                echo "<td>En Espera</td> ";
+                                echo "</tr>";
+                                }
+                            }
+                            ?>
+                        </tbody>
+                </table>
+                <table class='table'>
+                    <thead>
+                        <tr>
+                        <th>Nombre</th>
+                        <th>Fecha de Inicio</th>
+                        <th>Recinto</th>
+                        <th>Ciudad</th>
+                        <th>Pais</th>
+                        <th>Estado</th>
+                    </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            foreach ($eventos as $evento) {
+                                if ($evento[-1] = "Rechazado"){
+                                echo "<tr>";
+                                echo "<td>$evento[1]</td> ";
+                                echo "<td>$evento[5]</td> ";
+                                echo "<td>$evento[2]</td> ";
+                                echo "<td>$evento[3]</td> ";
+                                echo "<td>$evento[4]</td> ";
+                                echo "<td>Rechazado</td> ";
+                                echo "</tr>";
+                                }
+                            }
+                            ?>
+                        </tbody>
+                </table>
+                </table>
+                <table class='table'>
+                    <thead>
+                        <tr>
+                        <th>Nombre</th>
+                        <th>Fecha de Inicio</th>
+                        <th>Recinto</th>
+                        <th>Ciudad</th>
+                        <th>Pais</th>
+                        <th>Estado</th>
+                    </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            foreach ($eventos as $evento) {
+                                if ($evento[-1] = "Aprobado"){
+                                echo "<tr>";
+                                echo "<td>$evento[1]</td> ";
+                                echo "<td>$evento[5]</td> ";
+                                echo "<td>$evento[2]</td> ";
+                                echo "<td>$evento[3]</td> ";
+                                echo "<td>$evento[4]</td> ";
+                                echo "<td>Aprobado</td> ";
+                                echo "</tr>";
+                                }
+                            }
+                            ?>
+                        </tbody>
+                </table> 
 
         <?php
 

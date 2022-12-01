@@ -30,6 +30,8 @@ require("../config/conexion.php");
                 <form align="center" action="./crear_evento.php" method="get">
                     <input type="submit" value="Crear Evento">
                 </form>
+                
+                <?php
 
                 $tipo_id = $_SESSION['tipo_id'];
 

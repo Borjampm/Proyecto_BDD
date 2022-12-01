@@ -6,10 +6,16 @@ crear_evento (nombre varchar(100), fecha_inicio date, ciudad varchar(30), pais v
 -- declaramos lo que retorna, en este caso un booleano
 RETURNS INTEGER as $$
 
-
+DECLARE
+idmax int;
 
 -- definimos nuestra función
 BEGIN
+
+
+    SELECT INTO idmax 
+    MAX(eventos.id_evento) 
+    FROM eventos;
 
     IF fecha_inicio NOT IN (SELECT eventos.fecha_inicio from eventos WHERE eventos.recinto = recinto_nombre) THEN
         INSERT INTO eventos(evento, recinto, ciudad, pais, fecha_inicio, id_productora, estado) values(nombre, recinto_nombre, ciudad, pais, fecha_inicio, id_productora, estado);

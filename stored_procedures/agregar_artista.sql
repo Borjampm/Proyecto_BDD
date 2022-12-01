@@ -10,9 +10,12 @@ RETURNS INTEGER as $$
 BEGIN
 
 
-    INSERT INTO artista_en_evento values(id_productora_n, id_evento_n, id_artista_n, estado_n);
+    IF id_artista_n NOT IN (SELECT artista_en_evento.id_artista from artista_en_evento WHERE artista_en_evento.id_productora = id_productora_n AND artista_en_evento.id_evento = id_evento_n) THEN
 
-    -- retornamos true si se agregó el valor
+        INSERT INTO artista_en_evento values(id_productora_n, id_evento_n, id_artista_n, estado_n);
+    
+    END IF;
+
      RETURN 1;
 
 

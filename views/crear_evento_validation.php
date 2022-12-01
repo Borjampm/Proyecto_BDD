@@ -6,33 +6,28 @@
 ?>
 
 <?php
-
     $msg = '';
-    if (isset($_POST['login']) && !empty($_POST['username']) && !empty($_POST['password']))
+    if (isset($_POST['nombre']) && !empty($_POST['fecha_inicio']) && !empty($_POST['ciudad']) && !empty($_POST['pais']) && !empty($_POST['recinto']))
     {
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-        $query = "SELECT user_name, password, tipo, id_tipo FROM usuarios WHERE user_name ='$username'AND password ='$password';";
+        $nombre = $_POST['nombre'];
+        $fecha_inicio = $_POST['fecha_inicio'];
+        $ciudad = $_POST['ciudad'];
+        $pais = $_POST['pais'];
+        $id= $_SESSION['tipo_id'];
+        $query = "SELECT importar_usuario('$nombre'::varchar, '$fecha_inicio'::varchar, '$ciudad'::varchar, '$pais'::varchar, $id);";
+
         $result = $db1 -> prepare($query);
         $result -> execute();
-        $usuario = $result -> fetchAll();
+        $resultado_evento = $result -> fetchAll();
 
-        if($usuario){
+        $resultado_evento = $resultado_evento[0]["crear_evento"];
+        if ($resultado_evento == 0){
+            $msg = "NO SE PUDO CREAR EL EVENTO";
+            header("Location: ./crear_evento.php?msg=$msg");
 
-        // $rut = $_POST['username'];
-        // $user_password = $_POST['password'];
-        $_SESSION['valid'] = true;
-        $_SESSION['timeout'] = time();
-        $_SESSION['username'] = $_POST['username'];
-        $_SESSION['password'] = $_POST['password'];
-        $_SESSION['tipo'] = $usuario[0][2];
-        $_SESSION['tipo_id'] = $usuario[0][3];
-
-        $msg = "SESION INICIADA CORRECTAMENTE";
-        header("Location: ./home.php?msg=$msg");
         } else{
-            $msg = "CREDENCIALES INVALIDAS";
-            header("Location: ./login.php?msg=$msg");
+            $msg = "EVENTO CREADO CORRECTAMENTE";
+        header("Location: ./home.php?msg=$msg");
         }
     }
 ?>

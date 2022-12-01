@@ -22,7 +22,7 @@
 
 
 
-        // Ejecutamos las querys para efectivamente insertar los datos
+        // Ejecutamos las queries para efectivamente insertar los datos
         $result = $db1 -> prepare($query);
         $result -> execute();
         $resultado_artistas = $result -> fetchAll();

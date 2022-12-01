@@ -3,7 +3,7 @@
   $password = 'grupo13';
   $databaseName = 'grupo13e3';
 
-  $user2 = 'grupo999';
-  $password2 = 'grupo999';
-  $databaseName2 = 'grupo999e3';
+  $user2 = 'grupo14';
+  $password2 = 'proyecto14';
+  $databaseName2 = 'grupo14e3';
 ?>

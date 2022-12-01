@@ -3,7 +3,7 @@ include('../templates/header.html');
 require("../config/conexion.php");
 
 $query = "SELECT * FROM recintos;";
-$result = $db1 -> prepare($query);
+$result = $db2 -> prepare($query);
 $result -> execute();
 $recintos = $result -> fetchAll();
 

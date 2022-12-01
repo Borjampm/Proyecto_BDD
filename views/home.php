@@ -23,7 +23,7 @@ require("../config/conexion.php");
                 // VISTA PARA PRODUCTORAS
                 echo "PRODUCTORA";
 
-                $tipo_id = $_SESSION['tipo'];
+                $tipo_id = $_SESSION['tipo_id'];
 
                 $query = "SELECT * FROM eventos WHERE eventos.id_productora = '$tipo_id';";
                 $result = $db1 -> prepare($query);

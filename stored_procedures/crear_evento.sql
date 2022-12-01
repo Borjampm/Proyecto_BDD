@@ -12,7 +12,7 @@ RETURNS INTEGER as $$
 BEGIN
 
     IF fecha_inicio NOT IN (SELECT eventos.fecha_inicio from eventos WHERE eventos.recinto = recinto_nombre) THEN
-        INSERT INTO eventos values(nombre, recinto_nombre, ciudad, pais, fecha_inicio, id_productora, estado);
+        INSERT INTO eventos(evento, recinto, ciudad, pais, fecha_inicio, id_productora, estado) values(nombre, recinto_nombre, ciudad, pais, fecha_inicio, id_productora, estado);
 
         -- retornamos true si se agregó el valor
         RETURN 1;

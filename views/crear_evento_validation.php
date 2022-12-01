@@ -13,8 +13,9 @@
         $fecha_inicio = $_POST['fecha_inicio'];
         $ciudad = $_POST['ciudad'];
         $pais = $_POST['pais'];
+        $recinto = $_POST['recinto'];
         $id= $_SESSION['tipo_id'];
-        $query = "SELECT importar_usuario('$nombre'::varchar, '$fecha_inicio'::varchar, '$ciudad'::varchar, '$pais'::varchar, $id);";
+        $query = "SELECT importar_usuario('$nombre'::varchar, '$fecha_inicio'::varchar, '$ciudad'::varchar, '$pais'::varchar, '$recinto'::varchar,  $id);";
 
         $result = $db1 -> prepare($query);
         $result -> execute();

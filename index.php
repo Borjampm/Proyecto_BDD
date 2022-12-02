@@ -1,6 +1,6 @@
 <html>
 <?php include('./templates/header.html');   ?>
-    <body>
+    <body class="bg-dark text-white">
     <?php session_start();
     if (isset($_SESSION['username'])){
         echo "Bienvenido/a: ";

@@ -23,7 +23,7 @@ $recintos = $result -> fetchAll();
         <input class="form-control" type="date" name="fecha_inicio" placeholder="Fecha de Inicio" required>
         <input class="form-control" type="text" name="ciudad" placeholder="Ciudad" required>
         <input class="form-control" type="text" name="pais" placeholder="País" required>
-        <select class="form-control" name="recinto">
+        <select class="form-select" name="recinto">
             <?php
             #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
             foreach ($recintos as $d) {

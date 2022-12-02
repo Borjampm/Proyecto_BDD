@@ -126,11 +126,11 @@ require("../config/conexion.php");
                 ?>
                 <br></br>
                 <form align="center" action="./logout.php" method="post">
-                    <input type="submit" value="Cerrar sesión">
+                    <input class='btn btn-outline-danger' type="submit" value="Cerrar sesión">
                 </form>
                 <br>
                 <form align="center" action="./crear_evento.php" method="get">
-                    <input type="submit" value="Crear Evento">
+                    <input class='btn btn-outline-success' type="submit" value="Crear Evento">
                 </form>
                 <br></br>
 

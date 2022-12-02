@@ -2,8 +2,6 @@
 include('../templates/header.html');
 require("../config/conexion.php");
 
-echo $_GET['msg'];
-echo "-";
 $msg = explode(",", $_GET['msg']);
 $id_artista = $msg[0];
 $id_evento = $msg[1];

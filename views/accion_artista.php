@@ -15,7 +15,7 @@ $artistas_display = $result -> fetchAll();
 
 $msg = "Evento" . " " . $estado;
 
-header("Location: ./agregar_artista.php?msg=$msg");
+header("Location: ./home.php?msg=$msg");
 
 ?>
 

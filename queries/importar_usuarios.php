@@ -98,17 +98,6 @@
                 ?>
             </tbody>
         </table>
-        <table class='table'>
-            <thead>
-                <tr>
-                <th>result</th>
-                </tr>
-            </thead>
-            <tbody>
 
-            </tbody>
-        </table>
-        <footer>
-        </footer>
     </body>
 </html>

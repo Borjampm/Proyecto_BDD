@@ -163,9 +163,11 @@ require("../config/conexion.php");
                 $tipo_id = $_SESSION['tipo_id'];
                 if (isset($_POST['desde']) && !empty($_POST['hasta']))
                 {
+                $desde = $_POST['desde'];
+                $hasta = $_POST['hasta'];
                 $query = "SELECT * FROM eventos WHERE eventos.id_productora = '$tipo_id'
-                AND eventos.fecha_inicio > 
-                AND
+                AND eventos.fecha_inicio >= '$desde'
+                AND eventos.fecha_inicio <= '$hasta'
                 ORDER BY eventos.fecha_inicio ASC;";
                 $result = $db1 -> prepare($query);
                 $result -> execute();

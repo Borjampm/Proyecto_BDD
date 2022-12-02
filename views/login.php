@@ -9,8 +9,8 @@
 
 <?php include('../templates/header.html'); ?>
 
-<body>
-    <h3> Ingrese nombre de usuario y contraseña </h3>
+<body align="center">
+    <h3 class="display-6"> Ingrese sus credenciales </h3>
     <br>
     <form class="form-signin" role="form" action="login_validation.php" method="post" align="center">
         <div class="d-grid gap-2 col-6 mx-auto">

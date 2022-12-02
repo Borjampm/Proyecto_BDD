@@ -30,9 +30,9 @@ $recintos = $result -> fetchAll();
                 echo '<option value="'.$d[0].'">'.$d[0].'</option>';
             }
             ?>
-        </select>
+        </select>        
+        <button class='btn btn-outline-success' type="submit" name="crear_evento"> Crear Evento </button>
         </div>
 
-        <button class='btn btn-outline-success' type="submit" name="crear_evento"> Crear Evento </button>
     </form>
 </body>

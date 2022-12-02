@@ -21,7 +21,7 @@ La asignación de estas contraseñas se realiza al momento de importar los usuar
 
 - Un evento puede estar en 3 estados distintos: programado (si el evento es aprobado por todos los artistas invitados), en espera de aprobación (si se está a la espera de que los artistas invitados aprueben el evento), y rechazado (si alguno de los artistas invitados rechaza la invitación).
 
-- Si a un evento están invitados múltiples artistas, basta que solo 1 de ellos rechace la invitación para que el evento quede rechazado en su totalidad. Por el otro lado, es necesario contar con la aprobación de todos los artistas para que el evento quede programado. Los eventos cargados del archivo .csv se considerarán eventos programados.
+- Si a un evento están invitados múltiples artistas, basta que solo 1 de ellos rechace la invitación para que el evento quede rechazado en su totalidad. Por el otro lado, es necesario contar con la aprobación de todos los artistas para que el evento quede programado. Los eventos cargados del archivo ```.csv``` se considerarán eventos programados.
 
 - Para mostrar las entradas de cortesía disponibles por categoría se utilizaron solamente los datos de las entradas del grupo par, dado que no fue posible establecer una relación entre los datos de ambos grupos. Al consultar por las entradas disponibles para un evento, se muestran las distintas categorías junto a la cantidad de entradas disponibles para cada una de estas.
 

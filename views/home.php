@@ -35,7 +35,7 @@ require("../config/conexion.php");
                     <?php
                 foreach ($eventos as $evento) {
                     if ($evento[11] == "Programado"){
-                echo "<h4> $evento[5]</h4>";
+                echo "<br></br><h4> $evento[5]</h4>";
                 echo "<p> - Fecha: $evento[9]</p>";
                 echo "<p> - Recinto: $evento[6]</p>";
 

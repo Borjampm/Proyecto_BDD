@@ -147,8 +147,8 @@ require("../config/conexion.php");
             <p>
                 FILTRO
             </p>
-            <input class="form-control" type="date" name="desde" value="1900-01-01" required>
-            <input class="form-control" type="date" name="hasta" value="2200-12-31" required>
+            <input class="form-control" type="date" name="desde" value="2015-01-01" required>
+            <input class="form-control" type="date" name="hasta" value="2022-12-31" required>
                 <?php
 
                 $tipo_id = $_SESSION['tipo_id'];

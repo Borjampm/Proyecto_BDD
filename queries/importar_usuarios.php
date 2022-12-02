@@ -83,8 +83,8 @@
     <body class="bg-light">
     <div class="container"> 
 
-        <table class='table table-light table-hover w-auto table-bordered text-success border-info table-striped'>
-            <thead class="table-info">
+        <table class='table table-light table-hover w-auto table-bordered border-info table-striped'>
+            <thead class="table-success">
                 <tr>
                 <th>Nombre de usuario</th>
                 <th>Contraseña</th>

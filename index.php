@@ -2,9 +2,6 @@
 <?php include('./templates/header.html');   ?>
     <body class="bg-light text-white">
     
-    <div>
-    <h1 class="display-4 text-success" align="center">Portal de Eventos Musicales</h1>
-    </div>
 
     <?php session_start();
     if (isset($_SESSION['username'])){

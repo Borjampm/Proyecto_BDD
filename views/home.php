@@ -79,6 +79,7 @@ require("../config/conexion.php");
                         </form>';
                     }
                     }
+                    echo "<br>";
                     echo '
                     <form align="left" action="./hospedajes_artista.php?" method="post">
                     <input type="submit" value="Ver Hospedajes y Transportes">

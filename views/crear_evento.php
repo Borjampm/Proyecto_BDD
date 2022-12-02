@@ -31,7 +31,7 @@ $recintos = $result -> fetchAll();
             }
             ?>
         </select>        
-        <br></br>
+        <br>
         <button class='btn btn-outline-success' type="submit" name="crear_evento"> Crear Evento </button>
         </div>
 

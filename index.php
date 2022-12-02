@@ -1,6 +1,6 @@
 <html>
 <?php include('./templates/header.html');   ?>
-    <body class="bg-light text-white">
+    <body class="bg-indigo text-white">
     
     <div>
     <h1 class="display-4 text-info" align="center">Portal de Eventos Musicales</h1>

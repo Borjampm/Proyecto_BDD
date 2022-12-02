@@ -147,7 +147,7 @@ require("../config/conexion.php");
             <p>
                 FILTRO
             </p>
-            <input class="form-control" type="date" name="desde" value="01/01/1900" required>
+            <input class="form-control" type="date" name="desde" value="1900/01/01" required>
             <input class="form-control" type="date" name="hasta" value="12/31/2200" required>
                 <?php
 

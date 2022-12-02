@@ -124,6 +124,9 @@ require("../config/conexion.php");
                                         <form align="center" action="./artista_aprobar.php" method="get">
                                         <input type="submit" value="Aceptar">
                                         </form>
+                                        <form align="center" action="./artista_reprobar.php" method="get">
+                                        <input type="submit" value="Rechazar">
+                                        </form>
                                     </td> ';
                                 echo "</tr>";
                                 }

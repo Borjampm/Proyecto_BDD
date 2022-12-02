@@ -173,7 +173,13 @@ require("../config/conexion.php");
                 $result -> execute();
                 $eventos = $result -> fetchAll();
                 } else {
-                    echo "Plw";
+                $query = "SELECT * FROM eventos WHERE eventos.id_productora = '$tipo_id'
+                AND eventos.fecha_inicio >= '2015-01-01'
+                AND eventos.fecha_inicio <= '2022-12-31'
+                ORDER BY eventos.fecha_inicio ASC;";
+                $result = $db1 -> prepare($query);
+                $result -> execute();
+                $eventos = $result -> fetchAll();
                 }
                 ?>
 

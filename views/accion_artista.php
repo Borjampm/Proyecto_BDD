@@ -9,16 +9,15 @@ $estado = $msg[3];
 $id_productora = $msg[2];
 
 $query = "SELECT accion_artista($id_artista, $id_evento, '$estado'::varchar, $id_productora);";
-echo $query;
 $result = $db1 -> prepare($query);
 $result -> execute();
 $artistas_display = $result -> fetchAll();
 print_r($artistas_display);
 echo $artistas_display[0]['accion_artista'];
 
-$msg2 = "Evento" . " " . $artistas_display[0];
+$msg2 = "Evento" . " " . $estado;
 
-// header("Location: ./home.php?msg=$msg2");
+header("Location: ./home.php?msg=$msg2");
 
 ?>
 

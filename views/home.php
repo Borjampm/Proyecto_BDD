@@ -61,7 +61,7 @@ require("../config/conexion.php");
                 $result = $db1 -> prepare($query);
                 $result -> execute();
                 $tours = $result -> fetchAll();
-                if(empty($tour)){
+                if(empty($tours)){
                     echo "<p>El evento no pertenece a un Tour</p>";
                 }else{
                     echo "<p> - Otros artistas: </p>";

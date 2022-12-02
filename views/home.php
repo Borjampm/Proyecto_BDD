@@ -77,7 +77,19 @@ require("../config/conexion.php");
                     }
                     }
                     ?>
-
+                <?php
+                $query = "SELECT categoria, COUNT(categoria) from entradas WHERE nombre_evento = '$evento[5]' GROUP BY categoria ;";
+                $result = $db2 -> prepare($query);
+                $result -> execute();
+                $entradas = $result -> fetchAll();
+                echo "<p> - Entradas de Cortesía: </p>";
+                if(empty($entradas)){
+                    echo "<p>El evento no tiene entradas de cortesía asociadasr</p>";
+                } else {
+                    foreach ($entradas as $entrada){
+                        echo "$entrada";
+                }
+                ?>
                     <h2> Eventos en Espera de Aprobación </h2>
                 <table class='table'>
                     <thead>

@@ -12,6 +12,5 @@ $entradas = $result -> fetchAll();
 print_r($entradas);
 $msg2 = "Evento" . " " . $estado;
 
-header("Location: ./home.php?msg=$msg2");
 
 ?>

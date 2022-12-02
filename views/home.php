@@ -28,7 +28,7 @@ require("../config/conexion.php");
 
                 ?>
                                 <form align="center" action="./logout.php" method="post">
-                    <input lass='btn btn-outline-success' type="submit" value="Cerrar sesión">
+                    <input class='btn btn-outline-success' type="submit" value="Cerrar sesión">
                 </form>
                     <h2> Eventos Programados </h2>
                     <?php

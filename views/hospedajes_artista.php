@@ -1,6 +1,8 @@
 <?php
 include('../templates/header.html');
 require("../config/conexion.php");
+session_start();
+
 
 $tipo_id = $_SESSION['tipo_id'];
 

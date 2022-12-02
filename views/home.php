@@ -107,6 +107,7 @@ require("../config/conexion.php");
                         <th>Recinto</th>
                         <th>Ciudad</th>
                         <th>Pais</th>
+                        <th>Acción</th>
                     </tr>
                         </thead>
                         <tbody>
@@ -119,6 +120,11 @@ require("../config/conexion.php");
                                 echo "<td>$evento[6]</td> ";
                                 echo "<td>$evento[7]</td> ";
                                 echo "<td>$evento[8]</td> ";
+                                echo "<td>
+                                        <form align="center" action="./artista_aprobar.php" method="get">
+                                        <input type="submit" value="Aceptar">
+                                        </form>
+                                    </td> ";
                                 echo "</tr>";
                                 }
                             }

@@ -159,7 +159,7 @@ require("../config/conexion.php");
 
     </form>
             <p>
-                Todos los eventos
+                <!-- Todos los eventos -->
             </p>
             <?php
 

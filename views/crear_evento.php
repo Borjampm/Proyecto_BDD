@@ -14,12 +14,14 @@ $recintos = $result -> fetchAll();
 
 ?>
 
-<body>
+<body align = "center">
     <h3> Ingrese la información de su evento </h3>
     <br>
     <form class="form-signin" role="form" action="crear_evento_validation.php" method="post">
         <?php echo $msg; ?>
+        <div class="d-grid gap-2 col-6 mx-auto">
         <input class="form-control" type="text" name="nombre" placeholder="nombre del evento" required autofocus>
+        </div>
         <input class="form-control" type="date" name="fecha_inicio" placeholder="Fecha de Inicio" required>
         <input class="form-control" type="text" name="ciudad" placeholder="Ciudad" required>
         <input class="form-control" type="text" name="pais" placeholder="Pais" required>
@@ -31,6 +33,8 @@ $recintos = $result -> fetchAll();
             }
             ?>
         </select>
+        </div>
+
         <button type="submit" name="crear_evento"> Crear Evento </button>
     </form>
 </body>

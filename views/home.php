@@ -72,9 +72,9 @@ require("../config/conexion.php");
                         // if ($evento[7] == "Programado"){
                     echo "<p>   ->  $artista[5]</p>";
                         }
-
+                        $msg3 = $evento[5];
                         echo '
-                        <form align="left" action="./entradas_cortesia.php?" method="post">
+                        <form align="left" action="./entradas_cortesia.php?msg='.$msg3.'" method="post">
                         <input type="submit" value="Ver Entradas">
                         </form>';
                     }

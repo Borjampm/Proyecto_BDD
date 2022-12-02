@@ -45,9 +45,10 @@ require("../config/conexion.php");
                 $result -> execute();
                 $artistas = $result -> fetchAll();
 
+                echo "<p> - Otros artistas: </p>";
                     foreach ($artistas as $artista) {
                         // if ($evento[7] == "Programado"){
-                    echo "<p> $artista[5]</p>";
+                    echo "<p>   ->  $artista[5]</p>";
                         }
 
                 echo "<td>$evento[0]</td> ";

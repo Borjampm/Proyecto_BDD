@@ -186,6 +186,7 @@ require("../config/conexion.php");
                 }
                 ?>
 
+<br>
                 <div align="center">
                 <h3 class="display-6"> Eventos programados </h3>
                 <table align="center" class='table table-light table-hover w-auto table-bordered border-success table-striped'>

@@ -100,7 +100,8 @@ require("../config/conexion.php");
                                 echo "<td>$evento[6]</td> ";
                                 echo "<td>$evento[7]</td> ";
                                 echo "<td>$evento[8]</td> ";
-                                $msg = $tipo_id . "," .  $evento[1] . "," . $evento[0] . "," . "Aprobado";
+                                // $msg = $tipo_id . "," .  $evento[1] . "," . $evento[0] . "," . "Aprobado";
+                                $msg = 10000 . "," .  100000 . "," . 10000 . "," . "Aprobado";
 
                                 echo $msg;
                                 $msg2 = serialize(array($tipo_id, $evento[1], $evento[0], "Rechazado"));

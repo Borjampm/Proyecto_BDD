@@ -5,7 +5,6 @@ require("../config/conexion.php");
 echo $_GET['msg'];
 echo "-";
 $msg = explode(",", $_GET['msg']);
-echo $msg;
 $id_artista = $msg[0];
 $id_evento = $msg[1];
 $estado = $msg[3];

@@ -33,10 +33,11 @@ require("../config/conexion.php");
                     <h2> Eventos Programados </h2>
                     <?php
                 foreach ($eventos as $evento) {
-                    // if ($evento[7] == "Programado"){
+                    if ($evento[11] == "Programado"){
                 echo "<h3> $evento[5]</h3>";
                 echo "<p> - Fecha: $evento[9]</p>";
                 echo "<p> - Recinto: $evento[6]</p>";
+                    }
 
                 $query = "SELECT * FROM artista_en_evento
                 INNER JOIN artistas ON artista_en_evento.id_artista = artistas.id_artista

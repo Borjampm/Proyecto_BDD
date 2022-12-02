@@ -13,9 +13,9 @@ $result = $db1 -> prepare($query);
 $result -> execute();
 $artistas_display = $result -> fetchAll();
 
-$msg = "Evento" . " " . $artistas_display;
+$msg2 = "Evento" . " " . $artistas_display[0];
 
-header("Location: ./home.php?msg=$msg");
+header("Location: ./home.php?msg=$msg2");
 
 ?>
 

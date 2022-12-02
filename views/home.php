@@ -13,7 +13,7 @@ require("../config/conexion.php");
 
             if ($_SESSION["tipo"] == "artista"){
                 // VISTA PARA ARTISTAS
-                echo "Bienvenido/a: ";
+                echo "Bienvenido/a ";
                 echo $_SESSION['username'];
                 echo "\n";
 
@@ -56,7 +56,7 @@ require("../config/conexion.php");
                             echo "<p>   ->  $artista[5]</p>";
                         }
                     }
-                $query = "SELECT * from tours, eventos WHERE tours.nombre = eventos.evento AND eventos.evento = nombre;";
+                $query = "SELECT * from tours, eventos WHERE tours.nombre = eventos.evento AND eventos.evento = $evento[5];";
                 $result = $db1 -> prepare($query);
                 $result -> execute();
                 $tours = $result -> fetchAll();
@@ -131,7 +131,7 @@ require("../config/conexion.php");
 
             <?php } else {
                 // VISTA PARA PRODUCTORAS
-                echo "Bienvenido/a: ";
+                echo "Bienvenido/a ";
                 echo $_SESSION['username'];
                 echo "\n";
                 ?>

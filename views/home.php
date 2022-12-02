@@ -143,8 +143,8 @@ require("../config/conexion.php");
 
 
                 <h2> Eventos Programados </h2>
-                <table class='table'>
-                    <thead>
+                <table class='table table-light table-hover w-auto table-bordered border-success table-striped'>
+                    <thead class="table-success">
                         <tr>
                         <th>Nombre</th>
                         <th>Fecha de Inicio</th>

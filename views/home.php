@@ -52,32 +52,15 @@ require("../config/conexion.php");
                         // if ($evento[7] == "Programado"){
                     echo "<p>   ->  $artista[5]</p>";
                         }
-                $query = "SELECT * FROM artista_en_evento
-                INNER JOIN artistas ON artista_en_evento.id_artista = artistas.id_artista
-                WHERE artista_en_evento.id_evento = '$evento[4]'
-                AND  artistas.id_artista != '$evento[2]';";
+                $query = "SELECT * from tours, eventos WHERE tours.nombre = eventos.evento AND eventos.evento = nombre;";
                 $result = $db1 -> prepare($query);
                 $result -> execute();
-                $artistas = $result -> fetchAll();
-
-                echo "<p> - Tour: </p>";
-                    foreach ($artistas as $artista) {
-                        // if ($evento[7] == "Programado"){
-                    echo "<p>   ->  $artista[5]</p>";
-                        }
-                $query = "SELECT * FROM artista_en_evento
-                INNER JOIN artistas ON artista_en_evento.id_artista = artistas.id_artista
-                WHERE artista_en_evento.id_evento = '$evento[4]'
-                AND  artistas.id_artista != '$evento[2]';";
-                $result = $db1 -> prepare($query);
-                $result -> execute();
-                $artistas = $result -> fetchAll();
-
-                echo "<p> - Hospedaje y Traslado: </p>";
-                    foreach ($artistas as $artista) {
-                        // if ($evento[7] == "Programado"){
-                    echo "<p>   ->  $artista[5]</p>";
-                        }
+                $tour = $result -> fetchAll();
+                if(empty($artistas)){
+                    echo "El evento no pertenece a un Tour";
+                }else{
+                    echo "<p> - Tour: $tour[1]</p>";
+                }
 
                 $query = "SELECT * FROM artista_en_evento
                 INNER JOIN artistas ON artista_en_evento.id_artista = artistas.id_artista

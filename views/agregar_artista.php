@@ -36,8 +36,9 @@ $artistas_display = $result -> fetchAll();
 
         </div>
     </form>
+<br></br>
 
-    <h2 align="center" > Artistas Invitados </h2>
+    <h3 align="center" > Artistas Invitados </h2>
     <table align="center" class='table table-light table-hover w-auto table-bordered border-success table-striped'>
         <thead class="table-success">
             <tr>

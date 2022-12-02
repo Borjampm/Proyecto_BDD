@@ -145,18 +145,34 @@ require("../config/conexion.php");
 
 
             <p>
-                FILTRO
+                Buscar eventos por fecha
             </p>
+            <form class="form-signin" role="form" action="home.php" method="post">
             <input class="form-control" type="date" name="desde" value="2015-01-01" required>
             <input class="form-control" type="date" name="hasta" value="2022-12-31" required>
-                <?php
+            <br>
+            <button class='btn btn-outline-success' type="submit" name="home"> Filtrar </button>
+        </div>
+
+    </form>
+            <p>
+                Todos los eventos
+            </p>
+            <?php
 
                 $tipo_id = $_SESSION['tipo_id'];
-
-                $query = "SELECT * FROM eventos WHERE eventos.id_productora = '$tipo_id' ORDER BY eventos.fecha_inicio ASC;";
+                if (isset($_POST['nombre']) && !empty($_POST['fecha_inicio']) && !empty($_POST['ciudad']) && !empty($_POST['pais']) && !empty($_POST['recinto']))
+                {
+                $query = "SELECT * FROM eventos WHERE eventos.id_productora = '$tipo_id'
+                AND eventos.fecha_inicio >
+                AND
+                ORDER BY eventos.fecha_inicio ASC;";
                 $result = $db1 -> prepare($query);
                 $result -> execute();
                 $eventos = $result -> fetchAll();
+                } else {
+                    echo "Plw";
+                }
                 ?>
 
                 <div align="center">

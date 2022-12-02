@@ -60,11 +60,11 @@ require("../config/conexion.php");
                 $result = $db1 -> prepare($query);
                 $result -> execute();
                 $tours = $result -> fetchAll();
-                $tour = $tours[0];
                 if(empty($tours)){
                     echo "<p>El evento no pertenece a un Tour</p>";
                 } else {
-                    echo "<p> - Tour: $tours[1]</p>";
+                    $tour = $tours[0];
+                    echo "<p> - Tour: $tour[1]</p>";
                 }
 
                 $query = "SELECT * FROM artista_en_evento

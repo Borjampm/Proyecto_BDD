@@ -13,9 +13,9 @@ require("../config/conexion.php");
 
             if ($_SESSION["tipo"] == "artista"){
                 // VISTA PARA ARTISTAS
-                echo "Bienvenido/a ";
+                echo "Hola ";
                 echo $_SESSION['username'];
-                echo "\n";
+                echo "!\n";
 
                 $tipo_id = $_SESSION['tipo_id'];
 

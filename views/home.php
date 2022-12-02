@@ -74,8 +74,8 @@ require("../config/conexion.php");
                         }
 
                         echo '
-                        <form align="center" action="./entradas_cortesia.php?" method="post">
-                        <input type="submit" value="Aceptar">
+                        <form align="left" action="./entradas_cortesia.php?" method="post">
+                        <input type="submit" value="Ver Entradas">
                         </form>';
                     }
                     }

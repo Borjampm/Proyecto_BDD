@@ -64,9 +64,7 @@
         echo "No se pudieron crear ".$n_productoras_malo." cuentas de productoras.";
         echo "\n";
         echo "No se pudieron crear ".$n_artistas_malo." cuentas de artistas.";
-        <div class="alert alert-info" role="alert">
-            A simple info alert—check it out!
-        </div>
+
     } else{
         echo "Se crearon exitosamente todos los usuarios.";
     }

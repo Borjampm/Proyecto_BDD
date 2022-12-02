@@ -10,6 +10,7 @@ require("../config/conexion.php");
                 <input type="submit" value="Iniciar sesión">
             </form>
         <?php } else {
+
             if ($_SESSION["tipo"] == "artista"){
                 // VISTA PARA ARTISTAS
                 echo "Bienvenido/a: ";
@@ -24,6 +25,9 @@ require("../config/conexion.php");
                 $eventos = $result -> fetchAll();
 
                 ?>
+                                <form align="center" action="./logout.php" method="post">
+                    <input type="submit" value="Cerrar sesión">
+                </form>
                                 <h2> Eventos Programados </h2>
                 <table class='table'>
                     <thead>

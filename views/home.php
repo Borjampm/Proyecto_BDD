@@ -142,7 +142,7 @@ require("../config/conexion.php");
                 ?>
 
 
-                <h2> Eventos Programados </h2>
+                <h3 class="display-6"> Eventos programados </h3>
                 <table align="center" class='table table-light table-hover w-auto table-bordered border-success table-striped'>
                     <thead class="table-success">
                         <tr>
@@ -171,7 +171,7 @@ require("../config/conexion.php");
                             ?>
                         </tbody>
                 </table>
-                <h2> Eventos en Espera </h2>
+                <h3 class="display-6"> Eventos en espera </h3>
                 <table align="center" class='table table-light table-hover w-auto table-bordered border-success table-striped'>
                     <thead class="table-success">
                         <tr>
@@ -200,7 +200,7 @@ require("../config/conexion.php");
                             ?>
                         </tbody>
                 </table>
-                <h2> Eventos Rechazados </h2>
+                <h3 class="display-6"> Eventos rechazados </h3>
                 <table align="center" class='table table-light table-hover w-auto table-bordered border-success table-striped'>
                     <thead class="table-success">
                         <tr>

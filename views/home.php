@@ -47,11 +47,11 @@ require("../config/conexion.php");
                 $result -> execute();
                 $artistas = $result -> fetchAll();
 
-                echo "<p> - Otros artistas: </p>";
-                        // if ($evento[7] == "Programado"){
+                // if ($evento[7] == "Programado"){
                     if(empty($artistas)){
                         echo "No hay más artistas en este evento";
                     }else{
+                        echo "<p> - Otros artistas: </p>";
                         foreach ($artistas as $artista) {
                             echo "<p>   ->  $artista[5]</p>";
                         }
@@ -63,7 +63,7 @@ require("../config/conexion.php");
                 if(empty($tour)){
                     echo "El evento no pertenece a un Tour";
                 }else{
-                    echo "<p> - Tour: $tour[1]</p>";
+                    echo "<p> - Tour: '$tour[1]'</p>";
                 }
 
                 $query = "SELECT * FROM artista_en_evento

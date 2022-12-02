@@ -49,7 +49,7 @@ require("../config/conexion.php");
                                 // echo "<td>Programado</td> ";
                                 echo "</tr>";
                                 }
-                            }
+                            
                             ?>
                         </tbody>
                 </table>

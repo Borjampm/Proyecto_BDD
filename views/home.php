@@ -96,9 +96,35 @@ require("../config/conexion.php");
 
                     }
                     }
+                    ?>
 
-
-                ?>
+                    <h2> Eventos Programados </h2>
+                <table class='table'>
+                    <thead>
+                        <tr>
+                        <th>Nombre</th>
+                        <th>Fecha de Inicio</th>
+                        <th>Recinto</th>
+                        <th>Ciudad</th>
+                        <th>Pais</th>
+                    </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            foreach ($eventos as $evento) {
+                                if ($evento[3] == "En Espera"){
+                                echo "<tr>";
+                                echo "<td>$evento[5]</td> ";
+                                echo "<td>$evento[9]</td> ";
+                                echo "<td>$evento[6]</td> ";
+                                echo "<td>$evento[7]</td> ";
+                                echo "<td>$evento[8]</td> ";
+                                echo "</tr>";
+                                }
+                            }
+                            ?>
+                        </tbody>
+                </table>
 
 
             <?php } else {

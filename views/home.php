@@ -67,14 +67,6 @@ require("../config/conexion.php");
                     echo "<p> - Tour: $tour[1]</p>";
                 }
 
-                $query = "SELECT * FROM artista_en_evento
-                INNER JOIN artistas ON artista_en_evento.id_artista = artistas.id_artista
-                WHERE artista_en_evento.id_evento = '$evento[4]'
-                AND  artistas.id_artista != '$evento[2]';";
-                $result = $db1 -> prepare($query);
-                $result -> execute();
-                $artistas = $result -> fetchAll();
-
                 echo "<p> - Entradas de Cortesía: </p>";
                     foreach ($artistas as $artista) {
                         // if ($evento[7] == "Programado"){

@@ -10,15 +10,15 @@
 <?php include('../templates/header.html'); ?>
 
 <body>
-    <!-- <h3> Ingrese nombre de usuario y contraseña </h3> -->
+    <h3> Ingrese nombre de usuario y contraseña </h3>
     <br>
     <form class="form-signin" role="form" action="login_validation.php" method="post" align="center">
-        <?php echo $msg; ?>
         <div class="d-grid gap-2 col-6 mx-auto">
         <input class="form-control" type="text" name="username" placeholder="Nombre de Usuario" required autofocus>
         <input class="form-control" type="password" name="password" placeholder="Contraseña" required>
         </div>
         <!-- <select type="tipo" name="tipo" placeholder="contraseña" required> -->
+        <br></br>
         <button class='btn btn-outline-success' type="submit" name="login"> Iniciar sesión </button>
     </form>
 

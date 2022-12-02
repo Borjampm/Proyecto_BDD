@@ -35,7 +35,7 @@ require("../config/conexion.php");
 
                 $tipo_id = $_SESSION['tipo_id'];
 
-                $query = "SELECT * FROM eventos WHERE eventos.id_productora = '$tipo_id' ORDER BY eventos.fecha_inicio DESC;";
+                $query = "SELECT * FROM eventos WHERE eventos.id_productora = '$tipo_id' ORDER BY eventos.fecha_inicio ASC;";
                 $result = $db1 -> prepare($query);
                 $result -> execute();
                 $eventos = $result -> fetchAll();

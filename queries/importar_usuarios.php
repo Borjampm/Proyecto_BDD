@@ -79,14 +79,17 @@
         <input class='btn' type='submit' value='Volver'>
     </form>
 
-    <body>
-        <table class='table'>
-            <thead>
+
+    <body class="bg-light">
+    <div class="container"> 
+
+        <table class='table table-dark table-hover w-auto table-bordered text-white border-info table-striped'>
+            <thead class="table-info">
                 <tr>
-                <th>username</th>
-                <th>password</th>
-                <th>tipo</th>
-                <th>id_tipo</th>
+                <th>Nombre de usuario</th>
+                <th>Contraseña</th>
+                <th>Categoría</th>
+                <th>ID en Categoría</th>
                 </tr>
             </thead>
             <tbody>
@@ -101,6 +104,6 @@
                 ?>
             </tbody>
         </table>
-
+    </div>
     </body>
 </html>

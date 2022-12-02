@@ -104,10 +104,10 @@ require("../config/conexion.php");
                                 $msg = 10;
                                 $msg2 = json_encode(array($tipo_id, $evento[0], $evento[6], "Rechazado"));
                                 echo '<td>
-                                        <form align="center" action="./accion_artista.php?msg='.$msg.'" method="get">
+                                        <form align="center" action="./accion_artista.php?msg='.$msg.'" method="post">
                                         <input type="submit" value="Aceptar">
                                         </form>
-                                        <form align="center" action="./accion_artista.php?msg='.$msg2.'" method="get">
+                                        <form align="center" action="./accion_artista.php?msg='.$msg2.'" method="post">
                                         <input type="submit" value="Rechazar">
                                         </form>
                                     </td> ';

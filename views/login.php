@@ -14,9 +14,9 @@
     <br>
     <form class="form-signin" role="form" action="login_validation.php" method="post">
         <?php echo $msg; ?>
-        <div class="d-grid gap-2 col-2 mx-auto">
-        <input class="form-control" type="text" name="username" placeholder="nombre de usuario" required autofocus>
-        <input class="form-control" type="password" name="password" placeholder="contraseña" required>
+        <div class="d-grid gap-2 col-6 mx-auto">
+        <input class="form-control" type="text" name="username" placeholder="Nombre de Usuario" required autofocus>
+        <input class="form-control" type="password" name="password" placeholder="Contraseña" required>
         </div>
         <!-- <select type="tipo" name="tipo" placeholder="contraseña" required> -->
         <button type="submit" name="login"> Iniciar sesión </button>

@@ -19,7 +19,7 @@ require("../config/conexion.php");
 
                 $tipo_id = $_SESSION['tipo_id'];
 
-                $query = "SELECT * FROM artista_en_evento, WHERE id_artista = '$tipo_id' ;";
+                $query = "SELECT * FROM artista_en_evento, eventos WHERE artista_en_evento.id_artista = '$tipo_id' ;";
                 $result = $db1 -> prepare($query);
                 $result -> execute();
                 $eventos = $result -> fetchAll();

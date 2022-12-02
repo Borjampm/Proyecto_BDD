@@ -49,10 +49,13 @@ require("../config/conexion.php");
                                 // if ($evento[7] == "Programado"){
                                 echo "<tr>";
                                 echo "<td>$evento[0]</td> ";
-                                echo "<td>$evento[5]</td> ";
+                                echo "<td>$evento[1]</td> ";
                                 echo "<td>$evento[2]</td> ";
                                 echo "<td>$evento[3]</td> ";
                                 echo "<td>$evento[4]</td> ";
+                                echo "<td>$evento[5]</td> ";
+                                echo "<td>$evento[2]</td> ";
+                                echo "<td>$evento[7]</td> ";
                                 echo "</tr>";
                                 }
 

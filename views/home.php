@@ -79,6 +79,10 @@ require("../config/conexion.php");
                         </form>';
                     }
                     }
+                    echo '
+                    <form align="left" action="./hospedajes_artista.php?" method="post">
+                    <input type="submit" value="Ver Hospedajes y Transportes">
+                    </form>';
                     ?>
 
                     <h2> Eventos en Espera de Aprobación </h2>
@@ -119,6 +123,7 @@ require("../config/conexion.php");
                             ?>
                         </tbody>
                 </table>
+
 
             <?php } else {
                 // VISTA PARA PRODUCTORAS

@@ -16,7 +16,7 @@
         if (!isset($_SESSION['username'])) {
     ?>
         <form align="center" action="views/login.php" method="get">
-            <input type="submit" value="Iniciar sesión">
+            <input type="submit" class="btn btn-outline-success" value="Iniciar sesión">
         </form>
     <?php } else { ?>
         <form align="center" action="views/logout.php" method="post">

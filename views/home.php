@@ -117,16 +117,12 @@ require("../config/conexion.php");
                         </tbody>
                 </table>
 
-
-            <div class="alert alert-primary" role="alert">
-                lol
             <?php } else {
                 // VISTA PARA PRODUCTORAS
                 echo "Bienvenido/a ";
                 echo $_SESSION['username'];
                 echo "\n";
                 ?>
-            </div>
 
                 <br></br>
                 <form align="center" action="./logout.php" method="post">

@@ -13,7 +13,7 @@
         if (!isset($_SESSION['username'])) {
     ?>
         <form align="center" action="views/login.php" method="get">
-            <input type="submit" class="btn btn-outline-info" value="Iniciar sesión">
+            <input type="submit" class="btn btn-outline-success" value="Iniciar sesión">
         </form>
     <?php } else { ?>
         <form align="center" action="views/logout.php" method="post">
@@ -21,7 +21,7 @@
         </form>
     <?php } ?>
         <form align="center" action='./queries/importar_usuarios.php' method='GET'>
-            <input class='btn btn-outline-danger' type='submit' value='Importar Usuarios'>
+            <input class='btn btn-outline-success' type='submit' value='Importar Usuarios'>
         </form>
 
 

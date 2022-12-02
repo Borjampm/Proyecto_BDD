@@ -63,7 +63,7 @@ require("../config/conexion.php");
                 if(empty($tours)){
                     echo "<p>El evento no pertenece a un Tour</p>";
                 }else{
-                    echo "<p> - Tour: $tour[1]</p>";
+                    echo "<p> - Tour: $tours[1]</p>";
                 }
 
                 $query = "SELECT * FROM artista_en_evento

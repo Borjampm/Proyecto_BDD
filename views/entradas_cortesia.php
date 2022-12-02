@@ -10,7 +10,6 @@ $result = $db2 -> prepare($query);
 $result -> execute();
 $entradas = $result -> fetchAll();
 print_r($entradas);
-$msg2 = "Evento" . " " . $estado;
 
 
 ?>

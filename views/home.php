@@ -23,6 +23,7 @@ require("../config/conexion.php");
                 $result = $db1 -> prepare($query);
                 $result -> execute();
                 $eventos = $result -> fetchAll();
+                echo $eventos
 
                 ?>
                                 <form align="center" action="./logout.php" method="post">

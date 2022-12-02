@@ -56,6 +56,10 @@ require("../config/conexion.php");
                                 echo "<td>$evento[5]</td> ";
                                 echo "<td>$evento[2]</td> ";
                                 echo "<td>$evento[7]</td> ";
+                                echo "<td>$evento[8]</td> ";
+                                echo "<td>$evento[9]</td> ";
+                                echo "<td>$evento[10]</td> ";
+                                echo "<td>$evento[11]</td> ";
                                 echo "</tr>";
                                 }
 

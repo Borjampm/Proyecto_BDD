@@ -25,47 +25,30 @@ require("../config/conexion.php");
                 $result = $db1 -> prepare($query);
                 $result -> execute();
                 $eventos = $result -> fetchAll();
-                echo $eventos
 
                 ?>
                                 <form align="center" action="./logout.php" method="post">
                     <input type="submit" value="Cerrar sesión">
                 </form>
-                                <h2> Eventos Programados </h2>
-                <table class='table'>
-                    <thead>
-                        <tr>
-                        <th>Nombre</th>
-                        <th>Fecha de Inicio</th>
-                        <th>Recinto</th>
-                        <th>Ciudad</th>
-                        <th>Pais</th>
-                        <th>Estado</th>
-                    </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                            foreach ($eventos as $evento) {
-                                // if ($evento[7] == "Programado"){
-                                echo "<tr>";
-                                echo "<td>$evento[0]</td> ";
-                                echo "<td>$evento[1]</td> ";
-                                echo "<td>$evento[2]</td> ";
-                                echo "<td>$evento[3]</td> ";
-                                echo "<td>$evento[4]</td> ";
-                                echo "<td>$evento[5]</td> ";
-                                echo "<td>$evento[6]</td> ";
-                                echo "<td>$evento[7]</td> ";
-                                echo "<td>$evento[8]</td> ";
-                                echo "<td>$evento[9]</td> ";
-                                echo "<td>$evento[10]</td> ";
-                                echo "<td>$evento[11]</td> ";
-                                echo "</tr>";
-                                }
+                    <h2> Eventos Programados </h2>
+                    <?php
+                foreach ($eventos as $evento) {
+                    // if ($evento[7] == "Programado"){
+                echo "<h2> $evento[5]</h2>";
+                    echo "<td>$evento[0]</td> ";
+                    echo "<td>$evento[1]</td> ";
+                    echo "<td>$evento[2]</td> ";
+                    echo "<td>$evento[3]</td> ";
+                    echo "<td>$evento[4]</td> ";
+                    echo "<td>$evento[6]</td> ";
+                    echo "<td>$evento[7]</td> ";
+                    echo "<td>$evento[8]</td> ";
+                    echo "<td>$evento[9]</td> ";
+                    echo "<td>$evento[10]</td> ";
+                    echo "<td>$evento[11]</td> ";
+                    }
 
-                            ?>
-                        </tbody>
-                </table>
+                ?>
 
 
             <?php } else {

@@ -9,7 +9,29 @@ $query = "SELECT categoria, COUNT(categoria) as Numero_de_entradas FROM entradas
 $result = $db2 -> prepare($query);
 $result -> execute();
 $entradas = $result -> fetchAll();
-print_r($entradas);
+if(empty($entradas)){
+    echo "<p>El evento no tiene entradas disponibles</p>";
+} else {
+    ?>
+    <table class='table'>
+                    <thead>
+                        <tr>
+                            <th>Categoria</th>
+                            <th>Cantidad Entradas</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            foreach ($entradas as $entrada) {
+                                echo "<tr>";
+                                echo "<td>$entrada[0]</td> ";
+                                echo "<td>$entrada[1]</td> ";
+                                echo "</tr>";
+                            }
+                            ?>
+                        </tbody>
+                </table>
+
+<?php }?>
 
 
-?>

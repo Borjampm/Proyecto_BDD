@@ -98,7 +98,7 @@ require("../config/conexion.php");
                     }
                     ?>
 
-                    <h2> Eventos Programados </h2>
+                    <h2> Eventos en Espera de Aprobación </h2>
                 <table class='table'>
                     <thead>
                         <tr>

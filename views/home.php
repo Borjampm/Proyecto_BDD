@@ -59,7 +59,7 @@ require("../config/conexion.php");
                 </table>
 
 
-            <?php}else{
+            <?php } else {
                 // VISTA PARA PRODUCTORAS
                 echo "Bienvenido/a: ";
                 echo $_SESSION['username'];

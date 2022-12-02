@@ -19,7 +19,7 @@ require("../config/conexion.php");
 
                 $tipo_id = $_SESSION['tipo_id'];
 
-                $query = "SELECT * FROM artista_en_evento, eventos WHERE id_artista = '$tipo_id' ;";
+                $query = "SELECT * FROM artista_en_evento, WHERE id_artista = '$tipo_id' ;";
                 $result = $db1 -> prepare($query);
                 $result -> execute();
                 $eventos = $result -> fetchAll();
@@ -33,11 +33,11 @@ require("../config/conexion.php");
                     <thead>
                         <tr>
                         <th>Nombre</th>
-                        <!-- <th>Fecha de Inicio</th>
+                        <th>Fecha de Inicio</th>
                         <th>Recinto</th>
                         <th>Ciudad</th>
                         <th>Pais</th>
-                        <th>Estado</th> -->
+                        <th>Estado</th>
                     </tr>
                         </thead>
                         <tbody>
@@ -45,12 +45,11 @@ require("../config/conexion.php");
                             foreach ($eventos as $evento) {
                                 // if ($evento[7] == "Programado"){
                                 echo "<tr>";
-                                echo "<td>$evento</td> ";
-                                // echo "<td>$evento[5]</td> ";
-                                // echo "<td>$evento[2]</td> ";
-                                // echo "<td>$evento[3]</td> ";
-                                // echo "<td>$evento[4]</td> ";
-                                // echo "<td>Programado</td> ";
+                                echo "<td>$evento[0]</td> ";
+                                echo "<td>$evento[5]</td> ";
+                                echo "<td>$evento[2]</td> ";
+                                echo "<td>$evento[3]</td> ";
+                                echo "<td>$evento[4]</td> ";
                                 echo "</tr>";
                                 }
 

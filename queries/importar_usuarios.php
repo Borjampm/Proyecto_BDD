@@ -75,7 +75,7 @@
     $usuarios = $result -> fetchAll();
 
 ?>
-<br>
+<br></br>
     <form action='../index.php' align="center" method='get'>
         <input class='btn btn-outline-success' type='submit' value='Volver'>
     </form>

@@ -15,15 +15,14 @@ $recintos = $result -> fetchAll();
 ?>
 
 <body align = "center">
-    <h3> Ingrese la información de su evento </h3>
+<h3 class="display-6"> Ingrese sus credenciales </h3>
     <br>
     <form class="form-signin" role="form" action="crear_evento_validation.php" method="post">
-        <?php echo $msg; ?>
         <div class="d-grid gap-2 col-6 mx-auto">
-        <input class="form-control" type="text" name="nombre" placeholder="nombre del evento" required autofocus>
+        <input class="form-control" type="text" name="nombre" placeholder="Nombre del Evento" required autofocus>
         <input class="form-control" type="date" name="fecha_inicio" placeholder="Fecha de Inicio" required>
         <input class="form-control" type="text" name="ciudad" placeholder="Ciudad" required>
-        <input class="form-control" type="text" name="pais" placeholder="Pais" required>
+        <input class="form-control" type="text" name="pais" placeholder="País" required>
         <select class="form-control" name="recinto">
             <?php
             #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
@@ -34,6 +33,6 @@ $recintos = $result -> fetchAll();
         </select>
         </div>
 
-        <button type="submit" name="crear_evento"> Crear Evento </button>
+        <button class='btn btn-outline-success' type="submit" name="crear_evento"> Crear Evento </button>
     </form>
 </body>

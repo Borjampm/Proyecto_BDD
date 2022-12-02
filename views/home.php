@@ -59,11 +59,15 @@ require("../config/conexion.php");
                 $query = "SELECT * from tours, eventos WHERE tours.nombre = eventos.evento AND eventos.evento = nombre;";
                 $result = $db1 -> prepare($query);
                 $result -> execute();
-                $tour = $result -> fetchAll();
+                $tours = $result -> fetchAll();
                 if(empty($tour)){
                     echo "El evento no pertenece a un Tour";
                 }else{
-                    echo "<p> - Tour: $tour[0][1]</p>";
+                    echo "<p> - Otros artistas: </p>";
+                        foreach ($tours as $tour) {
+                            echo "<p>   ->  $tour[1]</p>";
+                        }
+                    // echo "<p> - Tour: $tour[0][1]</p>";
                 }
 
                 $query = "SELECT * FROM artista_en_evento

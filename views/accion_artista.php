@@ -15,6 +15,10 @@ $result = $db1 -> prepare($query);
 $result -> execute();
 $artistas_display = $result -> fetchAll();
 
+$msg = "Evento" . " " . $estado;
+
+header("Location: ./agregar_artista.php?msg=$msg");
+
 ?>
 
 

@@ -25,7 +25,7 @@
     <?php } ?>
     <h3>Importar Usuarios</h3>
         <form  action='./queries/importar_usuarios.php' method='GET'>
-            <input class='btn' type='submit' value='Importar Usuarios'>
+            <input class='btn btn-primary' type='submit' value='Importar Usuarios'>
         </form>
 
 

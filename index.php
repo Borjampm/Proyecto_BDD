@@ -1,6 +1,11 @@
 <html>
 <?php include('./templates/header.html');   ?>
     <body class="bg-dark text-white">
+    
+    <div>
+    <h1 class="display-1 text-info" align="center">Portal de Eventos Musicales</h1>
+    </div>
+
     <?php session_start();
     if (isset($_SESSION['username'])){
         echo "Bienvenido/a: ";

@@ -75,7 +75,7 @@
     $usuarios = $result -> fetchAll();
 
 ?>
-    <form  action='../index.php' method='GET'>
+    <form  action='../index.php' method='get'>
         <input class='btn' type='submit' value='Volver'>
     </form>
 

@@ -124,12 +124,15 @@ require("../config/conexion.php");
                 echo $_SESSION['username'];
                 echo "\n";
                 ?>
+                <br></br>
                 <form align="center" action="./logout.php" method="post">
                     <input type="submit" value="Cerrar sesión">
                 </form>
+                <br>
                 <form align="center" action="./crear_evento.php" method="get">
                     <input type="submit" value="Crear Evento">
                 </form>
+                <br></br>
 
                 <?php
 

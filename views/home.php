@@ -40,7 +40,7 @@ require("../config/conexion.php");
 
                 $query = "SELECT * FROM artista_en_evento
                 INNER JOIN artistas ON artista_en_evento.id_artista = artistas.id_artista
-                WHERE artista_en_evento.id_evento = '$evento[0]' ;";
+                WHERE artista_en_evento.id_evento = '$evento[4]' ;";
                 $result = $db1 -> prepare($query);
                 $result -> execute();
                 $artistas = $result -> fetchAll();

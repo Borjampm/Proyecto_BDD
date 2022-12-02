@@ -19,7 +19,7 @@ $artistas_display = $result -> fetchAll();
 <form align="center" action="./home.php" method="get">
             <input class='btn btn-outline-success' type="submit" value="Volver al inicio">
     </form>
-    <h2> Seleccione un artista para invitar a su evento </h2>
+    <h3 class="display-6" align="center"> Seleccione un artista para invitar a su evento </h3>
     <br>
     <?php echo '<form class="form-signin" role="form" action="agregar_artista_validation.php?msg='.$msg.'" method="post">'; ?>
     <div class="d-grid gap-2 col-6 mx-auto">

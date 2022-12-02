@@ -10,9 +10,9 @@
 <?php include('../templates/header.html'); ?>
 
 <body align="center">
-    <h3 class="display-6"> Ingrese sus credenciales </h3>
     <br>
     <form class="form-signin" role="form" action="login_validation.php" method="post" align="center">
+    <h3 class="display-6"> Ingrese sus credenciales </h3>
         <div class="d-grid gap-2 col-6 mx-auto">
         <input class="form-control" type="text" name="username" placeholder="Nombre de Usuario" required autofocus>
         <input class="form-control" type="password" name="password" placeholder="Contraseña" required>

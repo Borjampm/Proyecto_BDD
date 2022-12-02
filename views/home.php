@@ -86,7 +86,7 @@ require("../config/conexion.php");
                     <input type="submit" value="Ver Hospedajes y Transportes">
                     </form>';
                     ?>
-
+<br></br>
                     <h2> Eventos en Espera de Aprobación </h2>
                 <table class='table'>
                     <thead>

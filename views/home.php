@@ -71,7 +71,7 @@ require("../config/conexion.php");
                 echo "<p> - Entradas de Cortesía: </p>";
                     foreach ($artistas as $artista) {
                         // if ($evento[7] == "Programado"){
-                    echo "<p>   ->  $artista[5]</p>";
+                    // echo "<p>   ->  $artista[5]</p>";
                         }
                         $msg3 = $evento[5];
                         echo '

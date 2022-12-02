@@ -73,7 +73,10 @@ require("../config/conexion.php");
                     echo "<p>   ->  $artista[5]</p>";
                         }
 
-
+                        echo '
+                        <form align="center" action="./entradas_cortesia.php?" method="post">
+                        <input type="submit" value="Aceptar">
+                        </form>'
                     }
                     }
                     ?>
@@ -82,13 +85,13 @@ require("../config/conexion.php");
                 <table class='table'>
                     <thead>
                         <tr>
-                        <th>Nombre</th>
-                        <th>Fecha de Inicio</th>
-                        <th>Recinto</th>
-                        <th>Ciudad</th>
-                        <th>Pais</th>
-                        <th>Acción</th>
-                    </tr>
+                            <th>Nombre</th>
+                            <th>Fecha de Inicio</th>
+                            <th>Recinto</th>
+                            <th>Ciudad</th>
+                            <th>Pais</th>
+                            <th>Acción</th>
+                        </tr>
                         </thead>
                         <tbody>
                             <?php
@@ -208,7 +211,7 @@ require("../config/conexion.php");
                         </tbody>
                 </table>
                 </div>
-            
+
                 <br>
                 <div align="center">
                 <h3 class="display-6"> Eventos rechazados </h3>

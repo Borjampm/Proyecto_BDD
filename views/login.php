@@ -14,7 +14,7 @@
     <br>
     <form class="form-signin" role="form" action="login_validation.php" method="post">
         <?php echo $msg; ?>
-        <div class="mb-3">
+        <div class="d-grid gap-2 col-2 mx-auto">
         <input class="form-control" type="text" name="username" placeholder="nombre de usuario" required autofocus>
         <input class="form-control" type="password" name="password" placeholder="contraseña" required>
         </div>

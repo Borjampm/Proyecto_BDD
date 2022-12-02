@@ -56,7 +56,7 @@ require("../config/conexion.php");
                             echo "<p>   ->  $artista[5]</p>";
                         }
                     }
-                $query = "SELECT * from tours, eventos WHERE tours.nombre = eventos.evento AND eventos.evento = '$evento[5]';";
+                $query = "SELECT * from tours WHERE tours.nombre =  '$evento[5]';";
                 $result = $db1 -> prepare($query);
                 $result -> execute();
                 $tours = $result -> fetchAll();

@@ -14,9 +14,12 @@ $result -> execute();
 $artistas_display = $result -> fetchAll();
 
 ?>
-
+<br>
 <body>
-    <h3> Seleccione un artista para invitar a su evento </h3>
+<form align="center" class='btn btn-outline-success' action="./home.php" method="get">
+            <input type="submit" value="Volver a home">
+            <br>
+    <h2> Seleccione un artista para invitar a su evento </h2>
     <br>
     <?php echo '<form class="form-signin" role="form" action="agregar_artista_validation.php?msg='.$msg.'" method="post">'; ?>
         <select name="id_artista">
@@ -29,8 +32,6 @@ $artistas_display = $result -> fetchAll();
         </select>
         <button type="submit" name="agregar_artista"> Invitar artista </button>
     </form>
-    <form align="center" action="./home.php" method="get">
-            <input type="submit" value="Volver a home">
     </form>
 
     <h2> Artistas Invitados </h2>

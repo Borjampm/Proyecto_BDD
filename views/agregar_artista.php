@@ -22,6 +22,7 @@ $artistas_display = $result -> fetchAll();
     <h2> Seleccione un artista para invitar a su evento </h2>
     <br>
     <?php echo '<form class="form-signin" role="form" action="agregar_artista_validation.php?msg='.$msg.'" method="post">'; ?>
+    <div class="d-grid gap-2 col-6 mx-auto">
         <select class="form-select" name="id_artista">
             <?php
             #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
@@ -30,6 +31,7 @@ $artistas_display = $result -> fetchAll();
             }
             ?>
         </select>
+        </div>
         <button class='btn btn-outline-success' type="submit" name="agregar_artista"> Invitar artista </button>
     </form>
 

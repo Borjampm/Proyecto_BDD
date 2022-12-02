@@ -23,9 +23,8 @@
             <input type="submit" value="Cerrar sesión">
         </form>
     <?php } ?>
-    <h3>Importar Usuarios</h3>
-        <form  action='./queries/importar_usuarios.php' method='GET'>
-            <input class='btn btn-primary' type='submit' value='Importar Usuarios'>
+        <form align="center" action='./queries/importar_usuarios.php' method='GET'>
+            <input class='btn btn-outline-primary' type='submit' value='Importar Usuarios'>
         </form>
 
 

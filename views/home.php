@@ -66,16 +66,20 @@ require("../config/conexion.php");
                     $tour = $tours[0];
                     echo "<p> - Tour: $tour[1]</p>";
                 }
-
+                
+                $query = "SELECT categoria, COUNT(categoria) from entradas WHERE nombre_evento = '$evento[5]' GROUP BY categoria ;";
+                $result = $db2 -> prepare($query);
+                $result -> execute();
+                $entradas = $result -> fetchAll();
                 echo "<p> - Entradas de Cortesía: </p>";
-                    foreach ($artistas as $artista) {
-                        // if ($evento[7] == "Programado"){
-                    echo "<p>   ->  $artista[5]</p>";
-                        }
-
-
-                    }
-                    }
+                if(empty($entradas)){
+                    echo "<p>El evento no tiene entradas de cortesía asociadasr</p>";
+                } else {
+                    foreach ($entradas as $entrada){
+                        echo $entrada;
+                }
+    
+                }
                     ?>
 
                     <h2> Eventos en Espera de Aprobación </h2>

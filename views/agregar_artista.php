@@ -16,8 +16,8 @@ $artistas_display = $result -> fetchAll();
 ?>
 <br>
 <body>
-<form align="center" class='btn btn-outline-success' action="./home.php" method="get">
-            <input type="submit" value="Volver a home">
+<form align="center" action="./home.php" method="get">
+            <input class='btn btn-outline-success' type="submit" value="Volver a home">
     </form>
     <h2> Seleccione un artista para invitar a su evento </h2>
     <br>

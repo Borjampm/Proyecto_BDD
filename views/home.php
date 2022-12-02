@@ -23,33 +23,8 @@ require("../config/conexion.php");
                 $result -> execute();
                 $eventos = $result -> fetchAll();
 
-
-            }
-
-            else{
-                // VISTA PARA PRODUCTORAS
-                echo "Bienvenido/a: ";
-                echo $_SESSION['username'];
-                echo "\n";
                 ?>
-                <form align="center" action="./logout.php" method="post">
-                    <input type="submit" value="Cerrar sesión">
-                </form>
-                <form align="center" action="./crear_evento.php" method="get">
-                    <input type="submit" value="Crear Evento">
-                </form>
-
-                <?php
-
-                $tipo_id = $_SESSION['tipo_id'];
-
-                $query = "SELECT * FROM eventos WHERE eventos.id_productora = '$tipo_id' ORDER BY eventos.fecha_inicio ASC;";
-                $result = $db1 -> prepare($query);
-                $result -> execute();
-                $eventos = $result -> fetchAll();
-                ?>
-
-                <h2> Eventos Programados </h2>
+                                <h2> Eventos Programados </h2>
                 <table class='table'>
                     <thead>
                         <tr>
@@ -78,6 +53,31 @@ require("../config/conexion.php");
                             ?>
                         </tbody>
                 </table>
+
+
+            <?php}else{
+                // VISTA PARA PRODUCTORAS
+                echo "Bienvenido/a: ";
+                echo $_SESSION['username'];
+                echo "\n";
+                ?>
+                <form align="center" action="./logout.php" method="post">
+                    <input type="submit" value="Cerrar sesión">
+                </form>
+                <form align="center" action="./crear_evento.php" method="get">
+                    <input type="submit" value="Crear Evento">
+                </form>
+
+                <?php
+
+                $tipo_id = $_SESSION['tipo_id'];
+
+                $query = "SELECT * FROM eventos WHERE eventos.id_productora = '$tipo_id' ORDER BY eventos.fecha_inicio ASC;";
+                $result = $db1 -> prepare($query);
+                $result -> execute();
+                $eventos = $result -> fetchAll();
+                ?>
+
 
                 <h2> Eventos Programados </h2>
                 <table class='table'>

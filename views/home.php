@@ -120,11 +120,11 @@ require("../config/conexion.php");
                                 echo "<td>$evento[6]</td> ";
                                 echo "<td>$evento[7]</td> ";
                                 echo "<td>$evento[8]</td> ";
-                                echo "<td>
+                                echo '<td>
                                         <form align="center" action="./artista_aprobar.php" method="get">
                                         <input type="submit" value="Aceptar">
                                         </form>
-                                    </td> ";
+                                    </td> ';
                                 echo "</tr>";
                                 }
                             }

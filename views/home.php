@@ -149,10 +149,12 @@ require("../config/conexion.php");
             </p>
             
             <form class="form-signin" role="form" action="home.php" method="post">
+            <div class="d-grid gap-2 col-6 mx-auto">
             <input class="form-control" type="date" name="desde" value="2015-01-01" required>
             <input class="form-control" type="date" name="hasta" value="2022-12-31" required>
             <br>
             <button class='btn btn-outline-success' type="submit" name="home"> Filtrar </button>
+            </div>
         </div>
 
     </form>

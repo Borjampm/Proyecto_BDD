@@ -62,7 +62,7 @@ require("../config/conexion.php");
                 $tours = $result -> fetchAll();
                 if(empty($tours)){
                     echo "<p>El evento no pertenece a un Tour</p>";
-                }else{
+                } else {
                     echo "<p> - Tour: $tours[1]</p>";
                 }
 

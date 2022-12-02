@@ -143,6 +143,10 @@ require("../config/conexion.php");
                 </form>
                 <br></br>
 
+
+            <p>
+                FILTRO
+            </p>
                 <?php
 
                 $tipo_id = $_SESSION['tipo_id'];

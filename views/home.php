@@ -100,7 +100,7 @@ require("../config/conexion.php");
                                 echo "<td>$evento[6]</td> ";
                                 echo "<td>$evento[7]</td> ";
                                 echo "<td>$evento[8]</td> ";
-                                $msg = serialize(array($tipo_id, $evento[1], $evento[0], "Aprobado"));
+                                $msg = json_encode(array($tipo_id, $evento[1], $evento[0], "Aprobado"));
                                 echo $msg;
                                 $msg2 = json_encode(array($tipo_id, $evento[1], $evento[0], "Rechazado"));
                                 echo '<td>

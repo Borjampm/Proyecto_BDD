@@ -4,7 +4,7 @@ require("../config/conexion.php");
 
 echo $_GET['msg'];
 echo "-";
-$msg = unserialize($_GET['msg']);
+$msg = json_decode($_GET['msg']);
 echo $msg;
 $id_artista = $msg[0];
 $id_evento = $msg[1];

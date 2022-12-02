@@ -27,14 +27,15 @@ require("../config/conexion.php");
                 $eventos = $result -> fetchAll();
 
                 ?>
-                                <form align="center" action="./logout.php" method="post">
+                <form align="center" action="./logout.php" method="post">
                     <input class='btn btn-outline-success' type="submit" value="Cerrar sesión">
                 </form>
+                <br></br>
                     <h2> Eventos Programados </h2>
                     <?php
                 foreach ($eventos as $evento) {
                     if ($evento[11] == "Programado"){
-                echo "<h3> $evento[5]</h3>";
+                echo "<h4> $evento[5]</h4>";
                 echo "<p> - Fecha: $evento[9]</p>";
                 echo "<p> - Recinto: $evento[6]</p>";
 

@@ -2,6 +2,7 @@
 include('../templates/header.html');
 require("../config/conexion.php");
 
+echo $_GET['msg'];
 $msg = json_decode($_GET['msg']);
 echo $msg;
 $id_artista = $msg[0];

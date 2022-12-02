@@ -173,6 +173,7 @@ require("../config/conexion.php");
                 </table>
                 </div>
 
+                <div align="center">
                 <h3 class="display-6"> Eventos en espera </h3>
                 <table align="center" class='table table-light table-hover w-auto table-bordered border-success table-striped'>
                     <thead class="table-success">
@@ -202,6 +203,9 @@ require("../config/conexion.php");
                             ?>
                         </tbody>
                 </table>
+                </div>
+            
+                <div align="center">
                 <h3 class="display-6"> Eventos rechazados </h3>
                 <table align="center" class='table table-light table-hover w-auto table-bordered border-success table-striped'>
                     <thead class="table-success">
@@ -231,6 +235,7 @@ require("../config/conexion.php");
                             ?>
                         </tbody>
                 </table>
+                        </div>
 
                 <?php
 

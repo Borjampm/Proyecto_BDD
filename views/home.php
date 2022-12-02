@@ -120,11 +120,13 @@ require("../config/conexion.php");
                                 echo "<td>$evento[6]</td> ";
                                 echo "<td>$evento[7]</td> ";
                                 echo "<td>$evento[8]</td> ";
+                                $msg = array($tipo_id, $evento[0], $evento[6], "Aprobado");
+                                $msg2 = array($tipo_id, $evento[0], $evento[6], "Rechazado");
                                 echo '<td>
-                                        <form align="center" action="./artista_aprobar.php" method="get">
+                                        <form align="center" action="./accion_artista.php?msg='.$msg.'" method="get">
                                         <input type="submit" value="Aceptar">
                                         </form>
-                                        <form align="center" action="./artista_reprobar.php" method="get">
+                                        <form align="center" action="./accion_artista.php?msg='.$msg2.'" method="get">
                                         <input type="submit" value="Rechazar">
                                         </form>
                                     </td> ';

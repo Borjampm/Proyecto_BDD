@@ -9,7 +9,7 @@ RETURNS INTEGER as $$
 -- definimos nuestra función
 BEGIN
 
-    UPDATE artista_en_evento SET id_productora = id_productora_n, id_evento = id_evento_n, id_artista = id_artista_n, estado = estado_n
+    UPDATE artista_en_evento SET  estado = estado_n
     WHERE id_productora = id_productora_n
     AND id_evento = id_evento_n
     AND id_artista = id_artista_n;

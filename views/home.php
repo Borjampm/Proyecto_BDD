@@ -49,7 +49,7 @@ require("../config/conexion.php");
 
                 // if ($evento[7] == "Programado"){
                     if(empty($artistas)){
-                        echo "No hay más artistas en este evento";
+                        echo "<p>No hay más artistas en este evento</p>";
                     }else{
                         echo "<p> - Otros artistas: </p>";
                         foreach ($artistas as $artista) {
@@ -61,7 +61,7 @@ require("../config/conexion.php");
                 $result -> execute();
                 $tours = $result -> fetchAll();
                 if(empty($tour)){
-                    echo "El evento no pertenece a un Tour";
+                    echo "<p>El evento no pertenece a un Tour</p>";
                 }else{
                     echo "<p> - Otros artistas: </p>";
                         foreach ($tours as $tour) {

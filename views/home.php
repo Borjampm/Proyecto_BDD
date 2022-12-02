@@ -36,7 +36,7 @@ require("../config/conexion.php");
                     // if ($evento[7] == "Programado"){
                 echo "<h3> $evento[5]</h3>";
                 echo "<p> - Fecha: $evento[9]</p>";
-                echo "<p> - Recinto: $evento[4]</p>";
+                echo "<p> - Recinto: $evento[6]</p>";
 
                     echo "<td>$evento[0]</td> ";
                     echo "<td>$evento[1]</td> ";

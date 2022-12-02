@@ -17,12 +17,12 @@ $artistas_display = $result -> fetchAll();
 <br>
 <body>
 <form align="center" action="./home.php" method="get">
-            <input class='btn btn-outline-success' type="submit" value="Volver a home">
+            <input class='btn btn-outline-success' type="submit" value="Volver al inicio">
     </form>
     <h2> Seleccione un artista para invitar a su evento </h2>
     <br>
     <?php echo '<form class="form-signin" role="form" action="agregar_artista_validation.php?msg='.$msg.'" method="post">'; ?>
-        <select name="id_artista">
+        <select class="form-select" name="id_artista">
             <?php
             #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
             foreach ($artistas as $d) {

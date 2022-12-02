@@ -157,9 +157,11 @@ require("../config/conexion.php");
                     <input class="form-control" type="date" name="desde" value="$desde" required>
                     <input class="form-control" type="date" name="hasta" value="$hasta" required>';
                 } else {
+                    echo '
                     <input class="form-control" type="date" name="desde" value="2015-01-01" required>
-                    <input class="form-control" type="date" name="hasta" value="2022-12-31" required>
+                    <input class="form-control" type="date" name="hasta" value="2022-12-31" required>';
                 }
+                ?>
             <br>
             <button class='btn btn-outline-success' type="submit" name="home"> Filtrar </button>
         </div>

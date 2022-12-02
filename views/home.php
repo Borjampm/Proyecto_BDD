@@ -82,6 +82,7 @@ require("../config/conexion.php");
                     }
                     echo "<br>";
                     echo '
+                    <br></br>
                     <form align="left" action="./hospedajes_artista.php?" method="post">
                     <input type="submit" value="Ver Hospedajes y Transportes">
                     </form>';

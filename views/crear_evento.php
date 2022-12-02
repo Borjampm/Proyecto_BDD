@@ -14,8 +14,8 @@ $recintos = $result -> fetchAll();
 
 ?>
 
-<body align = "center">
-<h3 class="display-6"> Ingrese sus credenciales </h3>
+<body align="center">
+<h3 class="display-6" aling="center"> Ingrese sus credenciales </h3>
     <br>
     <form class="form-signin" role="form" action="crear_evento_validation.php" method="post">
         <div class="d-grid gap-2 col-6 mx-auto">

@@ -13,7 +13,7 @@ $result = $db1 -> prepare($query);
 $result -> execute();
 $artistas_display = $result -> fetchAll();
 
-$msg = "Evento" . " " . $estado;
+$msg = "Evento" . " " . $artistas_display;
 
 header("Location: ./home.php?msg=$msg");
 

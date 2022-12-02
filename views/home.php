@@ -16,6 +16,14 @@ require("../config/conexion.php");
                 echo $_SESSION['username'];
                 echo "\n";
 
+                $tipo_id = $_SESSION['tipo_id'];
+
+                $query = "SELECT id_evento FROM artista_en_evento WHERE id_artista = '$tipo_id' ;";
+                $result = $db1 -> prepare($query);
+                $result -> execute();
+                $eventos = $result -> fetchAll();
+
+
             }
 
             else{
@@ -39,8 +47,38 @@ require("../config/conexion.php");
                 $result = $db1 -> prepare($query);
                 $result -> execute();
                 $eventos = $result -> fetchAll();
-
                 ?>
+
+                <h2> Eventos Programados </h2>
+                <table class='table'>
+                    <thead>
+                        <tr>
+                        <th>Nombre</th>
+                        <!-- <th>Fecha de Inicio</th>
+                        <th>Recinto</th>
+                        <th>Ciudad</th>
+                        <th>Pais</th>
+                        <th>Estado</th> -->
+                    </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            foreach ($eventos as $evento) {
+                                // if ($evento[7] == "Programado"){
+                                echo "<tr>";
+                                echo "<td>$evento[0]</td> ";
+                                // echo "<td>$evento[5]</td> ";
+                                // echo "<td>$evento[2]</td> ";
+                                // echo "<td>$evento[3]</td> ";
+                                // echo "<td>$evento[4]</td> ";
+                                // echo "<td>Programado</td> ";
+                                echo "</tr>";
+                                }
+                            }
+                            ?>
+                        </tbody>
+                </table>
+
                 <h2> Eventos Programados </h2>
                 <table class='table'>
                     <thead>

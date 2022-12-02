@@ -56,7 +56,8 @@ require("../config/conexion.php");
                             echo "<p>   ->  $artista[5]</p>";
                         }
                     }
-                $query = "SELECT * from tours WHERE LOWER(tours.nombre) =  LOWER('$evento[5]');";
+                $query = "SELECT * from tours WHERE tours.nombre =  '$evento[5]';";
+                echo $query;
                 $result = $db1 -> prepare($query);
                 $result -> execute();
                 $tours = $result -> fetchAll();

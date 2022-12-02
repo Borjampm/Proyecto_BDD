@@ -4,7 +4,7 @@ require("../config/conexion.php");
 if (isset($_GET['msg'])){
     $msg = $_GET['msg'];
 } else{
-    $msg = "INGRESAR CREDENCIALES";
+    $msg = "Ingrese los datos del evento";
 }
 
 $query = "SELECT nombre FROM recintos;";

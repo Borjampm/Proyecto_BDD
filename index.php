@@ -24,7 +24,7 @@
         </form>
     <?php } ?>
         <form align="center" action='./queries/importar_usuarios.php' method='GET'>
-            <input class='btn btn-outline-primary' type='submit' value='Importar Usuarios'>
+            <input class='btn btn-outline-success' type='submit' value='Importar Usuarios'>
         </form>
 
 

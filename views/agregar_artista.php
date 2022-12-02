@@ -32,8 +32,9 @@ $artistas_display = $result -> fetchAll();
             }
             ?>
         </select>
-        </div>
         <button class='btn btn-outline-success' type="submit" name="agregar_artista"> Invitar artista </button>
+
+        </div>
     </form>
 
     <h2> Artistas Invitados </h2>

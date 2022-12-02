@@ -37,6 +37,10 @@ BEGIN
         IF 'Rechazado' IN (SELECT estado FROM artista_en_evento WHERE artista_en_evento.id_evento = id_evento_n) THEN
             UPDATE eventos SET  estado = 'Rechazado'
             WHERE id_evento = id_evento_n;
+
+            UPDATE artista_en_evento SET  estado = 'Rechazado'
+            WHERE id_evento = id_evento_n;
+
         END IF;
     END IF;
 

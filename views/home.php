@@ -145,7 +145,7 @@ require("../config/conexion.php");
 
 
             <p>
-            <h3 class="display-6" align="center"> Ingrese sus credenciales </h3>
+            <h3 class="display-6" align="center"> Filtrar eventos por fecha </h3>
             </p>
             
             <form class="form-signin" role="form" action="home.php" method="post">

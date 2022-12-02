@@ -113,10 +113,10 @@ require("../config/conexion.php");
                                 $msg2 = $tipo_id . "," .  $evento[1] . "," . $evento[0] . "," . "Rechazado";
                                 echo '<td>
                                         <form align="center" action="./accion_artista.php?msg='.$msg.'" method="post">
-                                        <input class="btn btn-outline-success" type="submit" value="Aceptar">
+                                        <input class="btn btn-outline-success btn-sm" type="submit" value="Aceptar">
                                         </form>
                                         <form align="center" action="./accion_artista.php?msg='.$msg2.'" method="post">
-                                        <input class="btn btn-outline-danger" type="submit" value="Rechazar">
+                                        <input class="btn btn-outline-danger btn-sm" type="submit" value="Rechazar">
                                         </form>
                                     </td> ';
                                 echo "</tr>";

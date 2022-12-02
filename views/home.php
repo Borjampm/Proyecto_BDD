@@ -118,12 +118,15 @@ require("../config/conexion.php");
                 </table>
 
 
+            <div class="alert alert-primary" role="alert">
             <?php } else {
                 // VISTA PARA PRODUCTORAS
                 echo "Bienvenido/a ";
                 echo $_SESSION['username'];
                 echo "\n";
                 ?>
+            </div>
+
                 <br></br>
                 <form align="center" action="./logout.php" method="post">
                     <input class='btn btn-outline-danger' type="submit" value="Cerrar sesión">

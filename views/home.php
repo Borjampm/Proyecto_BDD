@@ -100,11 +100,8 @@ require("../config/conexion.php");
                                 echo "<td>$evento[6]</td> ";
                                 echo "<td>$evento[7]</td> ";
                                 echo "<td>$evento[8]</td> ";
-                                // $msg = $tipo_id . "," .  $evento[1] . "," . $evento[0] . "," . "Aprobado";
-                                $msg = 10000 . "," .  100000 . "," . 10000 . "," . "Aprobado";
-
-                                echo $msg;
-                                $msg2 = serialize(array($tipo_id, $evento[1], $evento[0], "Rechazado"));
+                                $msg = $tipo_id . "," .  $evento[1] . "," . $evento[0] . "," . "Aprobado";
+                                $msg2 = $tipo_id . "," .  $evento[1] . "," . $evento[0] . "," . "Rechazado";
                                 echo '<td>
                                         <form align="center" action="./accion_artista.php?msg='.$msg.'" method="post">
                                         <input type="submit" value="Aceptar">

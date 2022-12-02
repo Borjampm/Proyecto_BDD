@@ -147,6 +147,8 @@ require("../config/conexion.php");
             <p>
                 FILTRO
             </p>
+            <input class="form-control" type="date" name="desde" placeholder="Fecha de Inicio" required>
+            <input class="form-control" type="date" name="hasta" placeholder="Fecha de Inicio" required>
                 <?php
 
                 $tipo_id = $_SESSION['tipo_id'];

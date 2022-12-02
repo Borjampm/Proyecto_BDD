@@ -119,6 +119,7 @@ require("../config/conexion.php");
 
 
             <div class="alert alert-primary" role="alert">
+                lol
             <?php } else {
                 // VISTA PARA PRODUCTORAS
                 echo "Bienvenido/a ";

@@ -167,4 +167,8 @@ require("../config/conexion.php");
                         </tbody>
                 </table>
 
+                <?php
+
+                    }
+                 ?>
 </html>

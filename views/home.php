@@ -172,8 +172,8 @@ require("../config/conexion.php");
                         </tbody>
                 </table>
                 <h2> Eventos en Espera </h2>
-                <table class='table'>
-                    <thead>
+                <table class='table table-light table-hover w-auto table-bordered border-success table-striped'>
+                    <thead class="table-success">
                         <tr>
                         <th>Nombre</th>
                         <th>Fecha de Inicio</th>
@@ -201,8 +201,8 @@ require("../config/conexion.php");
                         </tbody>
                 </table>
                 <h2> Eventos Rechazados </h2>
-                <table class='table'>
-                    <thead>
+                <table class='table table-light table-hover w-auto table-bordered border-success table-striped'>
+                    <thead class="table-success">
                         <tr>
                         <th>Nombre</th>
                         <th>Fecha de Inicio</th>

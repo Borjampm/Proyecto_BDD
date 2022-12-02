@@ -19,11 +19,11 @@ $recintos = $result -> fetchAll();
     <br>
     <form class="form-signin" role="form" action="crear_evento_validation.php" method="post">
         <?php echo $msg; ?>
-        <input type="text" name="nombre" placeholder="nombre del evento" required autofocus>
-        <input type="date" name="fecha_inicio" placeholder="Fecha de Inicio" required>
-        <input type="text" name="ciudad" placeholder="Ciudad" required>
-        <input type="text" name="pais" placeholder="Pais" required>
-        <select name="recinto">
+        <input class="form-control" type="text" name="nombre" placeholder="nombre del evento" required autofocus>
+        <input class="form-control" type="date" name="fecha_inicio" placeholder="Fecha de Inicio" required>
+        <input class="form-control" type="text" name="ciudad" placeholder="Ciudad" required>
+        <input class="form-control" type="text" name="pais" placeholder="Pais" required>
+        <select class="form-control" name="recinto">
             <?php
             #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
             foreach ($recintos as $d) {

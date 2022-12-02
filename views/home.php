@@ -50,7 +50,7 @@ require("../config/conexion.php");
                 echo "<p> - Otros artistas: </p>";
                         // if ($evento[7] == "Programado"){
                     if(empty($artistas)){
-                        echo "No hay más artitas";
+                        echo "No hay más artistas en este evento";
                     }else{
                         foreach ($artistas as $artista) {
                             echo "<p>   ->  $artista[5]</p>";

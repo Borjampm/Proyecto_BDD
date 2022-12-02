@@ -37,7 +37,7 @@ require("../config/conexion.php");
                 echo "<h3> $evento[5]</h3>";
                 echo "<p> - Fecha: $evento[9]</p>";
                 echo "<p> - Recinto: $evento[6]</p>";
-                    }
+
 
                 $query = "SELECT * FROM artista_en_evento
                 INNER JOIN artistas ON artista_en_evento.id_artista = artistas.id_artista
@@ -94,6 +94,7 @@ require("../config/conexion.php");
                         }
 
 
+                    }
                     }
 
 

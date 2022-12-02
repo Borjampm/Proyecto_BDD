@@ -51,18 +51,48 @@ require("../config/conexion.php");
                         // if ($evento[7] == "Programado"){
                     echo "<p>   ->  $artista[5]</p>";
                         }
+                $query = "SELECT * FROM artista_en_evento
+                INNER JOIN artistas ON artista_en_evento.id_artista = artistas.id_artista
+                WHERE artista_en_evento.id_evento = '$evento[4]'
+                AND  artistas.id_artista != '$evento[2]';";
+                $result = $db1 -> prepare($query);
+                $result -> execute();
+                $artistas = $result -> fetchAll();
 
-                echo "<td>$evento[0]</td> ";
-                echo "<td>$evento[1]</td> ";
-                echo "<td>$evento[2]</td> ";
-                echo "<td>$evento[3]</td> ";
-                echo "<td>$evento[4]</td> ";
-                echo "<td>$evento[6]</td> ";
-                echo "<td>$evento[7]</td> ";
-                echo "<td>$evento[8]</td> ";
-                echo "<td>$evento[9]</td> ";
-                echo "<td>$evento[10]</td> ";
-                echo "<td>$evento[11]</td> ";
+                echo "<p> - Tour: </p>";
+                    foreach ($artistas as $artista) {
+                        // if ($evento[7] == "Programado"){
+                    echo "<p>   ->  $artista[5]</p>";
+                        }
+                $query = "SELECT * FROM artista_en_evento
+                INNER JOIN artistas ON artista_en_evento.id_artista = artistas.id_artista
+                WHERE artista_en_evento.id_evento = '$evento[4]'
+                AND  artistas.id_artista != '$evento[2]';";
+                $result = $db1 -> prepare($query);
+                $result -> execute();
+                $artistas = $result -> fetchAll();
+
+                echo "<p> - Hospedaje y Traslado: </p>";
+                    foreach ($artistas as $artista) {
+                        // if ($evento[7] == "Programado"){
+                    echo "<p>   ->  $artista[5]</p>";
+                        }
+
+                $query = "SELECT * FROM artista_en_evento
+                INNER JOIN artistas ON artista_en_evento.id_artista = artistas.id_artista
+                WHERE artista_en_evento.id_evento = '$evento[4]'
+                AND  artistas.id_artista != '$evento[2]';";
+                $result = $db1 -> prepare($query);
+                $result -> execute();
+                $artistas = $result -> fetchAll();
+
+                echo "<p> - Entradas de Cortesía: </p>";
+                    foreach ($artistas as $artista) {
+                        // if ($evento[7] == "Programado"){
+                    echo "<p>   ->  $artista[5]</p>";
+                        }
+
+
                     }
 
 
